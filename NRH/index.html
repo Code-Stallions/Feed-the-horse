@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<link rel="stylesheet" href="../NRH/CSS/style.css" type="text/css"/> 
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Näringsämnen Krav på hästar</title>
+
+<script type="text/javascript" id="display1">
+	 	
+ 	
+ 	
+ 	
+ 	function calc1() {
+				
+				for (i=0;i<document.forms[0].horse.length;i++) {	
+				
+				if (document.forms[0].horse[i].checked) {
+				
+				var user_input = document.forms[0].horse[i].value;
+					
+				var brk = "<br />";
+				
+					}
+					
+				}
+			
+				
+				var MJ = 0.5 * Math.pow(horseForm.weight.value,0.75);
+				
+				if(user_input == "Lite"){
+				var feed = MJ;
+		
+				}
+				else if (user_input == "Normal"){
+				var feed = MJ * 1.05;
+				}
+				else if (user_input == "Hard"){
+				var feed = MJ *1.10;
+				} 
+
+				
+				var energy = Math.ceil(feed);
+				
+				var prot = energy * 6;
+				var protine = Math.ceil(prot);
+				
+				var Kal = energy * 0.4;
+				var Kalcim = Math.ceil(Kal);
+				
+				var Fos = energy * 0.25;
+				var Fosfor = Math.ceil(Fos);
+				
+				var MAG = energy * 0.15;
+				var Magnism = Math.ceil(MAG);
+				
+				var input = (horseForm.weight.value); 
+				var SE = 0.2*(input/100);
+				var SE1 = Math.ceil(SE);
+				
+				var TS = 1.7*(input/100);
+				var TS1 = Math.ceil(TS);
+				
+			
+			
+				
+				
+				document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
+				document.write("<div class='display1'>");
+				document.write("<h1> Your Horse's Daily Requirement</h1>");
+				document.write(brk);
+				document.write("You have checked  =  " + user_input);
+				document.write(brk);
+				document.write(brk);
+				document.write("Total MJ = " + energy +"Kg");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total Protine = "+ protine +"Kg");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total Kalcium = " + Kalcim +"Kg");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total Fosfor = " + Fosfor +"Kg");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total  Magnism = " + Magnism +"Kg");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total SE = " + SE1 + "g");
+				document.write(brk);
+				document.write(brk);
+				document.write("Total TS = " + TS1 + "Kg");
+				document.write(brk);
+				document.write("</div>");
+		}
+	
+	
+	
+	</script>
+
+
+</head>
+
+<body>
+	<div class="glass"></div> 
+
+		<div class="header">
+        
+       		</div> 
+     
+     			<div class="horses">
+     			   <img src="../NRH/IMAGES/horses.png" alt="horses" width="587" height="440" border="0"/>
+     				 	</div> 
+     
+    				 		<div class="horses2">
+    				 		  	<img src="../NRH/IMAGES/horses2.png" alt="horses2" width="587" height="440" border="0"/>
+    				 		  		</div>
+    				   		
+       
+   <form action="" id="horseForm" >
+      <div class="wood">   											<!--This is div holds wood image on the middle page-->
+          <div class="horsetype" id="horsetype" >									<!--This is div holds different type of horses -->
+           				Välj den utfodring typ.
+             							<br/>
+        									<br/>
+        									  <input type="radio" id= "latt" name="horse" value="Lite"/> Lättfödda 
+        					&nbsp;&nbsp;&nbsp;<input type="radio" id= "normal"name="horse" value="Normal"/> Normalfödda 
+							&nbsp;&nbsp;&nbsp;<input type="radio" id= "svart"name="horse" value="Hard"/> Svårfödda 
+							</div>
+        					
+        					<div class="weighttype">        <!--This is div holds different type of weights -->
+           	           	 	Ange dina hästar gissade vikt.<br />
+          	         	<br/>  		
+                      <input type="text" name="weight" value=""/> <!--This is input is for accurate wieght -->
+        	      	</div>
+				<input type="button" value="calculate" class="submit" name="submit" onclick="javascript:calc1(horseForm)"/> 		      
+			</div>
+  		</form> 
+		
+</body>		 
+		<footer>
+			<center>		 
+				Näringsämnen Kravpå hästar
+			</center>		 
+		</footer>		 
+</html>		 
+					   				 
