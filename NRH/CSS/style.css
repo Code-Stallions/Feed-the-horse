@@ -3,7 +3,7 @@
 
 .script.type{
 			width: 720px;
-			height: 900px;
+			height:1000px;
 			background-image:url('../IMAGES/mount.png');			
 			background-repeat: repeat-x ;
 			background-position: 100% 15%;
@@ -11,13 +11,14 @@
 			padding:40px 30px 70px 30px;
             border-style:solid;
             border-width:1px;
+
 }
 
 
 body {
-			width: 100px;
+			width:100px;
 			height: 900px;
-			padding: 0px;										/* mount picture background */
+			padding:0px;										/* mount picture background */
 			margin: 0px;
 			background-image:url('../IMAGES/mount.png');			
 			background-repeat: repeat-x ;
@@ -28,8 +29,8 @@ body {
 .glass{
  			background-image: url('../IMAGES/pony-patter.png');	
  			width: 750px;     
-            height: 943px; 
-            padding: 160px 10px 80px 30px;
+            height: 1700px; 
+            padding: 0px 10px 80px 30px;
             margin: -20px 0px 0px 392px;
 			border:solid 0px;
 			position:absolute;
@@ -37,9 +38,8 @@ body {
 			left:0px;
 			top:0px;
 			z-index:-1;
+			}
 
-
-}
 .header{
 			background-image:url('../IMAGES/header.png'); 
 			background-repeat:no-repeat;
@@ -59,9 +59,9 @@ body {
 
 .wood{															/* Wooden menu image  */
 	
-			background-image:url('../IMAGES/wood1.png');
+			background-image:url('../IMAGES/pony-patter.png');
 			width: 650px;
-			height:656px;
+			height:905px;
 			margin: -460px 0px 10px 440px;
 			padding:30px 10px 60px 30px;	
 			border: 1px solid;
@@ -75,15 +75,15 @@ body {
 			
 			}
 
-
+	
 
 .horsetype{
 	 														      /* the horse type menu bar css */
 	 		background-color:#E0E0E0;
-			margin:120px 0px 0px 0px;
+			margin:30px 0px 0px 0px;
 			width: 360px;     
             height: 100px; 
-            padding:40px 0px 0px 50px;
+            padding:0px 0px 0px 50px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -103,7 +103,25 @@ body {
 			margin:30px 0px 0px 0px;
 			width: 360px;     
             height: 100px; 
-            padding:40px 0px 0px 50px;
+            padding:20px 0px 0px 50px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			}
+	
+
+.ProteinType{
+
+			background-color:#E0E0E0;
+			margin:30px 0px 20px 0px;
+			width: 260px;     
+            height: 500px; 
+            padding:10px 0px 0px 30px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -114,6 +132,21 @@ body {
 			border-radius: 4px;
 			}
 
+.DiverseType{
+			background-color:#E0E0E0;
+			margin:-532px 0px 0px 320px;
+			width: 260px;     
+            height: 500px; 
+            padding:10px 0px 0px 30px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			}
 
 .horses{																/* image of horses on the right side of the screen */
 			margin : 90px 0px 0px 1070px;				
@@ -140,14 +173,14 @@ body {
 		     border-radius:5px;
 		     border:1px solid black;
 		     display:inline-block;
-		     color:#777777;
+		     color:black;
 		     font-family:arial;
 		     font-size:12px;
 		     font-weight:bold;
 		     padding:13px 35px;
 		     text-decoration:none;
 		     text-shadow:1px 1px 0px #ffffff;
-		     margin:10px 0px 0px 460px;
+		     margin:30px 0px 0px 500px;
 			 -webkit-box-shadow: 0 8px 6px -6px black;
 	   		 -moz-box-shadow: 0 8px 6px -6px black;
 	         box-shadow: 0 8px 6px -6px black;	
@@ -161,6 +194,7 @@ body {
 			 top:1px;
 				}
 
+
 .display1	{
 			background-color:white;
 			margin:200px 0px 0px 450px;
@@ -169,15 +203,15 @@ body {
             padding:40px 0px 0px 30px;
             border-style:solid;
             border-width:1px;
-}
+			}
 
 footer{
 			background-color: black;						/*footer css  */
 			color:white;
-			width: 632px;     
+			width: 685px;     
             height: 100px; 
-         	padding: 50px 30px 30px 28px;
-         	margin: 310px 0px 10px 440px;
+         	padding:30px 10px 60px 90px;
+         	margin: 1000px 0px 0px 394px;
 			border:solid 1px;
 			border-color:black; 
 			
