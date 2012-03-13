@@ -1,119 +1,105 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-
-<link rel="stylesheet" href="../NRH/CSS/style.css" type="text/css"/> 
-
+	<link rel="stylesheet" href="../NRH/CSS/style.css" type="text/css"/> 
 	<meta http-equiv="Content-Type" content="text/html charset= UTF-8" />
-
 	<title>Näringsämnen Krav på hästar</title>
-
-<script type="text/javascript" id="display1">
-	 	
- 	
- 	
- 	
- 	function calc1() {
-				
-				
-				for (i=0;i<document.forms[0].horse.length;i++) {	
-				
+	<script type="text/javascript" id="display1">
+		function calc1() {
+			for (i=0;i<document.forms[0].horse.length;i++) {	
 				if (document.forms[0].horse[i].checked) {
-				
-				var user_input = document.forms[0].horse[i].value;
-					
-				var brk = "<br />";
-				
-					}
-					
+					var user_input = document.forms[0].horse[i].value;
+					var brk = "<br />";
 				}
+			}
+			var MJ = 0.5 * Math.pow(horseForm.weight.value,0.75);
+			if(user_input == "Lite"){
+				var feed = Math.ceil(MJ);
+			}
+			else if (user_input == "Normal"){
+				var feed = Math.ceil(MJ * 1.05);
+			}
+			else if (user_input == "Hard"){
+				var feed = Math.ceil(MJ *1.10);
+			} 
 			
-				
-				var MJ = 0.5 * Math.pow(horseForm.weight.value,0.75);
-				
-				if(user_input == "Lite"){
-				var feed = MJ;
-		
-				}
-				else if (user_input == "Normal"){
-				var feed = MJ * 1.05;
-				}
-				else if (user_input == "Hard"){
-				var feed = MJ *1.10;
-				} 
-				
-				var energy = Math.ceil(feed);
-				
-				var prot = energy * 6;
-				var protine = Math.ceil(prot);
-				
-				var Kal = energy * 0.4;
-				var Kalcim = Math.ceil(Kal);
-				
-				var Fos = energy * 0.25;
-				var Fosfor = Math.ceil(Fos);
-				
-				var MAG = energy * 0.15;
-				var Magnism = Math.ceil(MAG);
-				
-				var input = (horseForm.weight.value); 
-				var SE = 0.2*(input/100);
-				var SE1 = Math.ceil(SE);
-				
-				var TS = 1.7*(input/100);
-				var TS1 = Math.ceil(TS);
-			
-				var food_input="";
-				
-				for (j=0;j<document.form1.food.length;j++) {	
-				
+			var prot = Math.ceil(feed * 6);
+			var kal = Math.ceil(feed * 0.4);
+			var fos = Math.ceil(feed * 0.25);
+			var mag = Math.ceil(feed * 0.15);
+			var input = (horseForm.weight.value); 
+			var SE = Math.ceil(0.2*(input/100));
+			var TS = Math.ceil(1.7*(input/100));
+
+			var food_input="";
+			for (j=0;j<document.form1.food.length;j++) {
 				if (document.form1.food[j].checked) {
-				
-				food_input += document.form1.food[j].value + brk + "\n";
-				
-				
-					}
-					
+					food_input += document.form1.food[j].value + brk + "\n";
 				}
-				
-				
-				document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
-				document.write("<div class='display1'>");
-				document.write("<h1> Your Horse's Daily Requirement</h1>");
-				document.write("Your horse's weight is : " + input +"Kg");
-				document.write(brk);
-				document.write(brk);
-				document.write("You have checked  :  " + user_input);
-				document.write(brk);
-				document.write(brk);
-				document.write("Total MJ : " + energy);
-				document.write(brk);
-				document.write(brk);
-				document.write("Total Protine : "+ protine +"g");
-				document.write(brk);
-				document.write(brk);
-				document.write("Total Kalcium : " + Kalcim +"g");
-				document.write(brk);
-				document.write(brk);
-				document.write("Total Fosfor : " + Fosfor +"g");
-				document.write(brk);
-				document.write(brk);
-				document.write("Total Magnism : " + Magnism +"g");
-				document.write(brk);
-				document.write(brk);
-				document.write("Total SE : " + SE1 + "g");
-				document.write(brk);
-				document.write(brk);
-				document.write("Total TS : " + TS1 + "g");
-				document.write(brk);
-				document.write(brk);
-				document.write("<b>You are currently feeding your horse: </b> <br />" +food_input );
-				document.write("</div>");
+			}
+			
+			var daysPerWeek = (horseForm.horseWorkout.value)/10;
+			var skritt = (horseForm.horseWorkoutSkritt.value);
+			var trav = (horseForm.horseWorkoutTrav.value);
+			
+			var skrittCalc = (skritt * daysPerWeek * 0.2);
+			var travCalc = (trav * daysPerWeek * 1.3);
+			
+			var workoutMJ = Math.ceil(skrittCalc + travCalc + feed);
+			
+			document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
+			document.write("<div class='display1'>");
+			document.write("<h1> Your Horse's Daily Requirement</h1>");
+			document.write("Your horse's weight is : " + input +"Kg");
+			document.write(brk);
+			document.write(brk);
+			document.write("Test för skrittcalc " + skrittCalc);
+			document.write(brk);
+			document.write(brk);
+			document.write("Test för travcalc " + travCalc);
+			document.write(brk);
+			document.write(brk);
+			document.write("Test för workoutMJ " + workoutMJ);
+			document.write(brk);
+			document.write(brk);
+			document.write("Your horse worksout <b>" + daysPerWeek * 10 +"</b> days a week");
+			document.write(brk);
+			document.write(brk);
+			document.write("Your horse 'skritts' for <b>" + skritt +"</b> minutes per workout");
+			document.write(brk);
+			document.write(brk);
+			document.write("Your horse 'trav' for <b>" + trav +"</b> minutes per workout");
+			document.write(brk);
+			document.write(brk);
+			document.write("You have checked  :  " + user_input);
+			document.write(brk);
+			document.write(brk);
+			document.write("Total MJ : " + feed);
+			document.write(brk);
+			document.write(brk);
+			document.write("Total Protine : "+ prot +"g");
+			document.write(brk);
+			document.write(brk);
+			document.write("Total Kalcium : " + kal +"g");
+			document.write(brk);
+			document.write(brk);
+			document.write("Total Fosfor : " + fos +"g");
+			document.write(brk);
+			document.write(brk);
+			document.write("Total Magnism : " + mag +"g");
+			document.write(brk);
+			document.write(brk);
+			document.write("Total SE : " + SE + "g");
+			document.write(brk);
+			document.write(brk);
+			document.write("Total TS : " + TS + "g");
+			document.write(brk);
+			document.write(brk);
+			document.write("<b>You are currently feeding your horse: </b> <br />" +food_input );
+			document.write("</div>");
 		}
-		
-	
-		</script>
-	</head>
+	</script>
+</head>
 
 <body>
 	<div class="glass"></div> 
@@ -131,47 +117,53 @@
     				 		  		</div>
     				   		
        
-   <form action="" id="horseForm" name="form1">
-      <div class="wood">   											<!--This is div holds wood image on the middle page-->
-          <div class="horsetype" id="horsetype" >									<!--This is div holds different type of horses -->
-           				<h4>Välj den utfodring typ.</h4>
-             						<input type="radio" id= "latt" name="horse" value="Lite"/> Lättfödda 
-        					&nbsp;&nbsp;&nbsp;<input type="radio" id= "normal"name="horse" value="Normal"/> Normalfödda 
-							&nbsp;&nbsp;&nbsp;<input type="radio" id= "svart"name="horse" value="Hard"/> Svårfödda 
-							</div>
+	<form action="" id="horseForm" name="form1">
+		<div class="wood">   											<!--This is div holds wood image on the middle page-->
+		<div class="horsetype" id="horsetype" >									<!--This is div holds different type of horses -->
+			<h4>Välj den utfodring typ.</h4>
+			<input type="radio" id= "latt" name="horse" value="Lite"/> Lättfödda 
+			&nbsp;&nbsp;&nbsp;<input type="radio" id= "normal"name="horse" value="Normal"/> Normalfödda 
+			&nbsp;&nbsp;&nbsp;<input type="radio" id= "svart"name="horse" value="Hard"/> Svårfödda 
+		</div>
         					
-        					<div class="weighttype">        <!--This is div holds different type of weights -->
-           	           	 	<h4>Ange dina hästar gissade vikt.</h4>                      
-           	           	 	<input type="text" name="weight" value=""/> <!--This is input is for accurate wieght -->
-        	      	</div>
-					      
-			
+		<div class="weighttype">        <!--This is div holds different type of weights -->
+			<h4>Ange dina hästar gissade vikt.</h4>                      
+			<input type="text" name="weight" value=""/> <!--This is input is for accurate wieght -->
+		</div>		
+		
+		<div class="workout">
+		<h4>Hur många dagar i veckan tränar du din häst? (0 = inga dagar)</h4>   
+			<input type="text" name="horseWorkout" value=""/>
+		<h4>Hur många minuter per träningsdag tränar du din häst för skritt?</h4>
+			<input type="text" name="horseWorkoutSkritt" value="">
+		<h4>Hur många minuter per träningsdag tränar du din häst för trav?</h4>
+			<input type="text" name="horseWorkoutTrav" value="">
+		</div>
   	
-  	<div class="ProteinType" id="ProteinFoder">
-  		<h4>Välj den Proteinfodermedel typ.</h4>
-             							
-  		<input type="checkbox" class="checkbox"id= "Bryggerijast" name="food" value="Bryggerijäst" /> Bryggerijäst<br/>
-        <input type="checkbox" class="checkbox"id= "Fiskmjol"name="food" value="Fiskmjöl: (fettfattigt)" /> Fiskmjöl: fettfattigt <br/>
-		<input type="checkbox" class="checkbox"id= "FiskmjolFettrikt"name="food" value=" Fiskmjöl: (fettrikt)" /> Fiskmjöl: fettrikt	<br/>
-		<input type="checkbox" class="checkbox"id= "FiskmjolLag" name="food" value="Fiskmjöl:(låg fett/askhaltg)"/>Fiskmjöl:låg fett/askhalt<br/>
-        <input type="checkbox" class="checkbox"id= "Linfro"name="food" value="Lin: (frö)"/> Lin: frö<br/>	
-		<input type="checkbox" class="checkbox"id= "LinforExpeller"name="horse" value="Lin:(förexpeller)"/> Lin:förexpeller<br/>
-		<input type="checkbox" class="checkbox"id= "Lupinfro" name="food" value="Lupin: (frö)"/> Lupin: frö<br/>
-        <input type="checkbox" class="checkbox"id= "Majsgluten"name="food" value="Majsgluten" /> Majsgluten<br/>
-		<input type="checkbox" class="checkbox"id= "OljepalmKarnexpeller"name="food" value=" Oljepalm:( kärnexpellerr)"/> Oljepalm: kärnexpeller<br/>
-		<input type="checkbox" class="checkbox"id= "PotatisProtein" name="food" value="Potatisprotein"/> Potatisprotein <br/>
-    	<input type="checkbox" class="checkbox"id= "Raps"name="food" value="Raps: (för)" /> Raps: för <br/>
-		<input type="checkbox" class="checkbox"id= "RapsExpeller" name="food" value="Raps: (expeller, enkellåg)" /> Raps: expeller, enkellåg<br/>	
-        <input type="checkbox" class="checkbox"id= "RapsVarmebehandlat"name="food" value="Raps: (expeller, värmebehandlat)"/> Raps: expeller, värmebehandlat<br/>
-		<input type="checkbox" class="checkbox"id= "Sojamjo"name="food" value="Sojamjöl: (extraherat)"/> Sojamjöl: extraherat<br/>
-		<input type="checkbox" class="checkbox"id= "Sojabona" name="food" value="Sojaböna"/> Sojaböna<br/>
-        <input type="checkbox" class="checkbox"id= "SolrosExpellerEj"name="food" value="Solros: (expeller:ej välskalad)" /> Solros: expeller:ej välskalad<br/>
-		<input type="checkbox" class="checkbox"id= "Solros"name="food" value="Solros: (expeller: välskalad)"/> Solros: expeller: välskalad<br/>
-		<input type="checkbox" class="checkbox"id= "Vete" name="food" value="Vete: (drank)"/> Vete: drank<br/>
-        <input type="checkbox" class="checkbox"id= "Vicker"name="food" value="Vicker : (kärna)"/> Vicker : kärna<br/>
-  		<input type="checkbox" class="checkbox"id= "Akerbona" name="food" value="Åkerböna : (kärna)"/> Åkerböna : kärna<br/>
-  		<input type="checkbox" class="checkbox"id= "Arter" name="food" value="Ärter : (kärna:mat/foderärt)"/> Ärter : kärna:mat/foderärt<br/>
-  	 </div>	  	
+		<div class="ProteinType" id="ProteinFoder">
+			<h4>Välj den Proteinfodermedel typ.</h4>
+			<input type="checkbox" class="checkbox"id= "Bryggerijast" name="food" value="Bryggerijäst" /> Bryggerijäst<br/>
+			<input type="checkbox" class="checkbox"id= "Fiskmjol"name="food" value="Fiskmjöl: (fettfattigt)" /> Fiskmjöl: fettfattigt <br/>
+			<input type="checkbox" class="checkbox"id= "FiskmjolFettrikt"name="food" value=" Fiskmjöl: (fettrikt)" /> Fiskmjöl: fettrikt	<br/>
+			<input type="checkbox" class="checkbox"id= "FiskmjolLag" name="food" value="Fiskmjöl:(låg fett/askhaltg)"/>Fiskmjöl:låg fett/askhalt<br/>
+			<input type="checkbox" class="checkbox"id= "Linfro"name="food" value="Lin: (frö)"/> Lin: frö<br/>	
+			<input type="checkbox" class="checkbox"id= "LinforExpeller"name="horse" value="Lin:(förexpeller)"/> Lin:förexpeller<br/>
+			<input type="checkbox" class="checkbox"id= "Lupinfro" name="food" value="Lupin: (frö)"/> Lupin: frö<br/>
+			<input type="checkbox" class="checkbox"id= "Majsgluten"name="food" value="Majsgluten" /> Majsgluten<br/>
+			<input type="checkbox" class="checkbox"id= "OljepalmKarnexpeller"name="food" value=" Oljepalm:( kärnexpellerr)"/> Oljepalm: kärnexpeller<br/>
+			<input type="checkbox" class="checkbox"id= "PotatisProtein" name="food" value="Potatisprotein"/> Potatisprotein <br/>
+			<input type="checkbox" class="checkbox"id= "Raps"name="food" value="Raps: (för)" /> Raps: för <br/>
+			<input type="checkbox" class="checkbox"id= "RapsExpeller" name="food" value="Raps: (expeller, enkellåg)" /> Raps: expeller, enkellåg<br/>	
+			<input type="checkbox" class="checkbox"id= "RapsVarmebehandlat"name="food" value="Raps: (expeller, värmebehandlat)"/> Raps: expeller, värmebehandlat<br/>
+			<input type="checkbox" class="checkbox"id= "Sojamjo"name="food" value="Sojamjöl: (extraherat)"/> Sojamjöl: extraherat<br/>
+			<input type="checkbox" class="checkbox"id= "Sojabona" name="food" value="Sojaböna"/> Sojaböna<br/>
+			<input type="checkbox" class="checkbox"id= "SolrosExpellerEj"name="food" value="Solros: (expeller:ej välskalad)" /> Solros: expeller:ej välskalad<br/>
+			<input type="checkbox" class="checkbox"id= "Solros"name="food" value="Solros: (expeller: välskalad)"/> Solros: expeller: välskalad<br/>
+			<input type="checkbox" class="checkbox"id= "Vete" name="food" value="Vete: (drank)"/> Vete: drank<br/>
+			<input type="checkbox" class="checkbox"id= "Vicker"name="food" value="Vicker : (kärna)"/> Vicker : kärna<br/>
+			<input type="checkbox" class="checkbox"id= "Akerbona" name="food" value="Åkerböna : (kärna)"/> Åkerböna : kärna<br/>
+			<input type="checkbox" class="checkbox"id= "Arter" name="food" value="Ärter : (kärna:mat/foderärt)"/> Ärter : kärna:mat/foderärt<br/>
+		</div>	  	
   
   	<div class="DiverseType" id="DiverseFoder">
   		<h4>Välj den Diverse Fodermedel typ.</h4>
@@ -188,7 +180,6 @@
         <input type="checkbox" id= "Tapiokal"name="food" value="Tapioka"/> Tapioka,mjöl<br/>
 		<input type="checkbox" id= "Tangmjol"name="food" value="Tangmjöl"/> Tångmjöl <br/>
 		<input type="checkbox" id= "Vegetabilisk" name="food" value="Vegetabilisk"/> Vegetabiliskt fett (oija)<br/>	
-  		
   	 </div>
 	 <input type="button" value="Calculate" class="submit" name="submit" onclick="javascript:calc1(horseForm)"/> 
  	 </div>
