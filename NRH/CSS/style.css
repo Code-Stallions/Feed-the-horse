@@ -17,7 +17,7 @@
 
 body {
 			width:100px;
-			height: 900px;
+			height:900px;
 			padding:0px;										/* mount picture background */
 			margin: 0px;
 			background-image:url('../IMAGES/mount.png');			
@@ -57,7 +57,7 @@ body {
 
 			}
 
-.wood{															/* Wooden menu image  */
+.grayBack{															/* menu gray Background image  */
 	
 			background-image:url('../IMAGES/pony-patter.png');
 			width: 650px;
@@ -135,7 +135,7 @@ body {
 
 			background-color:#E0E0E0;
 			margin:30px 0px 20px 0px;
-			width: 260px;     
+			width: 270px;     
             height: 500px; 
             padding:10px 0px 0px 30px;
             border-style:solid;
@@ -212,11 +212,12 @@ body {
 
 
 .display1	{
-			background-color:white;
-			margin:200px 0px 0px 450px;
-			width: 720px;     
-            height: 750px; 
-            padding:40px 0px 0px 30px;
+			
+			background-image: url('../IMAGES/pony-patter.png');
+			margin:0px 0px 0px 450px;
+			width: 600px;     
+            height: 1250px; 
+            padding:50px 0px 0px 30px;
             border-style:solid;
             border-width:1px;
 			}
@@ -230,5 +231,5 @@ footer{
          	margin: 1000px 0px 0px 394px;
 			border:solid 1px;
 			border-color:black; 
-			
+			text-align: center;
 			}
