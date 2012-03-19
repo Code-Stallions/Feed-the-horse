@@ -38,17 +38,19 @@ function calc1() {
 			
 			var skrittCalc =  Math.ceil(skritt * daysPerWeek * 0.2);
 			var travCalc =  Math.ceil(trav * daysPerWeek * 1.3);
-			
 			var workoutMJ =  Math.ceil(skrittCalc + travCalc + feed);
-			
+				
+				
+				
+				
 				document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
-				document.write("<div class='display1'>");
+				document.write("<div class='display'>");
 				document.write("<h1><u>Horse's Requirement</u></h1>");
 				document.write("Your horse's current weight is : " + input +"Kg");
 				document.write(brk);
 				document.write(brk);
 				document.write("You have checked  :  " + user_input);
-				document.write("<h4><u> Your Horse's Daily Requirement</u></h4>");
+				document.write("<h4><u> Your horse's daily requirement</u></h4>");
 				document.write("Total MJ : " + feed);
 				document.write(brk);
 				document.write(brk);
@@ -70,7 +72,7 @@ function calc1() {
 				document.write("Total TS : " + TS + "g");
 				document.write(brk);
 				document.write(brk);
-				document.write("<h4><u> Your Horse's Daily Requirement after Work-out</u></h4>");
+				document.write("<h4><u> Your horse's daily requirement after work-out</u></h4>");
 				document.write("Your horse works out : " + daysPerWeek * 10 +"</b> days a week");
 				document.write(brk);
 				document.write(brk);
@@ -86,7 +88,7 @@ function calc1() {
 				document.write("Total för Trav : " + travCalc);
 				document.write(brk);
 				document.write(brk);
-				document.write("Total MJ för Work-out  : " + workoutMJ);
+				document.write("Total MJ för Work out  : " + workoutMJ);
 				document.write(brk);
 				document.write(brk);
 				document.write("<h4><u>You are currently feeding your horse</u> </h4>" + food_input);

@@ -11,7 +11,7 @@
 <body>
 		<div class="glass"></div> 
 		<div class="header"></div> 
-     
+     	
      		<div class="horses">
      			<img src="../NRH/IMAGES/horses.png" alt="horses" width="587" height="440" border="0"/>
      		</div> 
@@ -25,16 +25,20 @@
 		<div class="grayBack">   											<!--This is div holds gray Background image on the middle page-->
 			<div class="horsetype" id="horsetype" >									<!--This is div holds different type of horses -->
 				<h4>Välj den utfodring typ.</h4>
-					<input type="radio" id= "latt" name="horse" value="Lite"/>    Lättfödda &nbsp;&nbsp;&nbsp; 
-					<input type="radio" id= "normal"name="horse" value="Normal"/> Normalfödda &nbsp;&nbsp;&nbsp; 
-					<input type="radio" id= "svart"name="horse" value="Hard"/>    Svårfödda 
+					<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödda &nbsp;&nbsp;&nbsp; 
+					<input type="radio" id="normal" name="horse" value="Normal"/> Normalfödda &nbsp;&nbsp;&nbsp; 
+					<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödda 
 			</div>
         								
-			<div class="weighttype">        <!--This is div holds different type of weights -->
+			<div class="weighttype">        									<!--This is div holds different type of weights -->
 				<h4>Ange dina hästar gissade vikt.</h4>                      
-					<input type="text" name="weight" value=""/> <!--This is input is for accurate weight -->
-			</div>		
+					<input type="text" name="weight" value=""/><br/><br/> 			<!--This is input is for accurate weight -->
+						Om du inte vet din häst vikt 
+						<br/><a href="horseScale.html">klicka här </a>
+
+			</div>					
 					
+			
 			<div class="workout">
 				<h4>Hur många dagar i veckan tränar du din häst?</h4>   
 					<input type="text" name="horseWorkout" value=""/>
@@ -49,53 +53,58 @@
 			
 			<div class="ProteinType" id="ProteinFoder">
 				<h4>Välj den Proteinfodermedel typ.</h4>
-		    		<input type="checkbox" class="checkbox"id= "Bryggerijast" 		 name="food" value="Bryggerijäst" /> 				Bryggerijäst<br/>
-		    		<input type="checkbox" class="checkbox"id= "Fiskmjol"	  		 name="food" value="Fiskmjöl: (fettfattigt)" /> 	Fiskmjöl: fettfattigt <br/>
-		    		<input type="checkbox" class="checkbox"id= "FiskmjolFettrikt"    name="food" value="Fiskmjöl: (fettrikt)" /> 		Fiskmjöl: fettrikt	<br/>
-		    		<input type="checkbox" class="checkbox"id= "FiskmjolLag"  		 name="food" value="Fiskmjöl:(låg fett/askhaltg)"/>	Fiskmjöl:låg fett/askhalt<br/>
-		    		<input type="checkbox" class="checkbox"id= "Linfro"       		 name="food" value="Lin: (frö)"/> 					Lin:frö<br/>	
-		    		<input type="checkbox" class="checkbox"id= "LinforExpeller"		 name="food" value="Lin:(förexpeller)"/> 			Lin:förexpeller<br/>
-		    		<input type="checkbox" class="checkbox"id= "Lupinfro"      		 name="food" value="Lupin: (frö)"/> 				Lupin: frö<br/>
-		    		<input type="checkbox" class="checkbox"id= "Majsgluten"    		 name="food" value="Majsgluten" /> 					Majsgluten<br/>
-		    		<input type="checkbox" class="checkbox"id= "OljepalmKarnexpeller"name="food" value="Oljepalm:( kärnexpellerr)"/>	Oljepalm: kärnexpeller<br/>
-		    		<input type="checkbox" class="checkbox"id= "PotatisProtein" 	 name="food" value="Potatisprotein"/> 				Potatisprotein <br/>
-		    		<input type="checkbox" class="checkbox"id= "Raps"          	     name="food" value="Raps:(för)" /> 					Raps: för <br/>
-		    		<input type="checkbox" class="checkbox"id= "RapsExpeller"        name="food" value="Raps:(expeller,enkellåg)" /> 	Raps: expeller, enkellåg<br/>	
-		    		<input type="checkbox" class="checkbox"id= "RapsVarmebehandlat"  name="food" value="Raps:(expeller,värmebehandlat)"/> Raps: expeller, värmebehandlat<br/>
-		    		<input type="checkbox" class="checkbox"id= "Sojamjo"             name="food" value="Sojamjöl: (extraherat)"/> 		Sojamjöl: extraherat<br/>
-		    		<input type="checkbox" class="checkbox"id= "Sojabona"            name="food" value="Sojaböna"/> 					Sojaböna<br/>
-		    		<input type="checkbox" class="checkbox"id= "SolrosExpellerEj"    name="food" value="Solros:(expeller:ej välskalad)"/>     Solros: expeller:ej välskalad<br/>
-		    		<input type="checkbox" class="checkbox"id= "Solros"              name="food" value="Solros:(expeller:välskalad)"/>	Solros: expeller: välskalad<br/>
-		    		<input type="checkbox" class="checkbox"id= "Vete"                name="food" value="Vete:(drank)"/> 				Vete: drank<br/>
-		    		<input type="checkbox" class="checkbox"id= "Vicker"              name="food" value="Vicker:(kärna)"/> 				Vicker : kärna<br/>
-		    		<input type="checkbox" class="checkbox"id= "Akerbona"            name="food" value="Åkerböna:(kärna)"/> 			Åkerböna : kärna<br/>
-					<input type="checkbox" class="checkbox"id= "Arter"               name="food" value="Ärter:(kärna:mat/foderärt)"/> 	Ärter : kärna:mat/foderärt<br/>
+		    		<input type="checkbox" class="checkbox" id="Bryggerijast" 		 name="food" value="Bryggerijäst" /> 				Bryggerijäst<br/>
+		    		<input type="checkbox" class="checkbox" id="Fiskmjol"	  		 name="food" value="Fiskmjöl: (fettfattigt)" /> 	Fiskmjöl: fettfattigt <br/>
+		    		<input type="checkbox" class="checkbox" id="FiskmjolFettrikt"    name="food" value="Fiskmjöl: (fettrikt)" /> 		Fiskmjöl: fettrikt	<br/>
+		    		<input type="checkbox" class="checkbox" id="FiskmjolLag"  		 name="food" value="Fiskmjöl:(låg fett/askhaltg)"/>	Fiskmjöl:låg fett/askhalt<br/>
+		    		<input type="checkbox" class="checkbox" id="Linfro"       		 name="food" value="Lin: (frö)"/> 					Lin:frö<br/>	
+		    		<input type="checkbox" class="checkbox" id="LinforExpeller"		 name="food" value="Lin:(förexpeller)"/> 			Lin:förexpeller<br/>
+		    		<input type="checkbox" class="checkbox" id="Lupinfro"      		 name="food" value="Lupin: (frö)"/> 				Lupin: frö<br/>
+		    		<input type="checkbox" class="checkbox" id="Majsgluten"    		 name="food" value="Majsgluten" /> 					Majsgluten<br/>
+		    		<input type="checkbox" class="checkbox" id="OljepalmKarnexpeller"  name="food" value="Oljepalm:( kärnexpellerr)"/>	Oljepalm: kärnexpeller<br/>
+		    		<input type="checkbox" class="checkbox" id="PotatisProtein" 	 name="food" value="Potatisprotein"/> 				Potatisprotein <br/>
+		    		<input type="checkbox" class="checkbox" id="Raps"          	     name="food" value="Raps:(för)" /> 					Raps: för <br/>
+		    		<input type="checkbox" class="checkbox" id="RapsExpeller"        name="food" value="Raps:(expeller,enkellåg)" /> 	Raps: expeller, enkellåg<br/>	
+		    		<input type="checkbox" class="checkbox" id="RapsVarmebehandlat"  name="food" value="Raps:(expeller,värmebehandlat)"/> Raps: expeller, värmebehandlat<br/>
+		    		<input type="checkbox" class="checkbox" id= "Sojamjo"             name="food" value="Sojamjöl: (extraherat)"/> 		Sojamjöl: extraherat<br/>
+		    		<input type="checkbox" class="checkbox" id= "Sojabona"            name="food" value="Sojaböna"/> 					Sojaböna<br/>
+		    		<input type="checkbox" class="checkbox" id= "SolrosExpellerEj"    name="food" value="Solros:(expeller:ej välskalad)"/>     Solros: expeller:ej välskalad<br/>
+		    		<input type="checkbox" class="checkbox" id= "Solros"              name="food" value="Solros:(expeller:välskalad)"/>	Solros: expeller: välskalad<br/>
+		    		<input type="checkbox" class="checkbox" id= "Vete"                name="food" value="Vete:(drank)"/> 				Vete: drank<br/>
+		    		<input type="checkbox" class="checkbox" id= "Vicker"              name="food" value="Vicker:(kärna)"/> 				Vicker : kärna<br/>
+		    		<input type="checkbox" class="checkbox" id= "Akerbona"            name="food" value="Åkerböna:(kärna)"/> 			Åkerböna : kärna<br/>
+					<input type="checkbox" class="checkbox" id= "Arter"               name="food" value="Ärter:(kärna:mat/foderärt)"/> 	Ärter : kärna:mat/foderärt<br/>
 			</div>	  	
   					
   			<div class="DiverseType" id="DiverseFoder">
   				<h4>Välj den Diverse Fodermedel typ.</h4>
-        			<input type="checkbox" id= "Aspbark"              name="food" value="Aspbark"/>				Aspbark<br/>
-        			<input type="checkbox" id= "Asplov"               name="food" value="Asplov"/> 				Asplöv<br/>
-					<input type="checkbox" id= "CitrusPulpa"          name="food" value="CitrusPulpa"/> 		CitrusPulpa <br/>
-					<input type="checkbox" id= "Johannesbrod"         name="food" value="Johannesbrod"/> 		Johannesbröd<br/>
-        			<input type="checkbox" id= "Mjolk"                name="food" value="Mjolk"/> 				Mjölk,Skummad,Färsk<br/>
-					<input type="checkbox" id= "Morot"         		  name="food" value="Morot"/> 				Morot<br/>
-					<input type="checkbox" id= "Rorsockermelass"      name="food" value="Rorsockermelass"/> 	Rörsockermelass <br/>
-        			<input type="checkbox" id= "Sockerbeta"      	  name="food" value="Sockerbeta"/> 			Sockerbeta, melasserad betfiber <br/>
-					<input type="checkbox" id= "SockerbetaOmelasserad"name="food" value="Sockerbeta,omelasserad"/> Sockerbeta, omelasserad<br/>
-					<input type="checkbox" id= "SockerbetaBetmelass"  name="food" value="Sockerbeta,betmelass"/> Sockerbeta, betmelass <br/>
-        			<input type="checkbox" id= "Tapiokal"             name="food" value="Tapioka"/> 			Tapioka,mjöl<br/>
-					<input type="checkbox" id= "Tangmjol"             name="food" value="Tangmjöl"/> 			Tångmjöl <br/>
-					<input type="checkbox" id= "Vegetabilisk"         name="food" value="Vegetabilisk"/>		Vegetabiliskt fett (oija)<br/>	
+        			<input type="checkbox" id="Aspbark"              name="food" value="Aspbark"/>				Aspbark<br/>
+        			<input type="checkbox" id="Asplov"               name="food" value="Asplov"/> 				Asplöv<br/>
+					<input type="checkbox" id="CitrusPulpa"          name="food" value="CitrusPulpa"/> 		CitrusPulpa <br/>
+					<input type="checkbox" id="Johannesbrod"         name="food" value="Johannesbrod"/> 		Johannesbröd<br/>
+        			<input type="checkbox" id="Mjolk"                name="food" value="Mjolk"/> 				Mjölk,Skummad,Färsk<br/>
+					<input type="checkbox" id="Morot"         		  name="food" value="Morot"/> 				Morot<br/>
+					<input type="checkbox" id="Rorsockermelass"      name="food" value="Rorsockermelass"/> 	Rörsockermelass <br/>
+        			<input type="checkbox" id="Sockerbeta"      	  name="food" value="Sockerbeta"/> 			Sockerbeta, melasserad betfiber <br/>
+					<input type="checkbox" id="SockerbetaOmelasserad"  name="food" value="Sockerbeta,omelasserad"/> Sockerbeta, omelasserad<br/>
+					<input type="checkbox" id="SockerbetaBetmelass"  name="food" value="Sockerbeta,betmelass"/> Sockerbeta, betmelass <br/>
+        			<input type="checkbox" id="Tapiokal"             name="food" value="Tapioka"/> 			Tapioka,mjöl<br/>
+					<input type="checkbox" id="Tangmjol"             name="food" value="Tangmjöl"/> 			Tångmjöl <br/>
+					<input type="checkbox" id="Vegetabilisk"         name="food" value="Vegetabilisk"/>		Vegetabiliskt fett (oija)<br/>	
   	 		</div>
 	
 					<input type="button" value="Calculate" class="submit" name="submit" onclick="javascript:calc1(horseForm)"/> 
  		 </div><!--This is div holds gray Background image on the middle page-->
  	</form> 
-		<script type="text/javascript" id="display1" src="pony.js"></script>
+		<script type="text/javascript" id="display" src="pony.js"></script>
+	
+	
+	<p class="footer">
+    		<a href="http://validator.w3.org/check?uri=referer"><img
+     		    src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+      		</a>
+  </p>
 </body>		 
-			<footer>
-					Näringsämnen Kravpå hästar
-			</footer>		 
+
 </html>		 
 					   				 
