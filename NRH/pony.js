@@ -23,7 +23,7 @@ function calc1() {
 			var mag = Math.ceil(feed * 0.15);
 			var input = (horseForm.weight.value); 
 			var SE = Math.ceil(0.2*(input/100));
-			var TS = Math.ceil(1.7*(input/100));
+			var TS = Math.ceil(1.5*(input/100));
 
 			var food_input="";
 			for (j=0;j<document.form1.food.length;j++) {
@@ -43,7 +43,7 @@ function calc1() {
 				
 				
 				
-				document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
+				document.write("<link rel='stylesheet' href='../NRH/CSS/style1.css' type='text/css'/>");
 				document.write("<div class='display'>");
 				document.write("<h1><u>Horse's Requirement</u></h1>");
 				document.write("Your horse's current weight is : " + input +"Kg");
@@ -69,7 +69,7 @@ function calc1() {
 				document.write("Total SE : " + SE + "g");
 				document.write(brk);
 				document.write(brk);
-				document.write("Total TS : " + TS + "g");
+				document.write("Total TS : " + TS + "Kg");
 				document.write(brk);
 				document.write(brk);
 				document.write("<h4><u> Your horse's daily requirement after work-out</u></h4>");
@@ -97,3 +97,26 @@ function calc1() {
 		  window.onload = calc1();
 		
 		}
+			//function HorseMARK(){
+						    
+			//			    var measureHorse1 = Math.ceil((4.3 * (horseMark.horseLansmarkeomgang.value)) + (3.0*(horseMark.horseMankhojd.value))-785);
+						   
+						    				//document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");	
+						    				//document.write('<div class="displayWeight">');	
+						    				//document.write('<h3>Your horse current weight is:<br /></h3>');
+						    				//document.write('<h2>'+ measureHorse1 + ' Kg </h2>');
+						    				//document.write('</div>');
+						    				//window.onLoad;
+						    			//		}
+		
+						//function HorseBROSTOM(){
+						    
+						    //var measureHorse2 = Math.ceil(((horseMark.horseBrostomfang.value) * (horseMark.horseBrostomfang.value) * (horseMark.horseLenght.value))/8900);
+						    			
+						    			//document.write("<link rel='stylesheet' href='../NRH/CSS/style.css' type='text/css'/>");
+						    				//document.write('<div class="displayWeight">');	
+						    				//document.write('<h3>Your horse current weight is: <br /></h3>');
+						    				//document.write('<h2>'+ measureHorse2 + ' Kg </h2>');
+						    				//document.write('</div>');
+						    				//window.onLoad;
+						    				//}

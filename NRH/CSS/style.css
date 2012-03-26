@@ -1,160 +1,140 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.script.type{									
-			width: 100px;
-			height:1000px;
-			background-image:url('../IMAGES/mount.png');			
-			background-repeat: repeat-x ;
-			background-position: 100% 15%;
-			margin:300px 30px 50px 450px;
-			padding:40px 30px 70px 30px;
-            border-style:solid;
-            border-width:1px;
-
-}	
 
 
-body {
-			width:40px;
-			height:800px;
-			padding:0px;										/* mount picture background */
-			margin: 0px;
-			background-image:url('../IMAGES/mount.png');			
-			background-repeat: repeat-x ;
-			background-position: 100% 15%;
-  			font-family: "Al Bayan";
-  			font-size: small;
-  			}
+body{	
+
+}
 			 
 
-p		{
-			font-size: small;
-			font-family: "Al Bayan";
-			margin: 20px;
-			
+.body2	{
+	
+	margin: 0 auto;
+	width: 800px;
+	
+	
 }
 
-.header{
-			background-image:url('../IMAGES/header.png');/* horses text header  */ 
-			background-repeat:no-repeat;
-			background-color: black;
-			background-size:650px;
-			background-position:center;
-		 	width: 650px;     
-            height: 60px; 
-            padding: 60px 10px 80px 30px;
-            margin: 0px 0px 0px 440px;
-			border:solid 1px;
-			-webkit-box-shadow: 1px 8px 6px -6px black;
-	   		-moz-box-shadow: 1px 8px 6px -6px black;
-	        box-shadow: 1px 8px 6px -6px black;
+.montenImage{
+																/* mount picture background */
+		background-image:url('../IMAGES/mount.png');			
+		background-repeat: repeat-x ;
+		background-position:center;
+		background-size:500px;
+		width:auto;
+		height: 900px;
+		padding:10px; 
+		float: left;
+		position: absolute;	
+}
 
-			}
-
-.glass{
- 			background-image: url('../IMAGES/pony-patter.png');	/* menu glass Background image in index.html  */
- 			width: 750px;     
-            height: 1750px; 
-            padding: 0px 10px 80px 30px;
-            margin: -20px 0px 0px 392px;
-			border:solid 0px;
-			position:absolute;
-			opacity:0.6;	
-			left:0px;
-			top:0px;
-			z-index:-1;
-			}
-.glass2{
- 			background-image: url('../IMAGES/pony-patter.png');	/* menu glass Background image in horseScale.html  */
- 			width: 750px;     
-            height: 2650px; 
-            padding: 0px 10px 80px 30px;
-            margin: -20px 0px 0px 392px;
-			border:solid 0px;
-			position:absolute;
-			opacity:0.6;	
-			left:0px;
-			top:0px;
-			z-index:-1;
-			}
-.grayBack{															/* menu gray Background image in index.html  */
-	
-			background-image:url('../IMAGES/pony-patter.png');
-			width: 650px;
-			height:auto;
-			margin: -460px 0px 10px 440px;
-			padding:30px 10px 150px 30px;	
-			border: 1px solid;
-			border-style: solid;
-			border-color: black; 
-			position:absolute;
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	   		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			
-			
-			}
 
 .grayBack2{															/* menu gray Background image in horseScale site  */
 	
 			background-image:url('../IMAGES/pony-patter.png');
 			width: 650px;
-			height:auto;
-			margin: -460px 0px 0px 440px;
-			padding:0px 10px 30px 30px;								/* padding third pixel number controls the pages length   */
+			height:1000px;
+			float: left;
+			padding-top: : 100	px;								
+			padding: 30px auto;
 			border: 1px solid;
 			border-style: solid;
 			border-color: black; 
-			position:absolute;
+			
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			
+			z-index:1;
 			
 			}
 
-.pageHeight{
-			height:650px;
+.header{
+			background-image:url('../IMAGES/header.png');/* horses text header  */ 
+			background-repeat:no-repeat;
+			background-color: black;
+			background-size:500px;
+			background-position:center;
+		 	width: 520px;     
+            height: 60px; 
+            padding: 60px;
+            border:solid 1px;
+			-webkit-box-shadow: 1px 8px 6px -6px black;
+	   		-moz-box-shadow: 1px 8px 6px -6px black;
+	        box-shadow: 1px 8px 6px -6px black;
+			z-index: 1;	
+			}
+
+.horses	{	
+			background-image: url('../IMAGES/horses.png');					/* image of horses on the right side of the screen */
+			background-repeat:no-repeat;
+			width: 400px;
+			height: 400px;
+			float: left;
 			
-			}	
+			}
+
+.horses2{		
+			background-image: url('../IMAGES/horses2.png');						/* image of horses on the left side of the screen */
+			background-repeat:no-repeat;
+			width: 600px;
+			height: 500px;			
+			float: left;
+			
+			}
+
+h2.h3.h4.h5.p {
+			
+			font-size: small;
+			font-family: "Al Bayan";
+			float: left;
+			padding: 30px;
+			}
+
+
 
 .horseFatPic{
-			background-image:url('../IMAGES/old_mathematics.png');	/* häst fett bild i horseScale.html */
+			background-image:url('../IMAGES/real_horse_body.png');	/* häst fett bild i horseScale.html */
+			background-repeat:no-repeat;
 			background-color: white;
+			background-size:300px;
+			background-position:center;
+			float: left;
 			width: 320px;
 			height: 260px;	
-			padding: 40px 40px 40px 40px;
-			margin: 0px 0px 0px 110px;	
-			border: 1px solid;
-			border-color:silver; 
+			padding: 40px;
 			-webkit-box-shadow: 0 4px 6px -6px black;
 	   		-moz-box-shadow: 0 4px 6px -6px black;
 	        box-shadow: 0 4px 6px -6px black;
-}
+			
+			}
 
 .horseMesurement{
-			background-image:url('../IMAGES/old_mathematics.png');  /* häst Lansmärkeomgång i CM bild */
+			background-image:url('../IMAGES/horse_pen.png');  /* häst Lansmärkeomgång i CM bild */
+			background-repeat:no-repeat;
+			background-color:white;
+			background-size:300px;
+			background-position:center;
+			float: left;
 			width: 320px;
 			height: 260px;	
-			padding: 40px 40px 40px 40px;
-			margin: 0px 0px 0px 110px;
-			border: 1px solid;
-			border-color:silver; 
-			-webkit-box-shadow: 0 4px 6px -6px black;
+			padding: 40px;
+		 	-webkit-box-shadow: 0 4px 6px -6px black;
 	   		-moz-box-shadow: 0 4px 6px -6px black;
 	        box-shadow: 0 4px 6px -6px black;
 			
 
 }
 .horseMesurement2{
-			background-image:url('../IMAGES/old_mathematics.png'); /* häst Bröstomfån i CM  bild*/
+			background-image:url('../IMAGES/horse_pen2.png'); /* häst Bröstomfån i CM  bild*/
+			background-repeat:no-repeat;
+			background-color: white;
+			background-size:300px;
+			background-position:center;
+			float: left;
 			width: 320px;
 			height: 260px;	
-			padding: 40px 40px 40px 40px;
-			margin: 0px 0px 0px 110px;
-			border: 1px solid;
-			border-color:silver; 
+			padding: 40px;
 			-webkit-box-shadow: 0 4px 6px -6px black;
 	   		-moz-box-shadow: 0 4px 6px -6px black;
 	        box-shadow: 0 4px 6px -6px black;
@@ -163,13 +143,33 @@ p		{
 }
 
 
+.grayBack{															/* menu gray Background image in index.html  */
+	
+			background-image:url('../IMAGES/pony-patter.png');
+			width: 610px;
+			float:left;
+			height:auto;
+			padding:30px;	
+			border: 1px solid;
+			border-style: solid;
+			border-color: black; 
+			position:absolute;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			
+			}
+
+
+
+
 .horsetype{
 	 														      /* the horse type menu bar css */
 	 		background-color:#E0E0E0;
-			margin:30px 0px 0px 0px;
+			float: left;
 			width: 360px;     
             height: 100px; 
-            padding:0px 0px 0px 50px;
+            padding: 50px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -186,10 +186,10 @@ p		{
 .weighttype{
 													                /* the weight of the horse menu bar css*/
 			background-color:#E0E0E0;
-			margin:30px 0px 0px 0px;
+			float: left;
 			width: 360px;     
             height: 150px; 
-            padding:0px 0px 0px 50px;
+            padding: 30px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -204,10 +204,10 @@ p		{
 .workout{
 													                /* the work of the horse menu bar css*/
 			background-color:#E0E0E0;
-			margin:30px 0px 0px 0px;
+			float:left;
 			width: 470px;     
             height: 280px; 
-            padding:0px 0px 0px 50px;
+            padding: 50px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -222,10 +222,10 @@ p		{
 .ProteinType{
 
 			background-color:#E0E0E0;
-			margin:30px 0px 20px 0px;
+			float: left;
 			width: 270px;     
             height: 500px; 
-            padding:10px 0px 0px 30px;
+            padding:30px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -240,10 +240,10 @@ p		{
 .DiverseType{
 			
 			background-color:#E0E0E0;
-			margin:-532px 0px 0px 320px;
+			float: left;
 			width: 260px;     
             height: 500px; 
-            padding:10px 0px 0px 30px;
+            padding:30px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -255,16 +255,7 @@ p		{
 			
 			}
 
-.horses{																/* image of horses on the right side of the screen */
-			margin : 90px 0px 0px 1070px;				
-			z-index:-1;
-			}
 
-.horses2{															   /* image of horses on the left side of the screen */
-			margin : -500px 0px 0px -10px;
-			z-index:-1;
-			
-			}
 
 
 
@@ -283,11 +274,11 @@ p		{
 		     font-family:arial;
 		     font-size:12px;
 		     font-weight:bold;
-		     padding:13px 35px;
+		     float: left;
+		     padding:35px;
 		     text-decoration:none;
 		     text-shadow:1px 1px 0px #ffffff;
-		     margin:30px 0px 0px 500px;
-			 -webkit-box-shadow: 0 8px 6px -6px black;
+		     -webkit-box-shadow: 0 8px 6px -6px black;
 	   		 -moz-box-shadow: 0 8px 6px -6px black;
 	         box-shadow: 0 8px 6px -6px black;	
 }.submit:hover {
@@ -303,53 +294,40 @@ p		{
 .display	{											/*css for the index out put or result displayer */
 			
 			background-image: url('../IMAGES/pony-patter.png');
-			margin:30px 0px 30px 450px;
+			float:left;
 			width: 600px;     
             height: 1150px; 
-            padding:50px 0px 0px 30px;
+            padding:50px;
             border-style:solid;
             border-width:1px;
 			
 			}
 
-.displayWeight	{
-																		/*css for the weight displayer */
-			background-image: url('../IMAGES/pony-patter.png');
-			margin:30px 0px 30px 450px;
-			width: 600px;     
-            height: 150px; 
-            padding:50px 0px 0px 30px;
-            border-style:solid;
-            border-width:1px;
-			
-			}
+
 .footer{
-								/*W3C logo at footer index page */
-			
+			float: left;						/*W3C logo at footer index page */
 			width: 685px;     
             height: 50px; 
-         	margin: 1100px 0px 0px 790px;
-			text-align: center;
+         	text-align: center;
 			
 			}
 
 .footer2{
 								/*W3C logo at footer in horseScale page */
-			
-			width: 685px;     
+			float: left;
+			width: 65px;     
             height: 50px; 
-         	margin: 2000px 0px 0px 790px;
-			text-align: center;
+         	text-align: center;
 			
 			}
 
 
 #LansMark{
 			background-color:#E0E0E0;
-			margin:	10px 0px 0px 110px;
-			width: 360px;     
-            height: 210px; 
-            padding:0px 0px 0px 40px;
+			float: left;
+			width: 350px;     
+            height: 200px; 
+            padding:30px;	
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -362,23 +340,67 @@ p		{
 
 
 }
+#theanswer{
+		
+			text-align: center;
+			float: left;
+			background-color:white; 
+			color:red;
+			font-size: 20px;
+			font-family: "Al Bayan";
+			width: 350px;     
+            height:5px; 
+            padding:30px;
+            border-style:solid;
+            border-color: black; 
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0px 8px 6px -6px black;
+	        box-shadow: 0px 8px 6px -6px black;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
 
+}
 
 #Brostom{
 
 			background-color:#E0E0E0;
-			margin:-10px 0px 0px 110px;
-			width: 360px;     
+			float: left;
+			width: 350px;     
             height: 200px; 
-            padding:0px 0px 0px 40px;
+            padding:30px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0px 8px 6px -6px black;
 	        box-shadow: 0px 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;	
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;	
 
+
+}
+
+#theanswer2{
+		
+			text-align: center;
+			float: left;
+			background-color:white; 
+			color:red;
+			font-size: 20px;
+			font-family: "Al Bayan";
+			width: 350px;     
+            height:5px; 
+            padding:30px;
+            border-style:solid;
+            border-color: black; 
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0px 8px 6px -6px black;
+	        box-shadow: 0px 8px 6px -6px black;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
 
 }

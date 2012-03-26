@@ -2,52 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 		
 		<head>
-			<link rel="stylesheet" href="../NRH/CSS/style.css" type="text/css"/> 
+			<link rel="stylesheet" href="../NRH/CSS/style1.css" type="text/css"/> 
 			<meta http-equiv="Content-Type" content="text/html charset= UTF-8" />
 			<title>Näringsämnen Krav på hästar</title>					  
 			
 		</head>
 
 <body>
-		<div class="glass"></div> 
-		<div class="header"></div> 
-     	
-     		<div class="horses">
-     			<img src="../NRH/IMAGES/horses.png" alt="horses" width="587" height="440" border="0"/>
-     		</div> 
+	<div id="BgHorsesPicRight"></div> 
      
-    		<div class="horses2">
-    			<img src="../NRH/IMAGES/horses2.png" alt="horses2" width="587" height="440" border="0"/>
-    		</div>
+    		<div id="BgHorsesPicLeft"></div>	
+		
+<div class="body2">
+			
+			
+			<div class="header"></div> 
+     	
+     		
     				   		
-       
-	<form action="" id="horseForm" name="form1" method="post">
-		<div class="grayBack">   											<!--This is div holds gray Background image on the middle page-->
+ <form action="" id="horseForm" name="form1" method="post">
+		<div class="grayBack">   													<!--This is div holds gray Background image on the middle page-->
+			
 			<div class="horsetype" id="horsetype" >									<!--This is div holds different type of horses -->
 				<h4>Välj den utfodring typ.</h4>
-					<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödda &nbsp;&nbsp;&nbsp; 
-					<input type="radio" id="normal" name="horse" value="Normal"/> Normalfödda &nbsp;&nbsp;&nbsp; 
-					<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödda 
+				<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödda &nbsp;&nbsp;&nbsp; 
+				<input type="radio" id="normal" name="horse" value="Normal"/> Normalfödda &nbsp;&nbsp;&nbsp; 
+				<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödda 
 			</div>
         								
-			<div class="weighttype">        									<!--This is div holds different type of weights -->
+			<div class="weighttype">        										<!--This is div holds different type of weights -->
 				<h4>Ange dina hästar gissade vikt.</h4>                      
-					<input type="text" name="weight" value=""/><br/><br/> 			<!--This is input is for accurate weight -->
-						Om du inte vet din häst vikt 
-						<br/><a href="horseScale.html">klicka här </a>
+				<input type="text" name="weight" value=""/><br/><br/> 				<!--This is input is for accurate weight -->
+				Om du inte vet din häst vikt 
+				<br/><a href="horseScale.html">klicka här </a>
 
 			</div>					
 					
 			
 			<div class="workout">
 				<h4>Hur många dagar i veckan tränar du din häst?</h4>   
-					<input type="text" name="horseWorkout" value=""/>
+				<input type="text" name="horseWorkout" value=""/>
 					
 				<h4>Hur många minuter per träningsdag tränar du din häst för skritt?</h4>
-					<input type="text" name="horseWorkoutSkritt" value=""/>
+				<input type="text" name="horseWorkoutSkritt" value=""/>
 				
 				<h4>Hur många minuter per träningsdag tränar du din häst för trav?</h4>
-					<input type="text" name="horseWorkoutTrav" value=""/>
+				<input type="text" name="horseWorkoutTrav" value=""/>
 			</div>
   					
 			
@@ -68,7 +68,7 @@
 		    		<input type="checkbox" class="checkbox" id="RapsVarmebehandlat"  name="food" value="Raps:(expeller,värmebehandlat)"/> Raps: expeller, värmebehandlat<br/>
 		    		<input type="checkbox" class="checkbox" id= "Sojamjo"             name="food" value="Sojamjöl: (extraherat)"/> 		Sojamjöl: extraherat<br/>
 		    		<input type="checkbox" class="checkbox" id= "Sojabona"            name="food" value="Sojaböna"/> 					Sojaböna<br/>
-		    		<input type="checkbox" class="checkbox" id= "SolrosExpellerEj"    name="food" value="Solros:(expeller:ej välskalad)"/>     Solros: expeller:ej välskalad<br/>
+		    		<input type="checkbox" class="checkbox" id= "SolrosExpellerEj"    name="food" value="Solros:(expeller:ej välskalad)"/>   Solros: expeller:ej välskalad<br/>
 		    		<input type="checkbox" class="checkbox" id= "Solros"              name="food" value="Solros:(expeller:välskalad)"/>	Solros: expeller: välskalad<br/>
 		    		<input type="checkbox" class="checkbox" id= "Vete"                name="food" value="Vete:(drank)"/> 				Vete: drank<br/>
 		    		<input type="checkbox" class="checkbox" id= "Vicker"              name="food" value="Vicker:(kärna)"/> 				Vicker : kärna<br/>
@@ -92,18 +92,19 @@
 					<input type="checkbox" id="Tangmjol"             name="food" value="Tangmjöl"/> 			Tångmjöl <br/>
 					<input type="checkbox" id="Vegetabilisk"         name="food" value="Vegetabilisk"/>		Vegetabiliskt fett (oija)<br/>	
   	 		</div>
-	
-					<input type="button" value="Calculate" class="submit" name="submit" onclick="javascript:calc1(horseForm)"/> 
- 		 </div><!--This is div holds gray Background image on the middle page-->
- 	</form> 
-		<script type="text/javascript" id="display" src="pony.js"></script>
-	
-	
-	<p class="footer">
-    		<a href="http://validator.w3.org/check?uri=referer"><img
-     		    src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
-      		</a>
-  </p>
+			
+			<input type="button" value="Calculate" class="submit" name="submit" onclick="javascript:calc1(horseForm)"/> 
+ 		
+ 		
+ 		</div>												<!--This is div holds gray Background image on the middle page-->
+	</form> 
+		
+		<p class="footer">
+    	<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+    	</p>
+
+			<script type="text/javascript" id="display" src="pony.js"></script>
+	</div>	
 </body>		 
 
 </html>		 
