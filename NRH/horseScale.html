@@ -25,19 +25,7 @@
 					<div class="grayBack2">	
 						
 						<h2><strong>Hästens vikt</strong></h2>
-						<div class="horseFatPic"></div>
 					
-						<p>	
-							Om man inte har möjlighet att väga hästen anges här två olika sätt att beräkna hästens vikt. 
-							Du väljer själv vilken formel du vill använda. Det går också bra att använda båda och ange båda resultaten.<br/>
-							<br/><br/>
-							
-							Hästens hull kan bedömas genom att med handen lätt trycka och känna över revbenen i sadelstaden. 
-							Hästen har normalhull när revbenen inte är synliga men är lätta att känna. Hästen är i underhull 
-							när revbenen är synliga och i överhull när revbenen är svåra att känna på grund av ett tjockt underhudslager 
-							av fett. Om revebenen inte känns alls är hästen fet.Att bedöma hästens hull görs bäst genom att känna 
-							på hästen, men vill du ha hjälp kan du bifoga bilder på hästen i beställningen. Skriv gärna vilken häst det gäller. 
-						</p>
 						
 					<h3>Formel:1</h3>
 						<p>Lansmärkeomfång mäts från gropen framför manken och runt bålen.Mankhöjden mäts vinkelrätt från marken till mankens högsta höjd.
@@ -48,11 +36,11 @@
 					<div id="LansMark">		
 	   						<h4>Resultatet av mätningen av Lansmärkeomgång i cm.</h4>
        						
- 							<input type="text" name="horseLansmarkeomgang" value="" id="horseLansmarkeomgang"/>
+ 							<input type="text" name="horseLansmarkeomgang" value="" id="horseLansmarkeomgang" class="numbersOnly"/>
        						
  							<h4>Resultatet av mätningen av Mankhöjd i cm.</h4>
        						
- 							<input type="text" name="horseMankhojd" value="" id="horseMankhojd"/>
+ 							<input type="text" name="horseMankhojd" value="" id="horseMankhojd"class="numbersOnly"/>
        					 	
  							<input type="button" value="Calculate" class="submit1" name="submit"/> 
  						
@@ -76,9 +64,10 @@
        						    		
  					<div id="Brostom">	
  							 <h4>Resultatet av mätningen av Bröstomfång i cm.</h4>
-        					 <input type="text" name="horseBrostomfang" id="horseBrostomfang" value=""/>
+        					 <input type="text" name="horseBrostomfang" id="horseBrostomfang" value=""class="numbersOnly"/>
         					 <h4>Resultatet av mätningen av Längd i cm.</h4>
-        					 <input type="text" name="horseLenght" id="horseLenght" value=""/>
+        					 <input type="text" name="horseLenght" id="horseLenght" value=""class="numbersOnly"/>
+							 
 							 <input type="button" value="Calculate" class="submit2" name="submit" />
 						
 							<div id="theanswer2"> </div>
@@ -119,6 +108,10 @@
   					
   					});
 			
+				jQuery('.numbersOnly').keyup(function () { 
+    					this.value = this.value.replace(/[^0-9\.]/g,'');
+						});
+				
 				});
 		
 		</script>		
@@ -130,14 +123,7 @@
   		</p>	
 
 
-
-				
-
-				
-				
-				
-			
-			</div><!-- end of body2 div it contains all of the page div's -->
+	</div><!-- end of body2 div it contains all of the page div's -->
 	
 
 	</body>

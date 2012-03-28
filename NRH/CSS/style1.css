@@ -81,16 +81,32 @@ body		{
 			margin-top: 20px;
 			position: absolute;
 			}
-
+.horseSelect{
+												/* the horse type menu bar css */
+			background-color:#E0E0E0;
+			float: left;
+			width: 400px;     
+            height: 120px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	  		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			margin-top: 0px;
+}
 
 
 .horsetype	{
 	 														      /* the horse type menu bar css */
 	 		background-color:#E0E0E0;
 			float: left;
-			width: 320px;     
-            height: 100px; 
-            padding: 30px;
+			width: 400px;     
+            height: 90px; 
+            padding: 20px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -106,9 +122,9 @@ body		{
 													                /* the weight of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float: left;
-			width: 320px;     
-            height: 150px; 
-            padding: 30px;
+			width: 400px;     
+            height: 180px; 
+            padding: 20px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -120,14 +136,89 @@ body		{
 			margin-top: 20px;
 			
 			}
+
+
+.nextButton{
+   			border-top: 1px solid #7d9cb0;									/* the connection button css to the other sites (horseScale.html / horseWeight.html)*/
+   			background: #a5b0b7;
+   			background: -webkit-gradient(linear, left top, left bottom, from(#a2becf), to(#a5b0b8));
+   			background: -webkit-linear-gradient(top, #a2becf, #a5b0b7);
+   			background: -moz-linear-gradient(top, #a2becf, #a5b0b7);
+   			background: -ms-linear-gradient(top, #a2becf, #a5b0b7);
+   			background: -o-linear-gradient(top, #a2becf, #a5b0b7);
+   			padding: 3px;
+   			-webkit-border-radius: 2px;
+   			-moz-border-radius: 2px;
+   			border-radius: 2px;
+   			-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   			-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   			box-shadow: rgba(0,0,0,1) 0 1px 0;
+   			text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   			color: white;
+   			font-size: 13px;
+   			text-decoration: none;
+   			vertical-align: middle;
+  			}
+.nextButton:hover {
+   			border-top-color: #28597a;
+   			background: #28597a;
+   			color: #ccc;
+   			}
+.nextButton:active {
+   			border-top-color: #1b435e;
+   			background: #1b435e;
+   			}
+
+
+
+.hayType	{										
+															 /* the weight of the horse menu bar css*/
+			background-color:#E0E0E0;
+			float: left;
+			width: 400px;     
+            height: 200px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align:inherit;
+			}
+
+.MjSmbrp	{												 /* the weight of the horse menu bar css*/
+			
+			background-color:#E0E0E0;
+			float: left;
+			width: 400px;     
+            height: 220px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align:inherit;
+			
+			}
+
+
 .workout{
 													                /* the work of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float:left;
 			margin-top: 20px;
-			width: 320px;     
+			width: 400px;     
             height: 300px; 
-            padding: 30px;
+            padding: 20px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -144,9 +235,9 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			margin-top: 20px;
-			width: 320px;     
+			width: 400px;     
             height:auto; 
-            padding:30px;
+            padding:20px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -161,9 +252,9 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			margin-top: 20px;
-			width: 320px;     
+			width: 400px;     
             height: auto; 
-            padding:30px;
+            padding:20px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -211,8 +302,7 @@ body		{
 														/*W3C logo at footer index page */
 			width: 65px;     
             text-align: center;
-			padding-top:70px;	
-			margin-top:1900px;
+			margin-top: 2270px;
 			
 			}	
 			
@@ -406,6 +496,20 @@ body		{
 								/*W3C logo at footer in horseScale page */
 			width: 65px;     
             text-align: center;
-			margin-top:2500px;
+			margin-top:1900px;
 			
 			}
+			
+/*************************************************** BELOW IS CSS FOR A horseWeight.HTML result display PAGE ********************************************************/	
+
+
+.footer3{
+								/*W3C logo at footer in horseWeight.html page */
+			width: 65px;     
+            text-align: center;
+			margin-top:1800px;
+			
+			}
+
+
+		
