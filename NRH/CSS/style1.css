@@ -93,9 +93,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	  		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin-top: 0px;
 }
 
@@ -112,9 +109,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	  		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin-top: 20px;
 			}
 			
@@ -130,9 +124,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin-top: 20px;
 			
 			}
@@ -147,9 +138,6 @@ body		{
    			background: -ms-linear-gradient(top, #a2becf, #a5b0b7);
    			background: -o-linear-gradient(top, #a2becf, #a5b0b7);
    			padding: 3px;
-   			-webkit-border-radius: 2px;
-   			-moz-border-radius: 2px;
-   			border-radius: 2px;
    			-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
    			-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
    			box-shadow: rgba(0,0,0,1) 0 1px 0;
@@ -183,11 +171,23 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin-top: 20px;
 			text-align:inherit;
+			}
+
+.HorseFatSkinny {
+			
+			background-color:#E0E0E0;
+			float: left;
+			width: 400px;     
+            height: 90px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	  		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin-top: 20px;
 			}
 
 .MjSmbrp	{												 /* the weight of the horse menu bar css*/
@@ -202,9 +202,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin-top: 20px;
 			text-align:inherit;
 			
@@ -224,9 +221,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			
 			}
 			
@@ -243,9 +237,7 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
+	        
 			}
 .DiverseType{
 			
@@ -260,9 +252,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			
 			}
 .submit {																/* submit button, and has on mouse over css */
@@ -302,10 +291,25 @@ body		{
 														/*W3C logo at footer index page */
 			width: 65px;     
             text-align: center;
-			margin-top: 2270px;
-			
-			}	
-			
+			margin-top: 2570px;
+		}	
+
+
+#time	{
+			background-color:#E0E0E0;
+			float: left;
+			width: 1000px;     
+            height: 50px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin-top: 20px;
+			color:red;
+
+}			
 /*************************************************** BELOW IS CSS FOR A index.HTML result display PAGE ********************************************************/
 
 .display	{											/*css for the index out put or result displayer */
@@ -420,13 +424,7 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0px 8px 6px -6px black;
 	        box-shadow: 0px 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
-			margin:20px;
 			
-
-
 			}
 
 #theanswer{								/*Formel:1 calculater white display bar */
@@ -443,9 +441,6 @@ body		{
             border-style:solid;
             border-color: black; 
             border-width:1px;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin:20px;
 
 			}
@@ -462,9 +457,6 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0px 8px 6px -6px black;
 	        box-shadow: 0px 8px 6px -6px black;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin:20px;
 			
 
@@ -485,9 +477,6 @@ body		{
             border-style:solid;
             border-color: black; 
             border-width:1px;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			border-radius: 4px;
 			margin:20px;
 			
 			}
@@ -503,7 +492,7 @@ body		{
 /*************************************************** BELOW IS CSS FOR A horseWeight.HTML result display PAGE ********************************************************/	
 
 
-.footer3{
+.footer3	{
 								/*W3C logo at footer in horseWeight.html page */
 			width: 65px;     
             text-align: center;
@@ -511,5 +500,5 @@ body		{
 			
 			}
 
-
+	
 		
