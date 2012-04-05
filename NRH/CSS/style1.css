@@ -25,9 +25,10 @@ body		{
 			background-color: black;
 			background-size:600px;
 			background-position:center;
-		 	width: 540px;     
+		 	width: 1315px;     
             height: 100px; 
             padding: 50px;
+            margin-left:-400px;
             border:solid 1px;
 			-webkit-box-shadow: 1px 8px 6px -6px black;
 	   		-moz-box-shadow: 1px 8px 6px -6px black;
@@ -68,7 +69,7 @@ body		{
 
 .grayBack	{															/* menu gray Background image in index.html  */
 			background-image:url('../IMAGES/pony-patter.png');
-			width: 540px;
+			width: 450px;
 			float:left;
 			height:auto;
 			padding:50px;	
@@ -78,6 +79,7 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
+			margin:-260px;
 			margin-top: 20px;
 			position: absolute;
 			}
@@ -287,29 +289,96 @@ body		{
 			 top:1px;
 }			 
 
+#ResultHead	{
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 0px;
+			}
+
+#ResultText	{
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}			
+#ResultText2	{
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}
+#ResultText3	{
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}
+#ResultText4	{
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}
+
+
+
+#ResultBody {
+
+			background-image:url('../IMAGES/pony-patter.png');
+			width: auto;
+			height:1930px;
+			float:right;
+			padding:50px;	
+			border: 1px solid;
+			border-style: solid;
+			border-color: black; 
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin:730px;
+			margin-top: 20px;
+			position: absolute;
+			
+			}
+
+#redTxt		{
+			color:red; 
+			}
+
+#greenTxt		{
+			color:green; 
+			}
 .footer{
 														/*W3C logo at footer index page */
 			width: 65px;     
             text-align: center;
-			margin-top: 2570px;
+			float:left;
+			margin-top: 2070px;
 		}	
 
 
-#time	{
-			background-color:#E0E0E0;
-			float: left;
-			width: 1000px;     
-            height: 50px; 
-            padding: 20px;
-            border-style:solid;
-            border-width:1px;
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	   		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 20px;
-			color:red;
 
-}			
 /*************************************************** BELOW IS CSS FOR A index.HTML result display PAGE ********************************************************/
 
 .display	{											/*css for the index out put or result displayer */

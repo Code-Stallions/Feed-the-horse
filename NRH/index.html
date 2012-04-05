@@ -11,7 +11,7 @@
 <body>
 	
 					<div id="BgHorsesPicRight"></div> 
-    				<div id="BgHorsesPicLeft"></div>	
+    					
 		
 
 	 	<div class="body2"><!--This is content body div it holds the page width and height to flote left-->
@@ -52,16 +52,7 @@
  						    			<a href="horseWeight.html" class="nextButton"> klicka här </a><br/>
  						    		
  						    		</div>					
- 						    		<div class="MjSmbrp">
- 						    			
- 						    			<h4>Please enter the MJ and SMBRP, if you already have your result. </h4>
- 						    			
- 						    			<h4>MJ</h4>
- 						    			<input type="text" name="MJInput" value="" id="MjInput" class="numbersOnly"/>
- 						    			
- 						    			<h4>SMBRP</h4>
- 						    			<input type="text" name="SmbrpInput" value="" id="SmbrpInput" class="numbersOnly"/>
- 						    		</div>
+ 						    		
  						    		<div class="HorseFatSkinny" id="FatSkinny" > <!--This is div holds different type of horses weight-->
  						    			<h4>Är din häst För smal eller tjock?</h4>
  						    			<input type="radio" id="Small"   name="horsefiger" value="Small"/>    Small &nbsp;&nbsp;&nbsp; 
@@ -70,14 +61,8 @@
  						    		</div>
  						    		
  						    		<div class="hayType">
- 						    			<h4>Please pick your type of hay.</h4>
- 						    			<input type="radio"    name="tableCall" value="hay1"/>hay 1 &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio"    name="tableCall" value="hay2"/>hay 2 &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio"    name="tableCall" value="hay3"/>hay 3 &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio"    name="tableCall" value="hay4"/>hay 4 &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio"    name="tableCall" value="hay5"/>hay 5 &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio"    name="tableCall" value="hay6"/>hay 6 &nbsp;&nbsp;&nbsp;
- 						    			<br/>
+ 						    			<h4>Please enter your type of hay.</h4>
+ 						    			<input type="text" name="hayInput" id="hayInput" class="hayInput" value=""/><br/>
  						    		
  						    			<h4>Please enter the hay chemical detail.</h4>	
  						    			<table border="0">
@@ -91,13 +76,13 @@
  						    						<th>TS</th>	
  						    					</tr>
  						    					<tr>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="MJ1"  value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="SMBRP2" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="Ca3" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="Phos4" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="MG5" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="SE6" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="4" size="4" id="TS7" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="MJ1"  value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="SMBRP2" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="Ca3" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="Phos4" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="MG5" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="SE6" value=""/></th>	
+ 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="TS7" value=""/></th>	
  						    					</tr>	
  						    			</table>
  						    		</div>
@@ -116,33 +101,33 @@
  						    		
  						    		<div class="ProteinType" id="ProteinFoder">
  						    			<h4>Välj den Proteinfodermedel typ.</h4>
- 						    	    		<input type="checkbox" class="checkbox" id="Bryggerijast" 	name="food" value="Bryggerijäst" /> Bryggerijäst<br/>
- 						    	    		<input type="checkbox" class="checkbox" id="Linfro"      	name="food" value="Lin: (frö)"/> Lin<br/>	
- 						    	    		<input type="checkbox" class="checkbox" id="PotatisProtein" name="food" value="Potatisprotein"/> Potatisprotein <br/>
- 						    	    		<input type="checkbox" class="checkbox" id="Raps"          	name="food" value="Raps:(för)" /> 	Raps <br/>
- 						    	    		<input type="checkbox" class="checkbox" id= "Sojamjo"       name="food" value="Sojamjöl: (extraherat)"/> Sojamjöl<br/>
- 						    	    		<input type="checkbox" class="checkbox" id= "Sojabona"      name="food" value="Sojaböna"/> 	Sojaböna<br/>
- 						    	    		<input type="checkbox" class="checkbox" id= "SolrosExpellerEj" name="food" value="Solros:(expeller)"/>  Solros<br/>
- 						    				<input type="checkbox" class="checkbox" id= "Arter"         name="food" value="Ärter:(kärna:mat/foderärt)"/> Ärter<br/>
+ 						    	    		<input type="checkbox" class="checkbox" id="Bryggerijast" 	name="food" value=" Bryggerijäst " /> Bryggerijäst<br/>
+ 						    	    		<input type="checkbox" class="checkbox" id="Linfro"      	name="food" value=" Lin: (frö) "/> Lin<br/>	
+ 						    	    		<input type="checkbox" class="checkbox" id="PotatisProtein" name="food" value=" Potatisprotein "/> Potatisprotein <br/>
+ 						    	    		<input type="checkbox" class="checkbox" id="Raps"          	name="food" value=" Raps:(för) " /> 	Raps <br/>
+ 						    	    		<input type="checkbox" class="checkbox" id= "Sojamjo"       name="food" value=" Sojamjöl:(extraherat) "/> Sojamjöl<br/>
+ 						    	    		<input type="checkbox" class="checkbox" id= "Sojabona"      name="food" value=" Sojaböna "/> 	Sojaböna<br/>
+ 						    	    		<input type="checkbox" class="checkbox" id= "SolrosExpellerEj" name="food" value=" Solros:(expeller) "/>  Solros<br/>
+ 						    				<input type="checkbox" class="checkbox" id= "Arter"         name="food" value=" Ärter:(kärna:mat/foderärt) "/> Ärter<br/>
  						    		</div>	  	
  						 					
  						 			<div class="DiverseType" id="DiverseFoder">
- 						 				<h4>Välj den Diverse Fodermedel typ.</h4>
- 						       			<input type="checkbox" id="Aspbark"        name="food" value="Aspbark"/> Aspbark<br/>
- 						       			<input type="checkbox" id="Asplov"         name="food" value="Asplov"/>  Asplöv<br/>
- 						    			<input type="checkbox" id="Morot"          name="food" value="Morot"/> 	 Morot<br/>
- 						       			<input type="checkbox" id="Sockerbeta"     name="food" value="Sockerbeta"/> Sockerbeta, melasserad<br/>
- 						    			<input type="checkbox" id="SockerbetaOmelasserad" name="food" value="Sockerbeta,omelasserad"/> Sockerbeta, omelasserad<br/>
- 						    			<input type="checkbox" id="SockerbetaBetmelass"   name="food" value="Sockerbeta,betmelass"/> 	 Sockerbeta, betmelass <br/>
- 						    			<input type="checkbox" id="Vegetabilisk"         name="food" value="Vegetabilisk"/>			 Vegetabiliskt fett (oija)<br/>	
+ 						 			 <h4>Välj den Diverse Fodermedel typ.</h4>
+ 						       			<input type="checkbox" class="checkbox" id="Aspbark"        name="food" value=" Aspbark "/> Aspbark<br/>
+ 						       			<input type="checkbox" class="checkbox" id="Asplov"         name="food" value=" Asplov "/>  Asplöv<br/>
+ 						    			<input type="checkbox" class="checkbox" id="Morot"          name="food" value=" Morot "/> 	 Morot<br/>
+ 						       			<input type="checkbox" class="checkbox" id="Sockerbeta"     name="food" value=" Sockerbeta "/> Sockerbeta, melasserad<br/>
+ 						    			<input type="checkbox" class="checkbox" id="SockerbetaOmelasserad"name="food" value=" Sockerbeta,omelasserad "/> Sockerbeta, omelasserad<br/>
+ 						    			<input type="checkbox" class="checkbox" id="SockerbetaBetmelass" name="food" value=" Sockerbeta,betmelass "/> Sockerbeta,betmelass <br/>
+ 						    			<input type="checkbox" class="checkbox" id="Vegetabilisk"         name="food" value=" Vegetabilisk "/>Vegetabiliskt fett (oija)<br/>	
  						 	 		</div>	
  						    		
  						    		<input type="button" value ="Calculate" class="submit" name="submit" id="calcu"/>
  						    	
  						    	
- 						    	</div>												<!--This is div holds gray Background image on the middle page-->
+ 						    												<!--This is div holds gray Background image on the middle page-->
  						    </form> 
-					
+					</div>	
 							
 							<p class="footer">
     							<a href="http://validator.w3.org/check?uri=referer">
@@ -162,7 +147,15 @@
     						  this.value = this.value.replace(/[^0-9\.]/g,'');
 							  });
 				</script>			
-			<div id="time"></div>
+	
+	<div id="ResultBody">	
+	<div id="ResultHead"></div>	
+	<div id="ResultText"></div>	
+	<div id="ResultText2"></div>
+	<div id="ResultText3"></div>
+	<div id="ResultText4"></div>
+	</div>
+	
 	</body>		 
 
 </html>		 
