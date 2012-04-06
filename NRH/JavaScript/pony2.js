@@ -49,14 +49,14 @@ $(document).ready(function(){
 						
 						
 						var Horsefiger = $("input[name=horsefiger]:checked").val();
-							if (Horsefiger == "Small"){																							 
-								 var sizeType = ("<p id='redTxt'>This horse is too small needs to eat</p>");
+							if (Horsefiger == "Smal"){																							 
+								 var sizeType = ("<p id='redTxt'>Din häst är för smal,Se till att den äter mer</p>");
 								}						
-							else if (Horsefiger == "Normall"){																							 
-								 var sizeType =("<p id ='greenTxt'>This horse is normal needs to continue with the plan</p>");
+							else if (Horsefiger == "Normal"){																							 
+								 var sizeType =("<p id ='greenTxt'>Din häst vikt är perfekt fortsätt så</p>");
 								}																															 
 							else if (Horsefiger == "Tjok"){																								 
-							 	 var sizeType = ("<p id='redTxt'>This horse is too fat needs to eat less</p>");
+							 	 var sizeType = ("<p id='redTxt'>Din häst är för fet,Ge den mindre mat</p>");
 								}
 							else if (typeof Horsefiger === "undefined"){																								 
 							 	 var sizeType = ("<p id='redTxt'>You have not selected horse weight type </p>");
@@ -67,86 +67,86 @@ $(document).ready(function(){
 						
 						var MJenergy = ($('#MJ1').val());
 							if (MJenergy == feed){
-								 var Energy = ("<p id='greenTxt'>Your horse is getting  the right amount of MJ</p>");
+								 var Energy = ("<p id='greenTxt'>Din häst får tillräckligt med MJ </p>");
 								}
 							else if (MJenergy > feed){
-							     var Energy = ("<p id='redTxt'>You are feeding too much MJ </p>");
+							     var Energy = ("<p id='redTxt'>Din häst får för mycket MJ </p>");
 								}
 							else if (MJenergy < feed){
-								 var Energy = ("<p id='redTxt'>You are feeding too little MJ </p>");
+								 var Energy = ("<p id='redTxt'>Din häst får för lite MJ </p>");
 								}
 
 						
 						var SMBRPenergy = ($('#SMBRP2').val());
 							if (SMBRPenergy == prot){
-								var ProtineEnergy =  ("<p id='greenTxt'>Your horse is getting  the right amount of Protine </p>");
+								var ProtineEnergy =  ("<p id='greenTxt'>Din häst får tillräckligt med Protein </p>");
 								}
 							else if (SMBRPenergy > prot){
-								var ProtineEnergy =  ("<p id='redTxt'>You are feeding too much Protine </p>");
+								var ProtineEnergy =  ("<p id='redTxt'>Din häst får för mycket Protein </p>");
 								}
 							else if (SMBRPenergy < prot){
-								var ProtineEnergy =  ("<p id='redTxt'>You are feeding too little Protine </p>");
+								var ProtineEnergy =  ("<p id='redTxt'>Din häst får inte tillräckligt med Protein </p>");
 								}
 
 						
 						
 						var Caenergy = ($('#Ca3').val());
 							if (Caenergy == kal){
-								var Calintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Calcium </p>");
+								var Calintake =  ("<p id='greenTxt'>Din häst får tillräckligt med Calcium </p>");
 								}
 							else if (Caenergy > kal){
-								var Calintake =  ("<p id='redTxt'>You are feeding too much Calcium </p>");
+								var Calintake =  ("<p id='redTxt'>Din häst får för mycket Calcium </p>");
 								}
 							else if (Caenergy < kal){
-								var Calintake =  ("<p id='redTxt'>You are feeding too little Calcium </p>");
+								var Calintake =  ("<p id='redTxt'>Din häst får inte tillräckligt med Calcium </p>");
 								}
 						
 						var Penergy =($('#Phos4').val());
 							if (Penergy == fos){
-								var Fosintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Fosfers </p>");
+								var Fosintake =  ("<p id='greenTxt'>Din häst får tillräckligt med Fosfor </p>");
 								}
 							else if (Penergy > fos){
-								var Fosintake =  ("<p id='redTxt'>You are feeding too much Fosfers </p>");
+								var Fosintake =  ("<p id='redTxt'>Din häst får för mycket Fosfor </p>");
 								}
 							else if (Penergy < fos){
-								var Fosintake =  ("<p id='redTxt'>You are feeding too little  Fosfers </p>");
+								var Fosintake =  ("<p id='redTxt'>Din häst får inte tillräckligt med Fosfor </p>");
 								}
 						
 						
 						var Mgenergy = ($('#MG5').val());
 							if (Mgenergy == mag){
-								var MGintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Magniseum </p>");
+								var MGintake =  ("<p id='greenTxt'>Din häst får tillräckligt med Magnesium </p>");
 								}
 							else if (Mgenergy > mag){
-								var MGintake =  ("<p id='redTxt'>You are feeding too much Magniseum </p>");
+								var MGintake =  ("<p id='redTxt'>Din häst får för mycket Magniseum </p>");
 								}
 							else if (Mgenergy < mag){
-								var MGintake =  ("<p id='redTxt'>You are feeding too little Magniseum </p>");
+								var MGintake =  ("<p id='redTxt'>Din häst får inte tillräckligt med Magniseum </p>");
 								}
 						
 						
 						var SEenergy = ($('#SE6').val());
 							if (SEenergy == SE){
-								var SEintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Selenium </p>");
+								var SEintake =  ("<p id='greenTxt'>Din häst får tillräckligt med Selenium </p>");
 								}
 							else if (SEenergy > SE){
-								var SEintake =  ("<p id='redTxt'>You are feeding too much Selenium </p>");
+								var SEintake =  ("<p id='redTxt'>Din häst får för mycket Selenium </p>");
 								}
 							else if (SEenergy < SE){
-								var SEintake =  ("<p id='redTxt'>You are feeding too little Selenium </p>");
+								var SEintake =  ("<p id='redTxt'>Din häst får inte tillräckligt med Selenium </p>");
 								}
 
 						
 						
 						var TSenergy = ($('#TS7').val());
 							if (TSenergy == TS){
-								var TSintake =  ("<p id='greenTxt'>Your horse is getting the right amount of TS </p>");
+								var TSintake =  ("<p id='greenTxt'>Din häst får tillräckligt med TS </p>");
 								}
 							else if (TSenergy > TS){
-								var TSintake =  ("<pid='redTxt'>You are feeding too much TS </p>");
+								var TSintake =  ("<pid='redTxt'>Din häst får för mycket TS </p>");
 								}
 							else if (TSenergy < TS){
-								var TSintake =  ("<p id='redTxt'>You are feeding too little TS </p>");
+								var TSintake =  ("<p id='redTxt'>Din häst får inte tillräckligt med TS </p>");
 								}
 						
 						
@@ -170,10 +170,10 @@ $(document).ready(function(){
        						 
  							
    						
-   			$("#ResultHead").html("<h2>Your horse is : "+ HorseType + "</h2>");
+   			$("#ResultHead").html("<h2>Din häst är en : "+ HorseType + "</h2>");
    			
    			$("#ResultText").html(
-   								"<h3>Your horses required energy break-down are: </h3>" +
+   								"<h3>Din häst energibehov är: </h3>" +
    							  	"Work feeding : "+ Horse +'<br/>' +
 							  	"MJ : " + feed +"Kg"+ '<br/>' +
 							  	"Protein: " + prot +"g"+ '<br/>' +
@@ -185,7 +185,7 @@ $(document).ready(function(){
 							  );
 				
 			$("#ResultText2").html(
-									"<h3>You have filled in: </h3>" +
+									"<h3>Du valde: </h3>" +
 									"Horse Body figure : " + Horsefiger + sizeType +'<br/>');
   			
   			$("#ResultText3").html(
