@@ -33,21 +33,21 @@
     				  <form action="" id="horseForm" name="form1" method="post" enctype="multipart/form-data">
  					  
  					  				<div class="horseSelect" id="horseSelect" >	<!--This is div holds different type of horses -->
- 						    			<h4>Välj den hästs typ.</h4>
- 						    			<input type="radio" id="pony"      name="horseType" value="Pony"/>Pony &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="female"    name="horseType" value="Female"/>Female &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="pregnant"  name="horseType" value="Pregnant"/>Pregnant <br/>	<br/>
- 						    			<input type="radio" id="male"      name="horseType" value="Male"/>Male &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="stallion"  name="horseType" value="Stallion"/>Stallion &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="gelding"   name="horseType" value="Gelding"/> Gelding:castrated
+ 						    			<h4>Välj vilket typ av häst du har.</h4>
+ 						    			<input type="radio" id="pony"      name="horseType" value="Pony"/>Ponny &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="female"    name="horseType" value="Female"/>Hona &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="pregnant"  name="horseType" value="Pregnant"/>Dräktig <br/>	<br/>
+ 						    			<input type="radio" id="male"      name="horseType" value="Male"/>Hane &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="stallion"  name="horseType" value="Stallion"/>Hingst &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="gelding"   name="horseType" value="Gelding"/> Kastrerad
  						    		
  						    		</div>
  						    		
  						    		<div class="horsetype" id="horsetype" >										<!--This is div holds different type of horses -->
  						    			<h4>Välj den utfodring typ.</h4>
- 						    			<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödda &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="normal" name="horse" value="Normal"/>  Normalfödda &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödda 
+ 						    			<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödd &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="normal" name="horse" value="Normal"/>  Normalfödd &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödd 
  						    		</div>
  						       								
  						    		<div class="weighttype">        											<!--This is div holds different type of weights -->
@@ -64,17 +64,17 @@
  						    		</div>					
  						    		
  						    		<div class="HorseFatSkinny" id="FatSkinny" > <!--This is div holds different type of horses weight-->
- 						    			<h4>Är din häst För smal eller tjock?</h4>
- 						    			<input type="radio" id="Small"   name="horsefiger" value="Small"/>    Small &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="Normal" name="horsefiger" value="Normall"/>  Normal &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="Tjok"  name="horsefiger" value="Tjok"/>    Tjök 
+ 						    			<h4>Är din häst för smal eller tjock?</h4>
+ 						    			<input type="radio" id="Small"   name="horsefiger" value="Smal"/>    Smal &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="Normal" name="horsefiger" value="Normal"/>  Normal &nbsp;&nbsp;&nbsp; 
+ 						    			<input type="radio" id="Tjok"  name="horsefiger" value="Tjock"/>    Tjock 
  						    		</div>
  						    		
  						    		<div class="hayType">
- 						    			<h4>Please enter your type of hay.</h4>
+ 						    			<h4>Var snäll och skriv in vilken typ av hö du har.</h4>
  						    			<input type="text" name="hayInput" id="hayInput" class="hayInput" value=""/><br/>
  						    		
- 						    			<h4>Please enter the hay chemical detail.</h4>	
+ 						    			<h4>Var snäll och skriv in ditt hös egenskaper.</h4>	
  						    			<table border="0">
  						    					<tr>
  						    						<th>MJ</th>				
@@ -104,13 +104,13 @@
  						    			<h4>Hur många minuter per träningsdag tränar du din häst i skritt?</h4>
  						    			<input type="text" id="horseWorkoutSkritt"  name="horseWorkoutSkritt" value="" class="numbersOnly" />
  						    			
- 						    			<h4>eller tränar du din häst i trav/galopp?</h4>
+ 						    			<h4>Hur många minuter tränar du din häst i trav/galopp?</h4>
  						    			<input type="text" id="horseWorkoutTrav" name="horseWorkoutTrav" value="" class="numbersOnly"/>
  						    		</div>
  						 					
  						    		
  						    		<div class="ProteinType" id="ProteinFoder">
- 						    			<h4>Välj den Proteinfodermedel typ.</h4>
+ 						    			<h4>Välj de Proteinfodermedel du har tillgängligt.</h4>
  						    	    		<input type="checkbox" class="checkbox" id="Bryggerijast" 	name="food" value=" Bryggerijäst " /> Bryggerijäst<br/>
  						    	    		<input type="checkbox" class="checkbox" id="Linfro"      	name="food" value=" Lin: (frö) "/> Lin<br/>	
  						    	    		<input type="checkbox" class="checkbox" id="PotatisProtein" name="food" value=" Potatisprotein "/> Potatisprotein <br/>
@@ -122,7 +122,7 @@
  						    		</div>	  	
  						 					
  						 			<div class="DiverseType" id="DiverseFoder">
- 						 			 <h4>Välj den Diverse Fodermedel typ.</h4>
+ 						 			 <h4>Välj den Diverse Fodermedel du har tillgängligt.</h4>
  						       			<input type="checkbox" class="checkbox" id="Aspbark"        name="food" value=" Aspbark "/> Aspbark<br/>
  						       			<input type="checkbox" class="checkbox" id="Asplov"         name="food" value=" Asplov "/>  Asplöv<br/>
  						    			<input type="checkbox" class="checkbox" id="Morot"          name="food" value=" Morot "/> 	 Morot<br/>
