@@ -11,9 +11,8 @@ $(document).ready(function(){
    							
    						
    						var weight = parseInt($('#weight2').val());
-      					var weight2 = (0.5 * (weight * 0.75)).toFixed(1);
-							
-							if (Horse == "Lite"){																							 
+      					var weight2 = Math.pow(weight,0.75)*(0.5).toFixed(1);
+						if (Horse == "Lite"){																							 
 								var feed = weight2;
 								}						
 							else if (Horse == "Normal"){																							 
@@ -27,7 +26,8 @@ $(document).ready(function(){
 								}
 						
 						
-						
+						var pony = Math.pow(1.093)-(weight,0.75)*0.63.toFixed(1);		
+						var pony4 = (pony);
 						
 						var prot = (feed * 6).toFixed(1);				// It works out the SMRC math formulas//
 						
@@ -37,9 +37,9 @@ $(document).ready(function(){
 						
 						var mag = (feed * 0.15).toFixed(1);				// It works out the magnizam math formulas//
 						
-						var SE = (0.2 * (weight2/100)).toFixed(1) ;		// It works out the SE math formulas//
+						var SE = (0.2 * (weight/100)).toFixed(1) ;		// It works out the SE math formulas//
 					
-						var TS = (1.5 * (weight2/100)).toFixed(1);		// It works out the TS math formulas//
+						var TS = (1.75 * (weight/100)).toFixed(1);		// It works out the TS math formulas//
 				
 						
 						
@@ -49,7 +49,10 @@ $(document).ready(function(){
 						
 						
 						var Horsefiger = $("input[name=horsefiger]:checked").val();
-							if (Horsefiger == "Small"){																							 
+							if (Horsefiger == 0){
+								 var sizeType = ("<p id='greenTxt'>You have not selected horse weight type </p>");
+								}
+							else if (Horsefiger == "Small"){																							 
 								 var sizeType = ("<p id='redTxt'>This horse is too small needs to eat</p>");
 								}						
 							else if (Horsefiger == "Normall"){																							 
@@ -58,15 +61,15 @@ $(document).ready(function(){
 							else if (Horsefiger == "Tjok"){																								 
 							 	 var sizeType = ("<p id='redTxt'>This horse is too fat needs to eat less</p>");
 								}
-							else if (typeof Horsefiger === "undefined"){																								 
-							 	 var sizeType = ("<p id='redTxt'>You have not selected horse weight type </p>");
-								
+							
+						
+						
+						
+						var MJenergy = $('#MJ1').val();
+							 if (MJenergy == 0){
+								 var Energy = ("<p id='greenTxt'></p>");
 								}
-						
-						
-						
-						var MJenergy = ($('#MJ1').val());
-							if (MJenergy == feed){
+							else if (MJenergy == feed){
 								 var Energy = ("<p id='greenTxt'>Your horse is getting  the right amount of MJ</p>");
 								}
 							else if (MJenergy > feed){
@@ -75,10 +78,15 @@ $(document).ready(function(){
 							else if (MJenergy < feed){
 								 var Energy = ("<p id='redTxt'>You are feeding too little MJ </p>");
 								}
-
-						
+							
+							
+							
 						var SMBRPenergy = ($('#SMBRP2').val());
-							if (SMBRPenergy == prot){
+							
+						 	if (SMBRPenergy == 0 ){
+								 var ProtineEnergy = ("<p id='redTxt'> </p>");
+								}
+							else if (SMBRPenergy == prot){
 								var ProtineEnergy =  ("<p id='greenTxt'>Your horse is getting  the right amount of Protine </p>");
 								}
 							else if (SMBRPenergy > prot){
@@ -87,11 +95,15 @@ $(document).ready(function(){
 							else if (SMBRPenergy < prot){
 								var ProtineEnergy =  ("<p id='redTxt'>You are feeding too little Protine </p>");
 								}
-
+						
 						
 						
 						var Caenergy = ($('#Ca3').val());
-							if (Caenergy == kal){
+							
+							if (Caenergy == 0){
+								 var Calintake = ("<p id='redTxt'></p>");
+								}
+							else if (Caenergy == kal){
 								var Calintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Calcium </p>");
 								}
 							else if (Caenergy > kal){
@@ -100,9 +112,15 @@ $(document).ready(function(){
 							else if (Caenergy < kal){
 								var Calintake =  ("<p id='redTxt'>You are feeding too little Calcium </p>");
 								}
+							
+						
 						
 						var Penergy =($('#Phos4').val());
-							if (Penergy == fos){
+							
+							if (Penergy == 0){
+								 var Fosintake = ("<p id='redTxt'></p>");
+								}
+							else if (Penergy == fos){
 								var Fosintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Fosfers </p>");
 								}
 							else if (Penergy > fos){
@@ -111,10 +129,15 @@ $(document).ready(function(){
 							else if (Penergy < fos){
 								var Fosintake =  ("<p id='redTxt'>You are feeding too little  Fosfers </p>");
 								}
+							
 						
 						
 						var Mgenergy = ($('#MG5').val());
-							if (Mgenergy == mag){
+							
+							if (Mgenergy == 0){
+								var MGintake = ("<p id='redTxt'></p>");
+								}
+							else if (Mgenergy == mag){
 								var MGintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Magniseum </p>");
 								}
 							else if (Mgenergy > mag){
@@ -123,10 +146,14 @@ $(document).ready(function(){
 							else if (Mgenergy < mag){
 								var MGintake =  ("<p id='redTxt'>You are feeding too little Magniseum </p>");
 								}
-						
+							
+
 						
 						var SEenergy = ($('#SE6').val());
-							if (SEenergy == SE){
+							if (SEenergy == 0){
+								var SEintake = ("<p id='redTxt'></p>");
+								}
+							else if (SEenergy == SE){
 								var SEintake =  ("<p id='greenTxt'>Your horse is getting  the right amount of Selenium </p>");
 								}
 							else if (SEenergy > SE){
@@ -135,20 +162,23 @@ $(document).ready(function(){
 							else if (SEenergy < SE){
 								var SEintake =  ("<p id='redTxt'>You are feeding too little Selenium </p>");
 								}
-
+							
 						
 						
 						var TSenergy = ($('#TS7').val());
-							if (TSenergy == TS){
+							if (TSenergy == 0){
+								var TSintake = ("<p id='redTxt'></p>");
+								}
+							else if (TSenergy == TS){
 								var TSintake =  ("<p id='greenTxt'>Your horse is getting the right amount of TS </p>");
 								}
 							else if (TSenergy > TS){
-								var TSintake =  ("<pid='redTxt'>You are feeding too much TS </p>");
+								var TSintake =  ("<p id='redTxt'>You are feeding too much TS, It should be "+TS+"</p>");
 								}
 							else if (TSenergy < TS){
 								var TSintake =  ("<p id='redTxt'>You are feeding too little TS </p>");
 								}
-						
+							
 						
 						var days = parseInt($('#horseWorkout').val());						// It works out the days Per Week math formulas//
 						var daysPerWeek = (days/10).toFixed(1);														
@@ -161,7 +191,7 @@ $(document).ready(function(){
 						var travCalc = ((TravAmout * daysPerWeek) * 1.3);							
 						var travCalc2 = (travCalc).toFixed(1);
 						
-						var workoutMJ = (parseInt(skrittCalc2) + parseInt(travCalc2) + parseInt(feed)).toFixed(1);		// It works out how much MJ needs to be added after the horse works out//
+						var workoutMJ = (parseInt(skrittCalc2) + parseInt(travCalc2) + parseInt(feed)).toFixed(1); // It works out how much MJ needs to be added after the horse works out//
 						
     					var aChecked = [];
 							$(':checkbox:checked').each(function(){
@@ -175,13 +205,14 @@ $(document).ready(function(){
    			$("#ResultText").html(
    								"<h3>Your horses required energy break-down are: </h3>" +
    							  	"Work feeding : "+ Horse +'<br/>' +
-							  	"MJ : " + feed +"Kg"+ '<br/>' +
+							  	"MJ : " + feed + '<br/>' +
 							  	"Protein: " + prot +"g"+ '<br/>' +
 							  	"Kalcium : " + kal +"g"+ '<br/>' +
 							  	"Fosfers : " + fos +"g"+ '<br/>' +
 							  	"Magnien : " + mag +"g"+ '<br/>' +
 							  	"Seleniam : " + SE +"g"+ '<br/>' +
 							  	"TS : " + TS +"g"+ '<br/>' 
+							 	+ pony4	
 							  );
 				
 			$("#ResultText2").html(
@@ -198,6 +229,7 @@ $(document).ready(function(){
 							 		'Magnien:' +  Mgenergy +"g"+'<br/>'+ MGintake +
 							 		'Seleniam :' +  SEenergy +"g"+'<br/>'+ SEintake +
 							 		'TS :' +  TSenergy +"g"+'<br/>'+ TSintake
+							 		
 							 		);
   			
   			$("#ResultText4").html(
@@ -205,15 +237,53 @@ $(document).ready(function(){
 									+ daysPerWeek + " days per week"+'<br/>'
 									+ skrittCalc + " Skrit hours per week" + '<br/>'
 									+ travCalc +" Trav hours in week"+'<br/>'+'<br/>'
-									+ workoutMJ +" Kg : MJ after working out "+'<br/>'
+									+ workoutMJ +": MJ after working out "+'<br/>'
 									+ 'Horse foods you have selected :' +  aChecked
 									
 									);		
   						
   							});
+							
+						
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#menuBar-one");
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#menuBar-one a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth"),
+            backgroundColor: $magicLineTwo.data("origColor")
+        });    
+    });
+    
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    
+
+});
 				
-				
-				});
+	
  
  
 

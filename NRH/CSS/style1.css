@@ -1,6 +1,5 @@
 body		{
 			width: 100%;
-			background-image:url('../IMAGES/mount.png');			
 			background-repeat: repeat-x ;
 			background-position-y: 200px;
 			background-size:400px;				
@@ -9,58 +8,40 @@ body		{
 			font-size: small;
 			font-family: "Al Bayan";
 			float: left;
-		
+			
 			}
 			
 
 .body2		{
 			margin: 0 auto;
 			width: 620px;
-			
+		
 			}
 			
 .header		{
 			background-image:url('../IMAGES/header.png');/* horses text header  */ 
 			background-repeat:no-repeat;
 			background-color: black;
-			background-size:600px;
+			background-size:700px;
 			background-position:center;
 		 	width: 1315px;     
-            height: 100px; 
+            height: 300px; 
             padding: 50px;
             margin-left:-400px;
             border:solid 1px;
-			-webkit-box-shadow: 1px 8px 6px -6px black;
-	   		-moz-box-shadow: 1px 8px 6px -6px black;
-	        box-shadow: 1px 8px 6px -6px black;
-			z-index: 1;	
+			-webkit-box-shadow: 1px 6px 2px -6px black;
+			-moz-box-shadow: 1px 6px 2px -6px black;
+			box-shadow: 1px 6px 2px -6px black;
+			
 			}
 
 #BgHorsesPicRight	{	
 			
-			background-image: url('../IMAGES/horses.png');					/* image of horses on the right side of the screen */
-			background-repeat:no-repeat;	
-			background-size:490px;
-			width:200px;
-			height:300px;
-			float:right;
-			padding:135px;
-			margin-top:400px;	
-			
-			
-			}
-
-#BgHorsesPicLeft	{		
-			
-			background-image: url('../IMAGES/horses2.png');						/* image of horses on the left side of the screen */
-			background-repeat:no-repeat;
-			background-size:650px;
-			width: 400px;
-			height:300px;			
-			float: left;
-			padding:100px;
-			margin-top:270px;
-			
+			float:left;
+			padding:30px;
+			margin-top:680px;	
+			margin-left:600px;
+			position: absolute;
 			}
 
 
@@ -80,8 +61,9 @@ body		{
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 			margin:-260px;
-			margin-top: 20px;
+			margin-top: 50px;
 			position: absolute;
+			
 			}
 .horseSelect{
 												/* the horse type menu bar css */
@@ -132,7 +114,7 @@ body		{
 
 
 .nextButton{
-   			border-top: 1px solid #7d9cb0;									/* the connection button css to the other sites (horseScale.html / horseWeight.html)*/
+   			border-top: 1px solid #7d9cb0;			/* the connection button css to the other sites (horseScale.html / horseWeight.html)*/
    			background: #a5b0b7;
    			background: -webkit-gradient(linear, left top, left bottom, from(#a2becf), to(#a5b0b8));
    			background: -webkit-linear-gradient(top, #a2becf, #a5b0b7);
@@ -347,7 +329,7 @@ body		{
 
 			background-image:url('../IMAGES/pony-patter.png');
 			width: auto;
-			height:1930px;
+			height:1935px;
 			float:right;
 			padding:50px;	
 			border: 1px solid;
@@ -357,7 +339,7 @@ body		{
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 			margin:730px;
-			margin-top: 20px;
+			margin-top: 50px;
 			position: absolute;
 			
 			}
@@ -417,29 +399,22 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 20px;
+			margin-top: 50px;
 			position: absolute;
-			
-			
 			} 	
 			
-.horseFatPic{
-			
-			background-image:url('../IMAGES/real_horse_body.png');	/* häst fett bild i horseScale.html */
-			background-repeat:no-repeat;
-			background-color: white;
+#blackBox{								/*image container for horseWeight.html*/
+			background-color:white;
+			width:500px;
+			padding:20px;
 			background-size:350px;
-			background-position:center;
 			float: left;
-			width: 430px;
-			height: 260px;	
-			padding: 0px 0px 40px 50px;
 			border: solid;
 			border-width: 1px;
 			-webkit-box-shadow: 0 4px 6px -6px black;
 	   		-moz-box-shadow: 0 4px 6px -6px black;
 	        box-shadow: 0 4px 6px -6px black;
-			margin:30px;
+			margin:0px;
 			
 			}		
 			
@@ -453,7 +428,7 @@ body		{
 			float: left;
 			width: 430px;
 			height: 260px;	
-			padding: 0px 0px 40px 70px;
+			padding: 35px;
 		 	border: solid;
 			border-width: 1px;
 		 	-webkit-box-shadow: 0 4px 6px -6px black;
@@ -472,7 +447,7 @@ body		{
 			float: left;
 			width: 430px;
 			height: 260px;	
-			padding: 0px 0px 40px 50px;
+			padding: 35px;
 		 	border: solid;
 			border-width: 1px;
 		 	-webkit-box-shadow: 0 4px 6px -6px black;
@@ -487,13 +462,13 @@ body		{
 			float: left;
 			width: 460px;     
             height: 220px; 
-            padding:20px 20px;	
+            padding:20px;	
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0px 8px 6px -6px black;
 	        box-shadow: 0px 8px 6px -6px black;
-			
+			margin:20px;
 			}
 
 #theanswer{								/*Formel:1 calculater white display bar */
@@ -506,7 +481,7 @@ body		{
 			font-family: "Al Bayan";
 			width: 400px;     
             height:20px; 
-            padding:10px 10px;
+            padding:10px;
             border-style:solid;
             border-color: black; 
             border-width:1px;
@@ -520,7 +495,7 @@ body		{
 			float: left;
 			width: 460px;     
             height: 220px; 
-            padding:20px 20px;	
+            padding:20px;	
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
@@ -542,7 +517,7 @@ body		{
 			font-family: "Al Bayan";
 			width: 400px;     
             height:20px; 
-            padding:10px 10px;
+            padding:10px;
             border-style:solid;
             border-color: black; 
             border-width:1px;
@@ -554,7 +529,7 @@ body		{
 								/*W3C logo at footer in horseScale page */
 			width: 65px;     
             text-align: center;
-			margin-top:1900px;
+			margin-top:2000px;
 			
 			}
 			
@@ -562,12 +537,86 @@ body		{
 
 
 .footer3	{
-								/*W3C logo at footer in horseWeight.html page */
-			width: 65px;     
+			width: 65px;     /*W3C logo at footer in horseWeight.html page */
             text-align: center;
-			margin-top:1800px;
+			margin-top:1900px;
 			
 			}
+			
+#menuBar-one { 
+			margin: 1px auto; 
+			list-style: none; 
+			position: relative; 
+			width: 610px; 
+			height: 40px;	
+			border:solid;
+			border-width: 1px; 
+			border-color: gray;
+			background-color: black;
+			-webkit-box-shadow: 1px 6px 2px -6px black;
+			-moz-box-shadow: 1px 6px 2px -6px black;
+			box-shadow: 1px 6px 2px -6px black;
+			margin-top: 290px;		
+			margin-right:320px;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			}			
 
-	
-		
+#menuBar-one li { 
+			display: inline-block; 
+			}
+
+#menuBar-one li a { 
+			position: relative; 
+			z-index: 200; 
+			color: white; 
+			font-size: 14px; 
+			display: block; 
+			float: left; 
+			padding: 10px 20px 5px 18px;
+			text-decoration: none;
+			text-transform: uppercase; 
+			}
+#menuBar-one li a:hover { 
+			color:white; 
+			}
+
+#menuBar-one #magic-line-two { 
+		    position: absolute; 
+		    top: 0; 
+		    left: 0; 
+		    padding: px;
+		    width: 350px; 
+		    background: #900; 
+		    z-index: 100; 
+			}
+
+.current_page_item_two a { 
+			color:white !important; 
+			}
+
+.ie6 #menuBar-one li, .ie7 #menuBar-one li {
+			display: inline;
+			}
+			
+#Youtubetable {
+			background-image:url('../IMAGES/pony-patter.png');
+			width: 950px;
+			float:left;
+			height:inherit;
+			padding:50px;	
+			border: 1px solid;
+			border-style: solid;
+			border-color: black; 
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	   		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin:-200px;
+			margin-top: 50px;
+			position: absolute;
+
+
+}			
+			
+			
