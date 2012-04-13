@@ -70,7 +70,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 400px;     
-            height: 120px; 
+            height: 200px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -148,7 +148,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 400px;     
-            height: 200px; 
+            height: auto; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -189,6 +189,22 @@ body		{
 			margin-top: 20px;
 			text-align:inherit;
 			
+			}
+			
+#Row2		{
+				display:none
+			}
+
+#Row3		{
+				display:none
+			}
+
+#Row4		{
+				display:none
+			}
+
+#Row5		{
+				display:none
 			}
 
 

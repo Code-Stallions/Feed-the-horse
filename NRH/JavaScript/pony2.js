@@ -1,8 +1,11 @@
 $(document).ready(function(){	
+		
+		$('.numbersOnly').keyup(function () { 
+    		this.value = this.value.replace(/[^0-9\.]/g,'');
+			}); 	
 			
 			 $('#ResultBody').hide();		
 					 $("#calcu").click(function(){
-   						
    						$('#ResultBody').fadeIn("10000");
    						
    						var HorseType = $("input[name=horseType]:checked").val();

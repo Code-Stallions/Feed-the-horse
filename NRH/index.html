@@ -21,9 +21,9 @@
             				<li class="current_page_item_two"><a rel="#fe4902" href="index.html">Home</a></li>
           					<li><a rel="#900" href="horseWeight.html">Reviews</a></li>
             				<li><a rel="#D40229" href="horseScale.html">The Show</a></li>
-            				<li><a rel="#98CEAA" href="result.html">Videos</a></li>
-           					<li><a rel="#1B9B93" href="#">Photos</a></li>
-            				<li><a rel="#8DC91E" href="#">Magic Shop</a></li>
+            				<li><a rel="#98CEAA" href="Videos.html">Videos</a></li>
+           					<li><a rel="#1B9B93" href="Photos.html">Photos</a></li>
+            				<li><a rel="#8DC91E" href="FoodShop.html">Food Shop</a></li>
        					 </ul>
        				 </div>		   					
    				</div> 
@@ -34,23 +34,28 @@
  					  
  					  				<div class="horseSelect" id="horseSelect" >	<!--This is div holds different type of horses -->
  						    			<h4>Välj vilket typ av häst du har.</h4>
- 						    			<input type="radio" id="pony"      name="horseType" value="Pony"/>Ponny &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="female"    name="horseType" value="Female"/>Hona &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="pregnant"  name="horseType" value="Pregnant"/>Dräktig <br/>	<br/>
- 						    			<input type="radio" id="male"      name="horseType" value="Male"/>Hane &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="stallion"  name="horseType" value="Stallion"/>Hingst &nbsp;&nbsp;&nbsp; 
- 						    			<input type="radio" id="gelding"   name="horseType" value="Gelding"/> Kastrerad
- 						    		
+ 						    			
+ 						    			<input type="radio" id="female" name="horseType" value="Female / Kastrerad "/>&nbsp;&nbsp;&nbsp;Hona / Kastrerad  						    												<br/><br/>
+ 						    			<input type="radio" id="Draktig:" name="horseType" value="Dräktig"/>&nbsp;&nbsp;&nbsp;Dräktig	
+ 						    				<input type="radio" id="EightMonths" name="Months" value="EightMonths"/> 8/9 Månad &nbsp;&nbsp;&nbsp; 
+ 						    				<input type="radio" id="TenMonths" 	 name="Months" value="TenMonths"/>10 Månad &nbsp;&nbsp;&nbsp; 
+ 						    				<input type="radio" id="ElevenMonths" name="Months" value="ElevenMonths"/>11 Månad  
+											<br/><br/>
+ 						    			<input type="radio" id="Young" name="horseType" value="Young"/>&nbsp;&nbsp;&nbsp;Hane 
+ 						    			<input type="text" id="YoungMonths" name="YoungMonths" value="" class="numbersOnly"/>Månad	
+ 						    				<br/><br/>
+ 						    			<input type="radio" id="stallion"  name="horseType" value="Stallion"/>&nbsp;&nbsp;&nbsp;Hingst 
+ 						    			 						    		
  						    		</div>
  						    		
- 						    		<div class="horsetype" id="horsetype" >										<!--This is div holds different type of horses -->
+ 						    		<div class="horsetype" id="horsetype" >			<!--This is div holds different type of horses -->
  						    			<h4>Välj den utfodring typ.</h4>
  						    			<input type="radio" id="latt"   name="horse" value="Lite"/>    Lättfödd &nbsp;&nbsp;&nbsp; 
  						    			<input type="radio" id="normal" name="horse" value="Normal"/>  Normalfödd &nbsp;&nbsp;&nbsp; 
  						    			<input type="radio" id="svart"  name="horse" value="Hard"/>    Svårfödd 
  						    		</div>
  						       								
- 						    		<div class="weighttype">        											<!--This is div holds different type of weights -->
+ 						    		<div class="weighttype">        				<!--This is div holds different type of weights -->
  						    			<h4>Ange din hästs ideala vikt.</h4>                      
  						    			<input type="text" name="weight" id="weight2" class="numbersOnly" value=""/><br/><br/><!--This is input is for accurate weight -->
  						    			
@@ -72,10 +77,13 @@
  						    		
  						    		<div class="hayType">
  						    			<h4>Var snäll och skriv in vilken typ av hö du har.</h4>
- 						    			<input type="text" name="hayInput" id="hayInput" class="hayInput" value=""/><br/>
+ 						    			<input type="text" name="hayInput" id="hayInput" value="" class="hayInput"/><br/>
  						    		
  						    			<h4>Var snäll och skriv in ditt hös egenskaper.</h4>	
- 						    			<table border="0">
+ 						    			<input type="button" id="AddTextField" name="AddTextField" value=" Field"/>	
+ 						    			
+ 						    			<table border="0" id="EnergyTable">
+ 						    				<tbody>	
  						    					<tr>
  						    						<th>MJ</th>				
  						    						<th>SMBRP</th>	
@@ -85,15 +93,66 @@
  						    						<th>SE</th>	
  						    						<th>TS</th>	
  						    					</tr>
- 						    					<tr>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="MJ1"  value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="SMBRP2" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="Ca3" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="Phos4" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="MG5" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="SE6" value=""/></th>	
- 						    						<th><input type="text" name="energy" maxlength="8" size="4" id="TS7" value=""/></th>	
+ 						    					
+ 						    					
+ 						    					<tr id="Row1">
+ 						    						<td>1:<input type="text" name="energy" maxlength="8" size="4" id="MJ1"  value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRP1" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Ca1" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Phos1" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MG1" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SE1" value=""  class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TS1" value="" class="numbersOnly"/></td>	
  						    					</tr>	
+ 						    				</tbody>	
+ 						    		
+ 						    				<tbody>	
+ 						    					<tr id="Row2">	
+ 						    						<td>2:<input type="text" name="energy" maxlength="8" size="4" id="MJ2"  value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRP2" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Ca2" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Phos2" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MG2" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SE2" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TS2" value="" class="numbersOnly"/></td>	
+ 						    					</tr>
+ 						    			</tbody>
+ 						    				
+ 						    				<tbody>	
+ 						    					<tr id="Row3">	
+ 						    						<td>3:<input type="text" name="energy" maxlength="8" size="4" id="MJ3"  value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRP3" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Ca3" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Phos3" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MG3" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SE3" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TS3" value="" class="numbersOnly"/></td>	
+ 						    					</tr>
+ 						    			</tbody>
+ 						    			<tbody>	
+ 						    					<tr id="Row4">	
+ 						    						<td>4:<input type="text" name="energy" maxlength="8" size="4" id="MJ4"  value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRP4" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Ca4" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Phos4" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MG4" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SE4" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TS4" value="" class="numbersOnly"/></td>	
+ 						    					</tr>
+ 						    			</tbody>
+ 						    			<tbody>	
+ 						    					<tr id="Row5">	
+ 						    						<td>5:<input type="text" name="energy" maxlength="8" size="4" id="MJ5"  value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRP5" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Ca5" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="Phos5" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MG5" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SE5" value="" class="numbersOnly"/></td>	
+ 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TS5" value="" class="numbersOnly"/></td>	
+ 						    					</tr>
+ 						    			</tbody>
+ 						    			
+ 						    			
  						    			</table>
  						    		</div>
  						    	
@@ -127,8 +186,8 @@
  						       			<input type="checkbox" class="checkbox" id="Asplov"         name="food" value=" Asplov "/>  Asplöv<br/>
  						    			<input type="checkbox" class="checkbox" id="Morot"          name="food" value=" Morot "/> 	 Morot<br/>
  						       			<input type="checkbox" class="checkbox" id="Sockerbeta"     name="food" value=" Sockerbeta "/> Sockerbeta, melasserad<br/>
- 						    			<input type="checkbox" class="checkbox" id="SockerbetaOmelasserad"name="food" value=" Sockerbeta,omelasserad "/> Sockerbeta, omelasserad<br/>
- 						    			<input type="checkbox" class="checkbox" id="SockerbetaBetmelass" name="food" value=" Sockerbeta,betmelass "/> Sockerbeta,betmelass <br/>
+ 						    			<input type="checkbox" class="checkbox" id="SockerbetaOme"name="food" value=" Sockerbeta,omelasserad "/> Sockerbeta, omelasserad<br/>
+ 						    			<input type="checkbox" class="checkbox" id="SockerbetaBet" name="food" value=" Sockerbeta,betmelass "/> Sockerbeta,betmelass <br/>
  						    			<input type="checkbox" class="checkbox" id="Vegetabilisk"         name="food" value=" Vegetabilisk "/>Vegetabiliskt fett (oija)<br/>	
  						 	 		</div>	
  						    		
@@ -143,25 +202,42 @@
     							</a>
  							</p>
 				
-		</div><!--This is END of content body div it holds the page width and height to flote left-->
-				
+			</div><!--This is END of content body div it holds the page width and height to flote left-->
+			
+			<div id="ResultBody">	
+			<div id="ResultHead"></div>	
+			<div id="ResultText"></div>	
+			<div id="ResultText2"></div>
+			<div id="ResultText3"></div>
+			<div id="ResultText4"></div>
+			</div>		
 				
 				<script type="text/javascript" src="JavaScript/jquery.js"></script>
 				<script type="text/javascript" id="display" src="JavaScript/pony2.js"></script>	
 				<script type="text/javascript" id="display2">
 				
-						jQuery('.numbersOnly').keyup(function () { 
-    						  this.value = this.value.replace(/[^0-9\.]/g,'');
-							  });
-				</script>			
-	
-	<div id="ResultBody">	
-	<div id="ResultHead"></div>	
-	<div id="ResultText"></div>	
-	<div id="ResultText2"></div>
-	<div id="ResultText3"></div>
-	<div id="ResultText4"></div>
-	</div>
+				
+										 $(document).ready(function () {
+									    		$("#AddTextField").live("click", function(){
+  									    		$('#Row2').show()
+  									    		.stop();
+  									    		$("#AddTextField").live("click", function(){
+  									    		$('#Row3').show()
+  									    		.stop();
+  									    		$("#AddTextField").live("click", function(){
+  									    		$('#Row4').show()
+  									    		.stop();
+  									    		$("#AddTextField").live("click", function(){
+  									    		$('#Row5').show()
+  									    		.stop();
+  									    		});
+  									    	});						
+  									    });						
+									});
+								});	    		
+					
+	</script>			
+
 	
 	</body>		 
 
