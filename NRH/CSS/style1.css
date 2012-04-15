@@ -101,7 +101,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 400px;     
-            height: 180px; 
+            height: 250px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -112,7 +112,20 @@ body		{
 			
 			}
 
+.linkHolder{
 
+
+			background-color:#E0E0E0;
+			float: left;
+			width: auto;     
+            height: auto; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			margin-top: 20px;
+			
+			
+			}
 .nextButton{
    			border-top: 1px solid #7d9cb0;			/* the connection button css to the other sites (horseScale.html / horseWeight.html)*/
    			background: #a5b0b7;
@@ -318,6 +331,18 @@ body		{
             border-width:1px;	 
 			margin-top: 20px;
 			}
+
+#ResultText22 {
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}
+
 #ResultText3	{
 			background-color: white;
 			width: 400px;

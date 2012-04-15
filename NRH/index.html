@@ -35,7 +35,7 @@
  					  				<div class="horseSelect" id="horseSelect" >	<!--This is div holds different type of horses -->
  						    			<h4>Välj vilket typ av häst du har.</h4>
  						    			
- 						    			<input type="radio" id="female" name="horseType" value="Female / Kastrerad "/>&nbsp;&nbsp;&nbsp;Hona / Kastrerad  						    												<br/><br/>
+ 						    			<input type="radio" id="female" name="horseType" value="Hona / Kastrerad "/>&nbsp;&nbsp;&nbsp;Hona / Kastrerad  						    												<br/><br/>
  						    			<input type="radio" id="Draktig:" name="horseType" value="Dräktig"/>&nbsp;&nbsp;&nbsp;Dräktig	
  						    				<input type="radio" id="EightMonths" name="Months" value="EightMonths"/> 8/9 Månad &nbsp;&nbsp;&nbsp; 
  						    				<input type="radio" id="TenMonths" 	 name="Months" value="TenMonths"/>10 Månad &nbsp;&nbsp;&nbsp; 
@@ -56,16 +56,17 @@
  						    		</div>
  						       								
  						    		<div class="weighttype">        				<!--This is div holds different type of weights -->
+ 						    			
  						    			<h4>Ange din hästs ideala vikt.</h4>                      
  						    			<input type="text" name="weight" id="weight2" class="numbersOnly" value=""/><br/><br/><!--This is input is for accurate weight -->
- 						    			
- 						    			Om du inte vet din häst vikt&nbsp;&nbsp; 
- 						    			<a href="horseScale.html" class="nextButton"> klicka här </a><br/>
- 						    			
- 						    			<br/>	
- 						    			Om du inte vet hullbedömning av hästar&nbsp;&nbsp; 
- 						    			<a href="horseWeight.html" class="nextButton"> klicka här </a><br/>
- 						    		
+ 						    				
+ 						    				<div class="linkHolder">	
+ 						    					<a href="horseScale.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
+ 						    					Om du inte vet din häst vikt
+ 						    					<br/><br/>	
+ 						    					<a href="horseWeight.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
+ 						    					Om du inte vet hullbedömning av hästar
+ 						    				</div>
  						    		</div>					
  						    		
  						    		<div class="HorseFatSkinny" id="FatSkinny" > <!--This is div holds different type of horses weight-->
@@ -80,7 +81,7 @@
  						    			<input type="text" name="hayInput" id="hayInput" value="" class="hayInput"/><br/>
  						    		
  						    			<h4>Var snäll och skriv in ditt hös egenskaper.</h4>	
- 						    			<input type="button" id="AddTextField" name="AddTextField" value=" Field"/>	
+ 						    			<input type="button" id="AddTextField" name="AddTextField" value="New Field"/>	
  						    			
  						    			<table border="0" id="EnergyTable">
  						    				<tbody>	
@@ -208,6 +209,7 @@
 			<div id="ResultHead"></div>	
 			<div id="ResultText"></div>	
 			<div id="ResultText2"></div>
+			<div id="ResultText22"></div>
 			<div id="ResultText3"></div>
 			<div id="ResultText4"></div>
 			</div>		

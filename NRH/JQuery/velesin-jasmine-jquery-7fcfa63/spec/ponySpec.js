@@ -1,4 +1,4 @@
-describe("FeedingForm", function(FoodCalculator) {zz
+describe("FeedingForm", function(FoodCalculator) {
   
     describe("FoodCalculator", function() {    
    			
@@ -187,7 +187,33 @@ describe("FeedingForm", function(FoodCalculator) {zz
   	var Running = Sprint + Skritt;
  		expect(Running).toEqual(42);
  		
- 	});	
+ 	
+	});	
  });
  
+ 	
+ 	describe("second pregohast energy intake", function(){
+ 	it("horse enegry input ", function(){
+ 			
+ 			var MJ2 = 75;	
+  			var foodintake = (MJ2 / (100/25));
+  			var foodintake2 = foodintake + MJ2;
+  			var totalintake = Math.ceil(foodintake2);
+ 			expect(totalintake).toEqual(94);
+ 		});				
+		 	
+	it("horse protine input ", function(){
+ 			var vikt3 = 75;	
+  			var Protintake = (vikt3 * 6);
+  			var totalProtn = Math.ceil(Protintake);
+ 			expect(totalProtn).toEqual(450);
+ 	});
+		it("horse protine add to regular feeding ", function(){
+ 			
+ 			var vikt4 = 19;	
+  			var Protintake2 = (vikt4 * 12);
+  			var Protntotal = Math.ceil(Protintake2);
+ 			expect(Protntotal).toEqual(228);
+ 	});
 
+});
