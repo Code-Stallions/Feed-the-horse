@@ -8,19 +8,42 @@ $(document).ready(function(){
 					 $("#calcu").click(function(){														// the click function starts here//
    							$('#ResultBody').fadeIn("10000");
    						
+   						
    						var HorseType = $("input[name=horseType]:checked").val();						// calls out the horse type you have selected//
-   								$("#ResultHead").html("<h2>Din häst är en : "+ HorseType + "</h2>");
+   							if (HorseType == undefined){
+   								var HorseType2 = ('');
+   							}else{
+   								var HorseType2 = (HorseType);
+   							}
+   							
+   							var PregnetHäst = $("input[name=Months]:checked").val();
+   							if (PregnetHäst == 'EightMonths' ){
+   								var MonthPreg = ('8/9'+'månad');
+   							}	
+   							else if (PregnetHäst == 'TenMonths'){
+   								var MonthPreg = ('10'+'månad');
+   							}	
+   							else if (PregnetHäst == 'ElevenMonths'){
+   								var MonthPreg = ('11'+'månad');
+   							}
+   							else if (PregnetHäst !== ''){
+   								var MonthPreg = ('');
+   							}	
+   								
+   						$("#ResultHead").html("<h2>Din häst är en : "+ HorseType2 +'&nbsp;'+ MonthPreg +"</h2>");
    								
    						
    					
    					
    						var Horse = $("input[name=horse]:checked").val();					// calls out the horse feeding you have selected latt, normal, hard,//
-   							
+   						if (Horse == undefined){
+   								var Horse2 = ('');
+   							}else{
+   								var Horse2 = (Horse);
+   							}
    						
    						
-   						
-   						
-   						var weight = parseInt($('#weight2').val());
+   						var weight = parseInt($('#weight2').val()|| 0);
       					var weight2 = Math.pow(weight,0.75)*(0.5).toFixed(1);
 						
 							if (Horse == "Lite"){																							 
@@ -33,9 +56,9 @@ $(document).ready(function(){
 							 	var feed = parseInt(weight2 * 1.10).toFixed(1);
 								}
 							else if (Horse !== ""){																								 
-							 	var feed = parseInt(weight2);
+							 	var feed = parseInt(weight2) || 0;
 								}
-						
+							
 						
 						
 						
@@ -49,13 +72,14 @@ $(document).ready(function(){
 						
 					
 					if((weight == 0)){
-						$("#ResultText").fadeOut();
+						$("#ResultText").hide();
 						}
 					else {	
-						 $("#ResultText").fadeIn();
+						 $("#ResultText").show();
 						 $("#ResultText").html(
+   								"<h3>Din häst vikt är : " + weight +'Kg' + "</h3>"+
    								"<h3>Din häst energibehov är: </h3>" +
-   							  	"Work feeding : "+ Horse +'<br/>' +
+   							  	"Work feeding : "+ Horse2 +'<br/>' +
 							  	"MJ : " + feed + "<br/>" +
 							  	"Protein: " + prot +"g"+ '<br/>' +
 							  	"Kalcium : " + kal +"g"+ '<br/>' +
@@ -770,7 +794,7 @@ $(document).ready(function(){
 						}
 							
 						
-						var days = parseInt($('#horseWorkout').val());						// It works out the days Per Week math formulas//
+						var days = parseInt($('#horseWorkout').val() || 0);						// It works out the days Per Week math formulas//
 						var daysPerWeek = (days/10).toFixed(1);														
 						
 						var skrit1 = parseInt($('#horseWorkoutSkritt').val());				// It gets the value of the horse Workout Skritt//
