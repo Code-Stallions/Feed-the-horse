@@ -104,7 +104,7 @@ $(document).ready(function(){
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ  " + PregnentHastTotal + "</p>");
 								var pregnantHästSMB = ("<p>Din Dräktighäst SMB.RP  " + SmbPregnentResult + "</p>");
 								
-								$("#ResultText22").html(pregnantHastSum + pregnantHästSMB);
+								$("#DraktigResult").html(pregnantHastSum + pregnantHästSMB);
 								}						
 							
 							else if (DräktigMJ == "TenMonths"){																							 
@@ -118,7 +118,7 @@ $(document).ready(function(){
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ  "+ PregnentHastTotal + "</p>");
 								var pregnantHästSMB = ("<p>Din Dräktighäst SMB.RP  " + SmbPregnentResult + "</p>");
 								
-								$("#ResultText22").html(pregnantHastSum + pregnantHästSMB);
+								$("#DraktigResult").html(pregnantHastSum + pregnantHästSMB);
 								}																															 
 							
 							else if (DräktigMJ == "ElevenMonths"){																								 
@@ -132,10 +132,10 @@ $(document).ready(function(){
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ  " + PregnentHastTotal + "</p>");
 								var pregnantHästSMB = ("<p>Din Dräktighäst SMB.RP  " + SmbPregnentResult + "</p>");
 								
-								$("#ResultText22").html(pregnantHastSum + pregnantHästSMB);
+								$("#DraktigResult").html(pregnantHastSum + pregnantHästSMB);
 								}
 							else if (DräktigMJ !== "" ){
-   									$("#ResultText22").hide();
+   									$("#DraktigResult").hide();
 								}
    							
 					
