@@ -807,12 +807,35 @@ $(document).ready(function(){
 						
 						var workoutMJ = (parseInt(skrittCalc2) + parseInt(travCalc2) + parseInt(feed)).toFixed(1); // It works out how much MJ needs to be added after the horse works out//
 						
-    					var FoodCheckeBox = [];
-							$(':checkbox:checked').each(function(){
-      							FoodCheckeBox.push(this.getAttribute("value"));
-							}); 
-       						 
- 			
+// An array with the different kinds of food for the horses \\
+	// Name, TS(%), MJ, smb.rp(g), Ca(g), P(g), Mg(g) \\
+		// Above is the order I stored them in \\
+// Ex. proteteinFoder[0][1] will bring out the MJ of Bryggerijäst \\			 
+var proteinFoder = new Array ();
+	proteinFoder[0] = new Array ( "Bryggerijäst", 90 , 12.2 , 394 , 2 , 14 , 2.3 );
+	proteinFoder[1] = new Array ( "Linfrö", 93 , 15.6 , 180 , 2.6 , 5.3 , 3.6 );
+	proteinFoder[2] = new Array ( "Potatisprotein", 90 , 13.1 , 685 , 1 , 4 ,1 );
+	proteinFoder[3] = new Array ( "Raps (frö)", 93 , 16.5 , 154 , 4 , 8 , 2.2 );
+	proteinFoder[4] = new Array ( "Sojamjöl", 87 , 11.7 , 390 , 2.8 , 6.3 , 2.3 );
+	proteinFoder[5] = new Array ( "Sojaböna", 87 , 12.1 , 299 , 2.3 , 5.5 , 2.5 );
+	proteinFoder[6] = new Array ( "Solros", 92 , 8.6 , 247 , 3.2 , 9.8 , 5.2 );
+	proteinFoder[7] = new Array ( "Ärter", 87 , 11.1 , 176 , 0.8 , 3.7 , 1.1 );
+
+var horseFoodChecked = $('input[name=food]:checked'); 	// check checkboxes with name="food" if checked
+if (horseFoodChecked.val() == undefined){ 				// if nothing is checked, then return nothing.
+	FoodCheckBox = ('');
+}
+else{
+	var FoodCheckBox = (
+		proteinFoder[horseFoodChecked.val()][0] + " har " + 
+		proteinFoder[horseFoodChecked.val()][1] + "% TS, " + 
+		proteinFoder[horseFoodChecked.val()][2] + " MJ, " + 
+		proteinFoder[horseFoodChecked.val()][3] + " smb.rp, " + 
+		proteinFoder[horseFoodChecked.val()][4] + " Ca, " + 
+		proteinFoder[horseFoodChecked.val()][5] + " P, " + 
+		proteinFoder[horseFoodChecked.val()][6] + " Mg <br>" 
+	)
+}
  						if ((days == 0)){
 							$("#ResultText4").hide();
 						}else{
@@ -823,7 +846,7 @@ $(document).ready(function(){
 									+ skrittCalc + ": Skrit hours per week" + '<br/>'
 									+ travCalc +": Trav hours in week"+'<br/>'+'<br/>'
 									+ workoutMJ +": MJ after working out "+'<br/>'
-									+ 'Horse foods you have selected :'+ '<br/>'+ FoodCheckeBox
+									+ 'Horse foods you have selected :'+ '<br/>'+ FoodCheckBox
 									);		
   								}							
 														
