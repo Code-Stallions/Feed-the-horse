@@ -204,21 +204,81 @@ body		{
 			
 			}
 			
+
+
 #Row2		{
-				display:none
+				display:none;
 			}
 
 #Row3		{
-				display:none
+				display:none;
 			}
 
 #Row4		{
-				display:none
+				display:none;
 			}
 
 #Row5		{
-				display:none
+				display:none;
 			}
+
+#Result11	{
+
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result22	{
+			display:none;
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result33	{
+			display:none;
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result44	{
+			display:none;
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result55	{
+			display:none;
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+
+}
+
 
 
 .workout{
@@ -321,7 +381,8 @@ body		{
             border-width:1px;	 
 			margin-top: 20px;
 			}			
-#ResultText2	{
+
+#ResultText2{
 			background-color: white;
 			width: 400px;
 			float:right;
@@ -343,16 +404,7 @@ body		{
 			margin-top: 20px;
 			}
 
-#ResultText3	{
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-			}
+
 #ResultText4	{
 			background-color: white;
 			width: 400px;
@@ -370,7 +422,7 @@ body		{
 
 			background-image:url('../IMAGES/pony-patter.png');
 			width: auto;
-			height:1935px;
+			height:auto;
 			float:right;
 			padding:50px;	
 			border: 1px solid;
