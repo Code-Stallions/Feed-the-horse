@@ -45,7 +45,6 @@ $(document).ready(function(){
    					var HorseType = ($("input[name=horseType]:checked").val()|| 0);	// calls out the horse type you have selected//
    							if (HorseType == "" || 0){
    								var HorseType2 = alert("Vänligen fil i Vikt eller Häst typen");
-   								
    								$('#ResultBody').hide();	
    							}else{
    								$("#ResultHead").show();
@@ -187,6 +186,15 @@ $(document).ready(function(){
 					var smallAmount = ("<a id='redTxt'> : Din häst får för lite med så tillsätt: </a>");
 					var rightAmount = ("<a id='greenTxt'>: Din häst får tillräckligt med: </a>");
 					var tooMuchAmount = ("<a id='redTxt'> : Din häst får för mycket så minus: </a>");
+					
+					var HayFeedWieght = ($('#FoodWeight').val() || 0)
+					var HayFeedWieght2 = (parseInt(HayFeedWieght));		
+					var HayFeedTotal = ((feed) * (HayFeedWieght2));	
+					var HayFeedResult = (parseInt(HayFeedTotal));
+					
+						
+					
+					
 					
 					
 					
