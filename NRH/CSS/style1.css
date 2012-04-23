@@ -363,7 +363,7 @@ body		{
 
 #ResultHead	{
 			background-color: white;
-			width: 400px;
+			width:400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -396,8 +396,7 @@ body		{
 			margin-top: 20px;
 			}
 
-
-#ResultText4	{
+#ResultText2 {
 			background-color: white;
 			width: 400px;
 			float:right;
@@ -408,7 +407,28 @@ body		{
 			margin-top: 20px;
 			}
 
+#ResultTravGalopp {
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+			}
 
+#ResultFoodArry {
+			background-color: white;
+			width: 400px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+
+}
 
 #ResultBody {
 
