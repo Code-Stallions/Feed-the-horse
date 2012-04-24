@@ -1,4 +1,4 @@
-$(document).ready(function(){	
+	$(document).ready(function(){	
 		var $el, leftPos, newWidth;
 			$mainNav2 = $("#menuBar-one");
 			 $mainNav2.append("<li id='magic-line-two'></li>");
@@ -29,10 +29,8 @@ $(document).ready(function(){
 				/* Kick IE into gear */
 				$(".current_page_item_two a").mouseenter();
 		
-		
-		
-		
-		$('.numbersOnly').keyup(function () { 										// It will only allow numbers to be entered in the text field//
+			
+			$('.numbersOnly').keyup(function () { 										// It will only allow numbers to be entered in the text field//
     		this.value = this.value.replace(/[^0-9\.]/g,'');
 			}); 	
 			
@@ -41,8 +39,8 @@ $(document).ready(function(){
    			$('#ResultBody').fadeIn("10000");
    					
    					
-   					var HorseTypeInput =("<a>Din häst är en : </a>");
-   					var HorseType = ($("input[name=horseType]:checked").val()|| 0);	// calls out the horse type you have selected//
+   						var HorseTypeInput =("<a>Din häst är en : </a>");
+   						var HorseType = ($("input[name=horseType]:checked").val()|| 0);	// calls out the horse type you have selected//
    							if (HorseType == "" || 0){
    								var HorseType2 = alert("Vänligen fil i Vikt eller Häst typen");
    								$('#ResultBody').hide();	
@@ -51,7 +49,7 @@ $(document).ready(function(){
    								var HorseType2 = ("<h3>"+HorseTypeInput+HorseType+"</h3>");
    								}
    						
-   						$("#ResultHead").html(HorseType2);		
+   							$("#ResultHead").html(HorseType2);		
    						
    								
    						
@@ -74,20 +72,30 @@ $(document).ready(function(){
 							else if (Horse == "Normal"){																							 
 								var feed = parseInt(weight2 * 1.05).toFixed(1);
 								}																															 
-							else if (Horse == "Hard"){																								 
+							else if (Horse == "Svart"){																								 
 							 	var feed = parseInt(weight2 * 1.10).toFixed(1);
 								}
 							else if (Horse !== ""){																								 
 							 	var feed = parseInt(weight2) || 0;
 								}
 						
-						var prot = parseInt(feed * 6).toFixed(1);				// It works out the SMRC math formulas//
-						var kal = parseInt(feed * 0.4).toFixed(1);				// It works out the calciam math formulas//
-						var fos = parseInt(feed * 0.25).toFixed(1);				// It works out the fosfers math formulas//
-						var mag = parseInt(feed * 0.15).toFixed(1);				// It works out the magnizam math formulas//
-						var SE = parseInt(0.2 * (weight/100)).toFixed(1) ;		// It works out the SE math formulas//
-						var TS = parseInt(1.75 * (weight/100)).toFixed(1);		// It works out the TS math formulas//
+						var prot = (feed * 6).toFixed(1);				// It works out the SMRC math formulas//
+						var prot2 = parseInt(prot);
 						
+						var kal = (feed * 0.38).toFixed(1);				// It works out the calciam math formulas//
+						var kal2 = parseInt(kal);
+						
+						var fos = (feed * 0.25).toFixed(1);				// It works out the fosfers math formulas//
+						var fos2 = parseInt(fos);
+						
+						var mag = (feed * 0.15).toFixed(1);				// It works out the magnizam math formulas//
+						var mag2 = parseInt(mag);
+						
+						var SE =(0.2 * (weight/100)).toFixed(1) ;		// It works out the SE math formulas//
+						var SE2 =parseInt(SE);
+						
+						var TS = (1.75 * (weight/100)).toFixed(1);		// It works out the TS math formulas//
+						var TS2 = parseInt(TS);
 						
 					
 					if((weight2 == 0)){
@@ -97,15 +105,15 @@ $(document).ready(function(){
 						 $("#ResultText").show();
 						 $("#ResultText").html(
    								"<h3>Din häst vikt är : " + weight +' Kg' + "</h3>"+
-   								"<h3>Din häst energibehov är: </h3>" +
+   								"<h3>Din häst dagsbehov är: </h3>" +
    							  	"<h4>"+"Utfodring typ : "+ Horse2 +'<br/>'+"</h4>"+
-							  	"MJ : " + feed + "<br/>" +
-							  	"Protein: " + prot +"Kg"+ '<br/>' +
+							  	"Energi (MJ) : " + feed + "<br/>" +
+							  	"Smältbart protein : " + prot +"g"+ '<br/>' +
 							  	"Kalcium : " + kal +"g"+ '<br/>' +
 							  	"Fosfers : " + fos +"g"+ '<br/>' +
 							  	"Magnien : " + mag +"g"+ '<br/>' +
 							  	"Seleniam : " + SE +"g"+ '<br/>' +
-							  	"TS : " + TS +"g"+ '<br/>' 
+							  	"TS : " + TS +"Kg"+ '<br/>' 
 							 	);
 						}
 					
@@ -159,12 +167,12 @@ $(document).ready(function(){
 							
 					
 					
-					var HayType = $('#hayInput').val();												// calls out the horse HAY you have entered//
+					var HayType = $('#hayInput').val();															// calls out the horse HAY you have entered//
 					var smallSize = ("<p id='redTxt'> Din häst är för smal,Se till att den äter mer. </p>");
 					var normaSize =("<p id ='greenTxt'> Din häst vikt är perfekt fortsätt så. </p>");
 					var fatSize = ("<p id='redTxt'> Din häst är för fet,Ge den mindre mat. </p>");
 					
-					var Horsefiger = $("input[name=horsefiger]:checked").val();				// this is formula is for work the text field available for the user//
+					var Horsefiger = $("input[name=horsefiger]:checked").val();					// this is formula is for work the text field available for the user//
 							if (Horsefiger == undefined){
 								$('#ResultText2').hide();
 								}
@@ -187,169 +195,164 @@ $(document).ready(function(){
 					var rightAmount = ("<a id='greenTxt'>: Din häst får tillräckligt med: </a>");
 					var tooMuchAmount = ("<a id='redTxt'> : Din häst får för mycket så minus: </a>");
 					
-					var HayFeedWieght = ($('#FoodWeight').val() || 0)
-					var HayFeedWieght2 = (parseInt(HayFeedWieght));		
-					var HayFeedTotal = ((feed) * (HayFeedWieght2));	
-					var HayFeedResult = (parseInt(HayFeedTotal));
+					
+					
 					
 						
+					var HayFeedWeight = ($('#FoodWeight').val() || 0);
+					var HayFeedTotal = (parseInt(HayFeedWeight));		
 					
 					
-					
-					
-					
-					var MJenergy =  ($('#MJ1').val() || 0);
-					var MJenergy2 = (parseInt(MJenergy));		
-					var EnergyLeft = ((feed) - (MJenergy2));	
-					var Leftenergy = (parseInt(EnergyLeft));	
-							
-							if (MJenergy2 == 0){
+					var MJenergy2 = ($('#MJ1').val());
+					var EnergyLeft = ((HayFeedTotal) * (MJenergy2));	
+					var MJminus = (feed - EnergyLeft).toFixed(1);	
+					var MJminus2 =(MJminus); 	
+						if (EnergyLeft == undefined){
 								 var EnergyIntake = ('');
 								}
-							else if (MJenergy2 == feed){
-								 var EnergyIntake = MJenergy2+rightAmount;
+							else if (EnergyLeft == feed){
+								 var EnergyIntake = rightAmount;
 								}
-							else if (MJenergy2 > feed){
-							    var EnergyIntake = MJenergy2+tooMuchAmount+''+Leftenergy+' MJ';
+							else if (EnergyLeft > feed){
+							    var EnergyIntake = tooMuchAmount+''+ MJminus2 +' MJ';
 							     }
-							else if (MJenergy2 < feed){
-								 var EnergyIntake = MJenergy2+smallAmount+''+Leftenergy+' MJ';
+							else if (EnergyLeft < feed){
+								 var EnergyIntake = smallAmount+''+MJminus2+' MJ';
 								}
-							else if (MJenergy2 !== ""){																								 
-							 	var EnergyIntake = MJenergy2+smallAmount;
-							 	}
-									
-					
-					var SMBRPenergy = ($('#SMBRP1').val()|| 0);
-					var SMBRPenergy2 = (parseInt(SMBRPenergy));
-					var ProtineLeft = ((prot) - (SMBRPenergy2));
-					var ProtineLeft2 = (parseInt(ProtineLeft));		
-						if (SMBRPenergy2 == 0 ){
+								
+					var SMBRPenergy2 = ($('#SMBRP1').val());
+					var ProtineLeft2 = ((HayFeedTotal) * (SMBRPenergy2));
+					var SMBRPminus =  (prot - ProtineLeft2).toFixed(1);
+					var SMBRPminus2 = (SMBRPminus);	
+						if (ProtineLeft2 == undefined || 0){
 								var  ProtineIntake = ('');
 								}
-							else if (SMBRPenergy2 == prot){
-								var  ProtineIntake = SMBRPenergy2+rightAmount;
+							else if (ProtineLeft2 == prot){
+								var  ProtineIntake = rightAmount;
 								}
-							else if (SMBRPenergy2 > prot){
-								var   ProtineIntake = SMBRPenergy2+tooMuchAmount+''+ProtineLeft2+' Protein';
+							else if (ProtineLeft2 > prot){
+								var   ProtineIntake = tooMuchAmount+''+SMBRPminus2+'g';
 								}
-							else if (SMBRPenergy2 < prot){
-								var   ProtineIntake = SMBRPenergy2+smallAmount+''+ProtineLeft2+' Protein';
+							else if (ProtineLeft2 < prot){
+								var   ProtineIntake = smallAmount+''+SMBRPminus2+'g';
 								}
-						
 					
-					var Caenergy = ($('#Ca1').val()|| 0);
-					var Caenergy2 = (parseInt(Caenergy));
-					var CalciumLeft = ((kal) - (Caenergy2));
-					var CalciumLeft2 = (parseInt(CalciumLeft));		
-						if (Caenergy2 == 0){
+					
+					var Caenergy2 = ($('#Ca1').val());
+					var CalciumLeft2 = ((HayFeedTotal) * (Caenergy2));
+					var CALCminus =  (kal - CalciumLeft2).toFixed(1);		
+					var CALCminus2 = (CALCminus);		
+						if (CalciumLeft2 == undefined){
 								 var CalcmIntake = ('');
 								}
-							 else if (Caenergy2 == kal){
-								var CalcmIntake = Caenergy2+rightAmount;
+							 else if (CalciumLeft2 == kal){
+								var CalcmIntake = rightAmount;
 								}
-							else if (Caenergy2 > kal){
-								var CalcmIntake = Caenergy2+tooMuchAmount+''+CalciumLeft2+' Kalcium';
+							else if (CalciumLeft2 > kal){
+								var CalcmIntake = tooMuchAmount+''+CALCminus2+'g';
 								}
-							else if (Caenergy2 < kal){
-								var CalcmIntake = Caenergy2+smallAmount+''+CalciumLeft2+' Kalcium';
-								}
-						
+							else if (CalciumLeft2 < kal){
+								var CalcmIntake = smallAmount+''+CALCminus2+'g';
+								}			
 					
-					var Penergy = ($('#Phos1').val()|| 0);
-					var Penergy2 = (parseInt(Penergy));
-					var FosferLeft = ((fos) - (Penergy2));
-					var FosferLeft2 = (parseInt(FosferLeft));	
-								
-							if (Penergy2 == 0){
+					var Penergy2 = ($('#Phos1').val());
+					var FosferLeft2 = ((HayFeedTotal) * (Penergy2));
+					var FOSFminus = (fos - FosferLeft2).toFixed(1);
+					var FOSFminus2 = (FOSFminus);		
+							if (FosferLeft2 == undefined){
 								 var FosIntake = ('');
 								}
-							else if (Penergy2 == fos){
-								var FosIntake = Penergy2+rightAmount;
+							else if (FosferLeft2 == fos){
+								var FosIntake = rightAmount;
 								}
-							else if (Penergy2 > fos){
-								var FosIntake =  Penergy2+tooMuchAmount+''+FosferLeft2+' Fosfers';
+							else if (FosferLeft2 > fos){
+								var FosIntake =  tooMuchAmount+''+FOSFminus2+'g';
 								}
-							else if (Penergy2 < fos){
-								var FosIntake =  Penergy2+smallAmount+''+FosferLeft2+' Fosfers';
+							else if (FosferLeft2 < fos){
+								var FosIntake =  smallAmount+''+FOSFminus2+'g';
 								}
-							
 					
-					
-					var Mgenergy = ($('#MG1').val()|| 0);
-					var Mgenergy2 =(parseInt(Mgenergy));
-					var MagLeft = ((mag) - (Mgenergy2));
-					var MagLeft2 = (parseInt(MagLeft));		
-								
-							if (Mgenergy2 == 0){
+					var Mgenergy2 = ($('#MG1').val());
+					var MagLeft2 = ((HayFeedTotal) * (Mgenergy2));
+					var MAGminus = (mag - MagLeft2).toFixed(1);
+					var MAGminus2 = (MAGminus);		
+							if (MagLeft2 == undefined){
 								var MagIntake = ('');
 								}
-							else if (Mgenergy2 == mag){
-								var MagIntake = Mgenergy2+rightAmount;
+							else if (MagLeft2 == mag){
+								var MagIntake = rightAmount;
 								}
-							else if (Mgenergy2 > mag){
-								var MagIntake = Mgenergy2+tooMuchAmount+''+MagLeft2+' Magnesium';
+							else if (MagLeft2 > mag){
+								var MagIntake = tooMuchAmount+''+ MAGminus2+' g';
 								}
-							else if (Mgenergy2 < mag){
-								var MagIntake = Mgenergy2+smallAmount+''+MagLeft2+' Magnesium';
+							else if (MagLeft2 < mag){
+								var MagIntake = smallAmount+''+ MAGminus2+' g';
 								}
-							
 					
-					var SEenergy = ($('#SE1').val()|| 0);
-					var SEenergy2 = parseInt(SEenergy);	
-					var SELeft = ((SE) - (SEenergy2));
-					var SELeft2 = (parseInt(SELeft));	
-							
-							if (SEenergy2 == 0){
+					var SEenergy2 =($('#SE1').val());
+					var SELeft2 =  ((HayFeedTotal) * (SEenergy2));
+					var SEminus = (SE - SELeft2).toFixed(1);	
+					var SEminus2 = (SEminus);
+						 if (SELeft2 == undefined){
 								var SEIntake = ('');
 								}
-							else if (SEenergy2 == SE){
-								var SEIntake =  SEenergy2+rightAmount;
+							else if (SELeft2 == SE){
+								var SEIntake =  rightAmount;
 								}
-							else if (SEenergy2 > SE){
-								var SEIntake = SEenergy2+tooMuchAmount+''+SELeft2+' Seleniam';
+							else if (SELeft2 > SE){
+								var SEIntake = tooMuchAmount+''+SEminus2+'g';
 								}
-							else if (SEenergy2 < SE){
-								var SEIntake = SEenergy2+smallAmount+''+SELeft2+' Seleniam';
+							else if (SELeft2 < SE){
+								var SEIntake = smallAmount+''+SEminus2+'g';
 								}
-						 
 					
-					var TSenergy =($('#TS1').val() || 0);
-					var TSenergy2 = parseInt(TSenergy);	
-					var TSLeft = ((TS) - (TSenergy2));
-					var TSLeft2 = (parseInt(TSLeft));		
-							
-							if (TSenergy2 == 0){
+					var TSenergy2 =($('#TS1').val());
+					var TSLeft2 = ((HayFeedTotal) * (TSenergy2));
+					var TSminus = (TS - TSLeft2).toFixed(1);	
+					var TSminus2 = (TSminus);	
+							if (TSLeft2 == undefined){
 								var TSIntake = ('');
 								}
-							else if (TSenergy2 == TS){
-								var TSIntake = TSenergy2+rightAmount ;
+							else if (TSLeft2 == TS){
+								var TSIntake = rightAmount;
 								}
-							else if (TSenergy2 > TS){
-								var TSIntake = TSenergy2+tooMuchAmount+''+TSLeft2+' TS';
+							else if (TSLeft2 > TS){
+								var TSIntake = tooMuchAmount+''+TSminus2+' g';
 								}
-							else if (TSenergy2 < TS){
-								var TSIntake = TSenergy2+smallAmount+''+TSLeft2+' TS';	
+							else if (TSLeft2 < TS){
+								var TSIntake = smallAmount+''+TSminus2+' g';	
 								}
-						
-					var HayType = $('#hayInput').val();	
-						
-						
-						if ((MJenergy == 0)){
-							$("#Result11").hide();
+					
+					
+					
+					
+					
+					var MJandSMRP = (EnergyLeft / ProtineLeft2).toFixed(1);		
+					
+					var CaAndP = (FosferLeft2 / CalciumLeft2).toFixed(1);
+					
+					
+					if ((HayFeedWeight == 0)){
+							$("#Result11").html("<h3 id='redTxt'> Snäll och skriv i ditt hös vikt'</h3>");
+								
 						}else{
 							$("#Result11").show();
 						  	$("#Result11").html(
   									"<h3>Here are your chemical input result 1:</h3> " +
-									"<h4>"+'Din hö du har:' + HayType +"</h4>"+
-							  		'MJ :' + EnergyIntake +'<br/>'+'<br/>'+
-							  		'Protein :'+  ProtineIntake +'<br/>'+'<br/>'+
-							 		'Kalcium :'+ CalcmIntake +'<br/>'+'<br/>'+
-									'Fosfers :' + FosIntake +'<br/>'+'<br/>'+	 
-							 		'Magnien:' +  MagIntake +'<br/>'+'<br/>'+
-							 		'Seleniam :' + SEIntake +'<br/>'+'<br/>'+
-							 		'TS :' + TSIntake
-							 		);
+									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
+							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
+							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
+							  		'Energi (MJ) :' +  EnergyLeft + EnergyIntake+'<br/>'+'<br/>'+
+							  		'Smältbart protein :'+  ProtineLeft2+' g' + ProtineIntake +'<br/>'+'<br/>'+
+							 		'Kalcium (g) :'+ CalciumLeft2+' g' + CalcmIntake+'<br/>'+'<br/>'+
+									'Fosfor (g) :' + FosferLeft2+' g' + FosIntake +'<br/>'+'<br/>'+	 
+							 		'Magnesium (g):' +  MagLeft2+' g' + MagIntake+'<br/>'+'<br/>'+
+							 		'Seleniam (g) :' +  SELeft2 +' g'+ SEIntake+'<br/>'+'<br/>'+
+							 		'TS :' + TSLeft2 + TSIntake+'<br/>'+'<br/>'+
+							 		"<h3>Din MJ/SMBRP and CA/P du har</h3>"+
+							 		'MJ/SMBRP :' + MJandSMRP+'<br/>'+
+							 		'CA/P :' + CaAndP +'<br/>'
+							 	);
   							
   							}
 						var days = parseInt($('#horseWorkout').val() || 0);						// It works out the days Per Week math formulas//
@@ -378,57 +381,57 @@ $(document).ready(function(){
 									);		
   								}
 		
+											
+					// An array with the different kinds of food for the horses \\
+						// Name, TS(%), MJ, smb.rp(g), Ca(g), P(g), Mg(g) \\
+							// Above is the order I stored them in \\
+					// Ex. proteteinFoder[0][1] will bring out the MJ of Bryggerijäst \\			 
+					var proteinFoder = new Array ();
 						
-// An array with the different kinds of food for the horses \\
-	// Name, TS(%), MJ, smb.rp(g), Ca(g), P(g), Mg(g) \\
-		// Above is the order I stored them in \\
-// Ex. proteteinFoder[0][1] will bring out the MJ of Bryggerijäst \\			 
-var proteinFoder = new Array ();
-	
-	proteinFoder[0] = new Array ( "Bryggerijäst", 90 , 12.2 , 394 , 2 , 14 , 2.3 );
-	proteinFoder[1] = new Array ( "Linfrö", 93 , 15.6 , 180 , 2.6 , 5.3 , 3.6 );
-	proteinFoder[2] = new Array ( "Potatisprotein", 90 , 13.1 , 685 , 1 , 4 ,1 );
-	proteinFoder[3] = new Array ( "Raps (frö)", 93 , 16.5 , 154 , 4 , 8 , 2.2 );
-	proteinFoder[4] = new Array ( "Sojamjöl", 87 , 11.7 , 390 , 2.8 , 6.3 , 2.3 );
-	proteinFoder[5] = new Array ( "Sojaböna", 87 , 12.1 , 299 , 2.3 , 5.5 , 2.5 );
-	proteinFoder[6] = new Array ( "Solros", 92 , 8.6 , 247 , 3.2 , 9.8 , 5.2 );
-	proteinFoder[7] = new Array ( "Ärter", 87 , 11.1 , 176 , 0.8 , 3.7 , 1.1 );
-
-var foodCheckBox = '';
-
-var horseFoodChecked = $('input[name=food]:checked'); 	// check checkboxes with name="food" if checked
-	
-if (horseFoodChecked.val() == undefined){ 				// if nothing is checked, then return nothing.
-	foodCheckBox = ('');
-}
-else{
-	$.each(horseFoodChecked, function(){ 
-	foodCheckBox = (
-		proteinFoder[horseFoodChecked.val()][0] + " har " + 
-		proteinFoder[horseFoodChecked.val()][1] + "% TS, " + 
-		proteinFoder[horseFoodChecked.val()][2] + " MJ, " + 
-		proteinFoder[horseFoodChecked.val()][3] + " smb.rp, " + 
-		proteinFoder[horseFoodChecked.val()][4] + " Ca, " + 
-		proteinFoder[horseFoodChecked.val()][5] + " P, " + 
-		proteinFoder[horseFoodChecked.val()][6] + " Mg <br>" 
-		)
-	});
-}
-				
-				var FoodCheckbox = ($('.checkbox').val()|| 0);	
-					if (FoodCheckbox == 0){
-							$("#ResultFoodArry").hide();
-						}else{
-							$("#ResultFoodArry").show();
-							$("#ResultFoodArry").html('Horse foods you have selected :'+ '<br/>' + foodCheckBox);
-							
-							
-						}
-		});
-				
-});
- 
- 
+						proteinFoder[0] = new Array ( "Bryggerijäst", 90 , 12.2 , 394 , 2 , 14 , 2.3 );
+						proteinFoder[1] = new Array ( "Linfrö", 93 , 15.6 , 180 , 2.6 , 5.3 , 3.6 );
+						proteinFoder[2] = new Array ( "Potatisprotein", 90 , 13.1 , 685 , 1 , 4 ,1 );
+						proteinFoder[3] = new Array ( "Raps (frö)", 93 , 16.5 , 154 , 4 , 8 , 2.2 );
+						proteinFoder[4] = new Array ( "Sojamjöl", 87 , 11.7 , 390 , 2.8 , 6.3 , 2.3 );
+						proteinFoder[5] = new Array ( "Sojaböna", 87 , 12.1 , 299 , 2.3 , 5.5 , 2.5 );
+						proteinFoder[6] = new Array ( "Solros", 92 , 8.6 , 247 , 3.2 , 9.8 , 5.2 );
+						proteinFoder[7] = new Array ( "Ärter", 87 , 11.1 , 176 , 0.8 , 3.7 , 1.1 );
+					
+					var foodCheckBox = '';
+					
+					var horseFoodChecked = $('input[name=food]:checked'); 	// check checkboxes with name="food" if checked
+						
+					if (horseFoodChecked.val() == undefined){ 				// if nothing is checked, then return nothing.
+						foodCheckBox = ('');
+					}
+					else{
+						$.each(horseFoodChecked, function(){ 
+						foodCheckBox = (
+							proteinFoder[horseFoodChecked.val()][0] + " har " + 
+							proteinFoder[horseFoodChecked.val()][1] + "% TS, " + 
+							proteinFoder[horseFoodChecked.val()][2] + " MJ, " + 
+							proteinFoder[horseFoodChecked.val()][3] + " smb.rp, " + 
+							proteinFoder[horseFoodChecked.val()][4] + " Ca, " + 
+							proteinFoder[horseFoodChecked.val()][5] + " P, " + 
+							proteinFoder[horseFoodChecked.val()][6] + " Mg <br>" 
+							)
+						});
+					}
+									
+									var FoodCheckbox = $('input[name=food]:checked' || 0);	
+										if (FoodCheckbox == 0){
+												$("#ResultFoodArry").hide();
+											}else{
+												$("ResultFoodArry").show();
+												$("ResultFoodArry").html('Horse foods you have selected :'+ '<br/>' + foodCheckBox);
+												
+												
+											}
+							});
+									
+					});
+					 
+					 
 
 
 

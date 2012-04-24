@@ -207,78 +207,7 @@ body		{
 			
 
 
-#Row2		{
-				display:none;
-			}
 
-#Row3		{
-				display:none;
-			}
-
-#Row4		{
-				display:none;
-			}
-
-#Row5		{
-				display:none;
-			}
-
-#Result11	{
-
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-}
-#Result22	{
-			display:none;
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-}
-#Result33	{
-			display:none;
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-}
-#Result44	{
-			display:none;
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-}
-#Result55	{
-			display:none;
-			background-color: white;
-			width: 400px;
-			float:right;
-			padding:10px;	
-			border: black;
-			border-style:solid;
-            border-width:1px;	 
-			margin-top: 20px;
-
-}
 
 
 
@@ -363,7 +292,7 @@ body		{
 
 #ResultHead	{
 			background-color: white;
-			width:400px;
+			width:500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -374,7 +303,7 @@ body		{
 
 #ResultText	{
 			background-color: white;
-			width: 400px;
+			width: 500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -387,7 +316,7 @@ body		{
 
 #DraktigResult{
 			background-color: white;
-			width: 400px;
+			width: 500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -398,7 +327,7 @@ body		{
 
 #ResultText2 {
 			background-color: white;
-			width: 400px;
+			width: 500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -409,7 +338,7 @@ body		{
 
 #ResultTravGalopp {
 			background-color: white;
-			width: 400px;
+			width: 500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -420,7 +349,7 @@ body		{
 
 #ResultFoodArry {
 			background-color: white;
-			width: 400px;
+			width: 500px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -448,6 +377,79 @@ body		{
 			position: absolute;
 			
 			}
+
+#Row2		{
+				display:none;
+			}
+
+#Row3		{
+				display:none;
+			}
+
+#Row4		{
+				display:none;
+			}
+
+#Row5		{
+				display:none;
+			}
+
+#Result11	{
+
+			background-color: white;
+			width: 500px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result22	{
+			display:none;
+			background-color: white;
+			width: 500px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result33	{
+			display:none;
+			background-color: white;
+			width: 500px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result44	{
+			display:none;
+			background-color: white;
+			width: 500px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+#Result55	{
+			display:none;
+			background-color: white;
+			width: 500px;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+
+}
 
 #redTxt		{
 			color:red; 
