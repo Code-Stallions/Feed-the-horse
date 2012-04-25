@@ -9,21 +9,21 @@
 </head>
 		
 <body>
-		<img id="BgHorsesPicRight" src="IMAGES/horses.png" style="width:680px; height:450px" alt=""  />	 
+		
     			
 										
 										
 	<div class="body2">		
-										    
+				<img id="BgHorsesPicRight" src="IMAGES/horses.png" style="width:680px; height:450px" alt=""  />	 <!--This is Background image of the horse's-->						    
 				<div class="header">	
      				<div class="nav-wrap">
      				<ul class="group" id="menuBar-one">
-            				<li><a rel="#fe4902" href="index.html">Home</a></li>
-          					<li><a rel="#900" href="horseWeight.html">Reviews</a></li>
-            				<li class="current_page_item_two"><a rel="#D40229" href="horseScale.html">The Show</a></li>
+            				<li><a rel="#fe4902" href="index.html">Hem</a></li>
+          					<li><a rel="#900" href="horseWeight.html">Häst Vikt</a></li>
+            				<li class="current_page_item_two"><a rel="#D40229" href="horseScale.html">Häst Skala</a></li>
             				<li><a rel="#98CEAA" href="Videos.html">Videos</a></li>
-           					<li><a rel="#1B9B93" href="Photos.html">Photos</a></li>
-            				<li><a rel="#8DC91E" href="FoodShop.html">Food Shop</a></li>
+           					<li><a rel="#1B9B93" href="Photos.html">Bilder</a></li>
+            				<li><a rel="#8DC91E" href="FoodShop.html">Häst mat</a></li>
        					 </ul>
        				 </div>		   					
    				</div>
@@ -40,10 +40,12 @@
 							<div class="horseMesurement"></div>
 							<div id="LansMark">		
 								 <h4>Resultatet av mätningen av Lansmärkeomgång i cm.</h4>
-    							   	<input type="text" name="horseLansmarkeomgang" value="" id="horseLansmarkeomgang" class="numbersOnly"/>
-    							  <h4>Resultatet av mätningen av Mankhöjd i cm.</h4>
-    							   	<input type="text" name="horseMankhojd" value="" id="horseMankhojd" class="numbersOnly"/>
-    							   	<input type="button" value="Calculate" class="submit1" name="submit"/> 
+    							   	<input type="text" name="horseLansmarkeomgang" value="" id="horseLansmarkeomgang" class="numbersOnly"/><span id="error1"></span>	  
+ 								<h4>Resultatet av mätningen av Mankhöjd i cm.</h4>
+    							   	<input type="text" name="horseMankhojd" value="" id="horseMankhojd" class="numbersOnly"/><span id="error2"></span>
+ 									<br/><br/>
+ 									<input type="button" value="Calculate" class="submit1" name="submit" style="margin-left:35px;"/> 
+ 							
  							<div id="theanswer"> </div>
  							</div>
     							 		
@@ -57,10 +59,12 @@
 								<div class="horseMesurement2"></div>
     							   	<div id="Brostom">	
  										<h4>Resultatet av mätningen av Bröstomfång i cm.</h4>
-    							    	 <input type="text" name="horseBrostomfang" id="horseBrostomfang" value="" class="numbersOnly"/>
-    							    	 <h4>Resultatet av mätningen av Längd i cm.</h4>
-    							    	 <input type="text" name="horseLenght" id="horseLenght" value=""  class="numbersOnly"/>
-										 <input type="button" value="Calculate" class="submit2" name="submit" />
+    							    	 <input type="text" name="horseBrostomfang" id="horseBrostomfang" value="" class="numbersOnly"/><span id="error3"></span> 
+ 										
+ 										<h4>Resultatet av mätningen av Längd i cm.</h4>
+    							    	 <input type="text" name="horseLenght" id="horseLenght" value=""  class="numbersOnly"/><span id="error4"></span>
+										<br/><br/>
+										 <input type="button" value="Calculate" class="submit2" name="submit" style="margin-left:35px;"/>
 										 <div id="theanswer2"> </div>
 									</div>	
 										 				
@@ -78,35 +82,55 @@
 										
 										
 	
-										
-										
-										
-										
+									
 									<script type="text/javascript" src="JavaScript/jquery.js"></script>
 									<script type="text/javascript" id="display" src="JavaScript/pony2.js"></script>	
+									<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 									<script type="text/javascript" id="displayWeight">
 										    
-										    
-										    $(document).ready(function(){	
+										   var errorText = (" Var snäll och skriv in ditt mätning av hästens");
+										   $(document).ready(function(){	
 										    	 $(".submit1").click(function(){
-   										    		var result1 = parseInt($('#horseLansmarkeomgang').val());
-										    		var result2 =parseInt($('#horseMankhojd').val());							
+   										    		var result1 = parseInt($('#horseLansmarkeomgang').val() || 0);
+										    		var result2 =parseInt($('#horseMankhojd').val() || 0);							
 										    		var resultLansmark = 4.3 * result1;
 										    		var resultMankhojd = 3.0 * result2;
 										    		var resultALL = (resultLansmark + resultMankhojd)-785;
 										    		var measureHorse1 = Math.round(resultALL);
-										        	$("#theanswer").html(measureHorse1 + " Kg");
-  										    		
+										        	if (result1 == 0){
+										       			$("#error1").html(errorText);
+										       			$("#error1").show(errorText);
+										       		}else{
+										       			$("#error1").hide(errorText);
+										       			}
+										       		if	(result2 == 0){
+										       			$("#error2").html(errorText);
+										       			$("#error2").show(errorText); 	
+										       		}else{	
+										       			$("#error2").hide(errorText);
+										       			$("#theanswer").html(measureHorse1 + " Kg");
+  										    		}
   										    	});
   										
   										    	$(".submit2").click(function(){
-   										    		var result3 = parseInt($('#horseBrostomfang').val());
-										    		var result4 = parseInt($('#horseLenght').val());							
+   										    		var result3 = parseInt($('#horseBrostomfang').val() || 0);
+										    		var result4 = parseInt($('#horseLenght').val() || 0);							
 										    		var result33 = result3 * result3;
 										    		var result5 = (result33 * result4) / 8900;
 										    		var measureHorse2 = Math.round(result5);
-										       		$("#theanswer2").html(measureHorse2 + " Kg");
-  										    	
+										       		if (result3 == 0){
+										       			$("#error3").html(errorText);
+										       			$("#error3").show(errorText);
+										       		}else{
+										       			$("#error3").hide(errorText);
+										       			}
+										       		if (result4 == 0){
+										       			$("#error4").html(errorText);
+										       			$("#error4").show(errorText);
+										       		}else{	
+										       			$("#error4").hide(errorText);
+										       			$("#theanswer2").html(measureHorse2 + " Kg");
+  										    		}	
   										    	});
 										
 										    			jQuery('.numbersOnly').keyup(function () { 

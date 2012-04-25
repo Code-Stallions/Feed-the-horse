@@ -6,8 +6,8 @@ body		{
 			background-size:400px;				
 			margin: 0px auto;
 			z-index:-1;	
-			font-size: small;
-			font-family: "Al Bayan";
+			font-size:small;
+			font-family:"Verdana";
 			float: left;
 			
 			}
@@ -16,7 +16,7 @@ body		{
 .body2		{
 			margin: 0 auto;
 			width: 620px;
-		
+			height: auto;
 			}
 			
 .header		{
@@ -30,10 +30,7 @@ body		{
             padding: 50px;
             margin-left:-400px;
             border:solid 1px;
-			-webkit-box-shadow: 1px 6px 2px -6px black;
-			-moz-box-shadow: 1px 6px 2px -6px black;
-			box-shadow: 1px 6px 2px -6px black;
-			
+			border-color: white;
 			}
 
 #BgHorsesPicRight	{	
@@ -41,7 +38,7 @@ body		{
 			float:left;
 			padding:30px;
 			margin-top:680px;	
-			margin-left:600px;
+			margin-left:190px;
 			position: absolute;
 			}
 
@@ -57,7 +54,7 @@ body		{
 			padding:50px;	
 			border: 1px solid;
 			border-style: solid;
-			border-color: black; 
+			border-color:#838B8B; 
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
@@ -67,10 +64,10 @@ body		{
 			
 			}
 .horseSelect{
-												/* the horse type menu bar css */
+												/* the horse type form input, stallian , pregnant or young horse radio buttons css */
 			background-color:#E0E0E0;
 			float: left;
-			width: 400px;     
+			width: 450px;     
             height: 200px; 
             padding: 20px;
             border-style:solid;
@@ -79,29 +76,20 @@ body		{
 	  		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 			margin-top: 0px;
-}
+			margin-left:-20px;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		
+		}
 
 
-.horsetype	{
-	 														      /* the horse type menu bar css */
-	 		background-color:#E0E0E0;
-			float: left;
-			width: 400px;     
-            height: 90px; 
-            padding: 20px;
-            border-style:solid;
-            border-width:1px;
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	  		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 20px;
-			}
 			
 .weighttype{
 													                /* the weight of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float: left;
-			width: 400px;     
+			width: 450px;     
             height: 250px; 
             padding: 20px;
             border-style:solid;
@@ -110,7 +98,30 @@ body		{
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 			margin-top: 20px;
-			
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
+			}
+
+
+.horsetype	{
+	 														      /* the horse type menu bar css */
+	 		background-color:#E0E0E0;
+			float: left;
+			width: 450px;     
+            height: 90px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	  		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin-top: 20px;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
 			}
 
 .linkHolder{
@@ -124,7 +135,7 @@ body		{
             border-style:solid;
             border-width:1px;
 			margin-top: 20px;
-			
+					
 			
 			}
 .nextButton{
@@ -157,11 +168,31 @@ body		{
 
 
 
+.HorseFatSkinny {
+			
+			background-color:#E0E0E0;			/* CSS for skinny or fat horse part*/
+			float: left;
+			width: 450px;     
+            height: 90px; 
+            padding: 20px;
+            border-style:solid;
+            border-width:1px;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	  		-moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+			margin-top: 20px;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
+			}
+
+
 .hayType	{										
 															 /* the weight of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float: left;
-			width: 400px;     
+			width: 450px;     
             height: auto; 
             padding: 20px;
             border-style:solid;
@@ -171,28 +202,21 @@ body		{
 	        box-shadow: 0 8px 6px -6px black;
 			margin-top: 20px;
 			text-align:inherit;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
+			
+			
 			}
 
-.HorseFatSkinny {
-			
-			background-color:#E0E0E0;
-			float: left;
-			width: 400px;     
-            height: 90px; 
-            padding: 20px;
-            border-style:solid;
-            border-width:1px;
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	  		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 20px;
-			}
+
 
 .MjSmbrp	{												 /* the weight of the horse menu bar css*/
 			
 			background-color:#E0E0E0;
 			float: left;
-			width: 400px;     
+			width: 450px;     
             height: 220px; 
             padding: 20px;
             border-style:solid;
@@ -202,7 +226,10 @@ body		{
 	        box-shadow: 0 8px 6px -6px black;
 			margin-top: 20px;
 			text-align:inherit;
-			
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
 			}
 			
 
@@ -216,7 +243,7 @@ body		{
 			background-color:#E0E0E0;
 			float:left;
 			margin-top: 20px;
-			width: 400px;     
+			width: 450px;     
             height: 300px; 
             padding: 20px;
             border-style:solid;
@@ -224,7 +251,10 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			
+			 -webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
 			}
 			
 .ProteinType{
@@ -232,7 +262,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			margin-top: 20px;
-			width: 400px;     
+			width: 450px;     
             height:auto; 
             padding:20px;
             border-style:solid;
@@ -240,14 +270,17 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-	        
+	        -webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
 			}
 .DiverseType{
 			
 			background-color:#E0E0E0;
 			float: left;
 			margin-top: 20px;
-			width: 400px;     
+			width: 450px;     
             height: auto; 
             padding:20px;
             border-style:solid;
@@ -255,7 +288,10 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			
+			 -webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			margin-left:-20px;
 			}
 .submit {																/* submit button, and has on mouse over css */
 		     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -460,35 +496,16 @@ body		{
 			}
 .footer{
 														/*W3C logo at footer index page */
-			width: 65px;     
-            height: auto;
+			
             text-align: center;
 			float:left;
 			margin-top:2300px;
+			position: relative;
 		}	
 
 
 
-/*************************************************** BELOW IS CSS FOR A index.HTML result display PAGE ********************************************************/
-
-.display	{											/*css for the index out put or result displayer */
-			
-			background-image:url('../IMAGES/pony-patter.png');
-			width: 540px;
-			float:left;
-			height:auto;
-			padding:60px;	
-			border: 1px solid;
-			border-style: solid;
-			border-color: black; 
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	   		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 100px;
-			margin-left: 400px;
-			margin-bottom: 100px;
-			
-			}			
+		
 			
 /*************************************************** BELOW IS CSS FOR A horseScale.HTML PAGE ********************************************************/
 
@@ -503,28 +520,15 @@ body		{
 			padding:50px;	
 			border: 1px solid;
 			border-style: solid;
-			border-color: black; 
+			border-color: #838B8B; 
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 			margin-top: 50px;
+			margin-left:-49px;
 			position: absolute;
 			} 	
-			
-#blackBox{								/*image container for horseWeight.html*/
-			background-color:white;
-			width:500px;
-			padding:20px;
-			background-size:350px;
-			float: left;
-			border: solid;
-			border-width: 1px;
-			-webkit-box-shadow: 0 4px 6px -6px black;
-	   		-moz-box-shadow: 0 4px 6px -6px black;
-	        box-shadow: 0 4px 6px -6px black;
-			margin:0px;
-			
-			}		
+	
 			
 .horseMesurement{
 			
@@ -569,7 +573,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 460px;     
-            height: 220px; 
+            height: auto; 
             padding:20px;	
             border-style:solid;
             border-width:1px;
@@ -586,7 +590,6 @@ body		{
 			background-color:white; 
 			color:red;
 			font-size: 20px;
-			font-family: "Al Bayan";
 			width: 400px;     
             height:20px; 
             padding:10px;
@@ -602,7 +605,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 460px;     
-            height: 220px; 
+            height: auto; 
             padding:20px;	
             border-style:solid;
             border-width:1px;
@@ -622,7 +625,6 @@ body		{
 			background-color:white; 
 			color:red;
 			font-size: 20px;
-			font-family: "Al Bayan";
 			width: 400px;     
             height:20px; 
             padding:10px;
@@ -632,6 +634,23 @@ body		{
 			margin:20px;
 			
 			}
+
+#error1	{
+			color:red;
+		}
+
+#error2	{
+			color:red;
+		}
+
+#error3	{
+			color:red;
+		}
+
+#error4	{
+			color:red;
+		}
+
 
 .footer2{
 								/*W3C logo at footer in horseScale page */
@@ -645,74 +664,59 @@ body		{
 
 
 .footer3	{
-			width: 65px;     /*W3C logo at footer in horseWeight.html page */
+			width: 65px;    			 /*W3C logo at footer in horseWeight.html page */
             text-align: center;
 			margin-top:1900px;
 			
 			}
 .footer4	{
-			width: 0px;     /*W3C logo at footer in VIDEO.html page */
+			width: 0px;     			/*W3C logo at footer in VIDEO.html page */
             text-align: center;
 			margin-top:1600px;
 				
 			}			
+
 #menuBar-one { 
 			margin: 1px auto; 
-			list-style: none; 
 			position: relative; 
-			width: 610px; 
-			height: 40px;	
+			background-color: #838B8B;
+			width: 590px; 
+			height:45px;	
 			border:solid;
-			border-width: 1px; 
-			border-color: gray;
-			background-color: black;
-			-webkit-box-shadow: 1px 6px 2px -6px black;
-			-moz-box-shadow: 1px 6px 2px -6px black;
-			box-shadow: 1px 6px 2px -6px black;
-			margin-top: 290px;		
-			margin-right:320px;
-			-webkit-border-radius: 2px;
-			-moz-border-radius: 2px;
-			border-radius: 2px;
+			border-width:0px; 
+			
+			margin-top: 305px;		
+			margin-right:390px;
+				
 			}			
 
-#menuBar-one li { 
+#menuBar-one li { 						/*red menu box's  */
 			display: inline-block; 
+			height:45px;
 			}
 
-#menuBar-one li a { 
+#menuBar-one li a { 					/* menu box's font, style, size and postioning*/
 			position: relative; 
 			z-index: 200; 
-			color: white; 
-			font-size: 14px; 
+			color: black; 
+			font-size: 13px; 
 			display: block; 
 			float: left; 
-			padding: 10px 20px 5px 18px;
+			padding: 15px;
 			text-decoration: none;
 			text-transform: uppercase; 
 			}
-#menuBar-one li a:hover { 
-			color:white; 
-			}
-
-#menuBar-one #magic-line-two { 
-		    position: absolute; 
-		    top: 0; 
-		    left: 0; 
-		    padding: px;
-		    width: 350px; 
-		    background: #900; 
-		    z-index: 100; 
-			}
-
-.current_page_item_two a { 
-			color:white !important; 
-			}
+.current_page_item_two{
+			background-color:white; 
+					
+					}
 
 .ie6 #menuBar-one li, .ie7 #menuBar-one li {
 			display: inline;
-			}
+					}
 			
+
+
 #Youtubetable {
 			background-image:url('../IMAGES/pony-patter.png');
 			width: 950px;
@@ -725,7 +729,7 @@ body		{
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-			margin:-200px;
+			margin:-250px;
 			margin-top: 50px;
 			position: absolute;
 
