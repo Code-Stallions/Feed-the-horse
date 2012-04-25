@@ -434,7 +434,7 @@
 					var CaAndP2 = (FosferLeft2 / CalciumLeft2).toFixed(1);
 					
 					
-						if ((HayFeedWeight == 0)){									//  2nd USER result output  //
+						if ((MJ_Input2 == 0)){									//  2nd USER result output  //
 							$("#Result22").hide();
 								
 						}else{
@@ -576,7 +576,7 @@
 					var CaAndP3 = (FosferLeft3 / CalciumLeft3).toFixed(1);
 					
 					
-						if ((HayFeedWeight == 0)){
+						if ((MJ_Input3 == 0)){
 							$("#Result33").hide();
 								
 						}else{
@@ -717,7 +717,7 @@
 					var MJandSMRP4 = (EnergyLeft4 / ProtineLeft4).toFixed(1);		
 					var CaAndP4 = (FosferLeft4 / CalciumLeft4).toFixed(1);
 					
-					if ((HayFeedWeight == 0)){
+					if ((MJ_Input4 == 0)){
 							$("#Result44").hide();
 								
 						}else{
@@ -859,7 +859,7 @@
 					var MJandSMRP5 = (EnergyLeft5 / ProtineLeft5).toFixed(1);		
 					var CaAndP5 = (FosferLeft5 / CalciumLeft5).toFixed(1);
 					
-					if ((HayFeedWeight == 0)){
+					if ((MJ_Input5 == 0)){
 							$("#Result55").hide();
 								
 						}else{
