@@ -39,25 +39,36 @@
 		 						    			<input type="radio" id=" Hane" name="horseType" value=" Hane"/>&nbsp;&nbsp;&nbsp;Hane 
 		 						    			<input type="text" id=" HaneMonths" name=" HaneMonths" value="" class="numbersOnly"/>Månad <br/><br/>
 		 						    			<input type="radio" id="Hingst"  name="horseType" value="Hingst"/>&nbsp;&nbsp;&nbsp;Hingst 
+		 						    		
+		 						    		<img id="icon1" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
+		 						    		
 		 						    		</div>
 		 						    		
-		 						    		<div class="weighttype">        				<!--This is div holds different type of weights -->
+		 						    	<div class="weighttype">        				<!--This is div holds different type of weights -->
 		 						    		<h4>Ange din hästs ideala vikt.</h4>                      
 		 						    			<input type="text" name="weight" id="weight2" class="numbersOnly" value=""/>Kg<br/><br/><!-- input for accurate weight -->
-		 						    			<div class="linkHolder">	
-		 						    					<a href="horseScale.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
+		 						    			<div class="linkHolder">
+		 						    				
+		 						    				<a href="horseScale.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
 		 						    					Om du inte vet din häst vikt
 		 						    					<br/><br/>	
 		 						    					<a href="horseWeight.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
 		 						    					Om du inte vet hullbedömning av hästar
 		 						    			</div>
+		 						    			
+		 						    			<img id="icon2" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						    		</div>
+		 						    		
+		 						    		
 		 						    		
 		 						    		<div class="horsetype" id="horsetype" >			<!--This is div holds different type of horses -->
 		 						    			<h4>Välj den utfodring typ.</h4>
 		 						    			<input type="radio" id="latt"   name="horse" value="Latt"/>    Lättfödd &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="normal" name="horse" value="Normal"/>  Normalfödd &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="svart"  name="horse" value="Svart"/>    Svårfödd 
+		 						    			
+		 						    			<img id="icon3" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
+		 						    		
 		 						    		</div>
 		 						       								
 		 						    		<div class="HorseFatSkinny" id="FatSkinny" > <!--This is div holds different type of horses weight-->
@@ -65,6 +76,8 @@
 		 						    			<input type="radio" id="Small"   name="horsefiger" value="Smal"/>    Smal &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="Normal" name="horsefiger" value="Normal"/>  Normal &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="Tjok"  name="horsefiger" value="Tjock"/>    Tjock 
+		 						    			
+		 						    			<img id="icon4" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						    		</div>
 		 						    		
 		 						    		<div class="hayType">
@@ -146,6 +159,8 @@
 		 						    					</tr>
 		 						    				</tbody>
 		 						    			</table>
+		 						    		
+		 						    			<img id="icon5" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />	
 		 						    		</div>
 		 						    	
 		 						    		<div class="workout">
@@ -157,6 +172,8 @@
 		 						    			
 		 						    			<h4>Hur många minuter tränar du din häst i trav/galopp?</h4>
 		 						    			<input type="text" id="horseWorkoutTrav" name="horseWorkoutTrav" value="" class="numbersOnly"/>
+		 						    		<img id="icon6" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
+		 						    		
 		 						    		</div>
 		 						 					
 		 						    		
@@ -170,6 +187,8 @@
 		 						    	    	<input type="checkbox" class="checkbox" id= "Sojabona"      name="food" value="5"/> 	Sojaböna<br/>
 		 						    	    	<input type="checkbox" class="checkbox" id= "SolrosExpellerEj" name="food" value="6"/>  Solros<br/>
 		 						    			<input type="checkbox" class="checkbox" id= "Arter"         name="food" value="7"/> Ärter<br/>
+		 						    		
+		 						    				<img id="icon7" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						    		</div>	  	
 		 						 					
 		 						 			<div class="DiverseType" id="DiverseFoder">
@@ -181,6 +200,8 @@
 		 						    			<input type="checkbox" class="checkbox" id="SockerbetaOme" 	name="food" value="4"/> Sockerbeta, omelasserad<br/>
 		 						    			<input type="checkbox" class="checkbox" id="SockerbetaBet" 	name="food" value="5"/> Sockerbeta,betmelass <br/>
 		 						    			<input type="checkbox" class="checkbox" id="Vegetabilisk"	name="food" value="6"/>Vegetabiliskt fett (oija)<br/>	
+		 						 	 		
+		 						 	 				<img id="icon8" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						 	 		</div>	
 		 						    		
 		 						    		<input type="button" value ="Calculate" class="submit" name="submit" id="calcu"/>
@@ -216,6 +237,39 @@
 				
 					
 				</div>		
+				
+				<div id="info1">
+		 			Välj den typ av häst du har, kommer resultatet beror på vilken typ du valt.om du har valt ung häst så skriv ålder av hästen i månader.
+		 		</div>		
+				
+				<div id="info2">
+		 			Ange dina hästar i kg och endast i användning siffror och inga bokstäver,Om du inte är säker eller om du inte vet, klicka på länken.
+		 		</div>	
+				
+				<div id="info3">
+		 			Ange typ av arbete din häst gör det, om din häst inte fungerar och välj Lättfödd.
+		 		</div>	
+				<div id="info4">
+		 			Välja vad tillståndet din häst är in på just nu.
+		 		</div>	
+				
+				
+				<div id="info5">
+		 			Ange mängden hö i kg och kemisk nedbrytning du fick ta emot från labbet och det kommer att 
+		 			fungera ut energi som för hästen, se till att du anger vikten av hästen på toppen av sidan.
+		 		</div>	
+						
+				<div id="info6">
+		 			Ange hur mycket utbildning eller arbete (om någon) i minuter och det kommer att fungera den extra energi som behövs för din häst
+		 		</div>			
+				
+				<div id="info7">
+		 			Välj den typ av protein du har så att du kan se hur mycket mineral och energi den innehåller
+		 		</div>
+				
+				<div id="info8">
+		 			Välj den typ av mat du har så att du kan se hur mycket mineral och energi den innehåller
+		 		</div>		
 						
 						<script type="text/javascript" src="JavaScript/jquery.js"></script>
 						<script type="text/javascript" id="display" src="JavaScript/pony2.js"></script>	

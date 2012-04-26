@@ -1,17 +1,66 @@
 	$(document).ready(function(){	
 		
-		 $("li").hover(function(){
-    			this.style.backgroundColor = "#EE3B3B";
-			},function() {
-   				this.style.backgroundColor = "";
-			});  
-  		
-		
-		
-			$('.numbersOnly').keyup(function () { 										// It will only allow numbers to be entered in the text field//
+		$('.numbersOnly').keyup(function () { 										// It will only allow numbers to be entered in the text field//
     		this.value = this.value.replace(/[^0-9\.]/g,'');
 			}); 	
 			
+		
+		$("#icon1").hover(function(){							// It allow info box to show everytime info icon is hoverd //
+    						 $("#info1").fadeIn("fast");
+								},
+									function(){
+    							$("#info1").fadeOut();
+							});
+		
+		$("#icon2").hover(function(){
+    						 $("#info2").fadeIn("fast");
+								},
+									function(){
+    							$("#info2").fadeOut();
+							});
+							
+		$("#icon3").hover(function(){
+    						 $("#info3").fadeIn("fast");
+								},
+									function(){
+    							$("#info3").fadeOut();
+							});				
+							
+		$("#icon4").hover(function(){
+    						 $("#info4").fadeIn("fast");
+								},
+									function(){
+    							$("#info4").fadeOut();
+							});					
+		$("#icon5").hover(function(){
+    						 $("#info5").fadeIn("fast");
+								},
+									function(){
+    							$("#info5").fadeOut();
+							});					
+		$("#icon6").hover(function(){
+    						 $("#info6").fadeIn("fast");
+								},
+									function(){
+    							$("#info6").fadeOut();
+							});					
+		$("#icon7").hover(function(){
+    						 $("#info7").fadeIn("fast");
+								},
+									function(){
+    							$("#info7").fadeOut();
+							});					
+		$("#icon8").hover(function(){
+    						 $("#info8").fadeIn("fast");
+								},
+									function(){
+    							$("#info8").fadeOut();
+							});					
+							
+							
+							
+							
+		
 			$('#ResultBody').hide();												// It hiddes the result window but its reveled after button is clicked//
 			$("#calcu").click(function(){									// the click function starts here//
    			$('#ResultBody').fadeIn("10000");
@@ -28,10 +77,13 @@
    								}
    						
    							$("#ResultHead").html(HorseType2);		
-   						
-   								
-   						
-   						var Horse = $("input[name=horse]:checked").val();					// calls out the horse feeding you have selected latt, normal, hard,//
+   							
+   							 
+    						  
+   							
+   							
+   							
+   						var Horse = $("input[name=horse]:checked").val();					// calls out t	he horse feeding you have selected latt, normal, hard,//
    							if (Horse == undefined){
    								var Horse2 = ('');
    								}

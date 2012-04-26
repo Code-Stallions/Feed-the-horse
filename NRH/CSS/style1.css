@@ -6,8 +6,9 @@ body		{
 			background-size:400px;				
 			margin: 0px auto;
 			z-index:-1;	
-			font-size:small;
-			font-family:"Verdana";
+			
+			font-size:13px;
+			font-family:"Tahoma";
 			float: left;
 			
 			}
@@ -17,6 +18,9 @@ body		{
 			margin: 0 auto;
 			width: 620px;
 			height: auto;
+			
+			
+			
 			}
 			
 .header		{
@@ -39,7 +43,8 @@ body		{
 			padding:30px;
 			margin-top:680px;	
 			margin-left:190px;
-			position: absolute;
+			position:absolute;
+			z-index:-1;
 			}
 
 
@@ -61,14 +66,17 @@ body		{
 			margin:-260px;
 			margin-top: 50px;
 			position: absolute;
-			
+			-webkit-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	-moz-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        
 			}
 .horseSelect{
 												/* the horse type form input, stallian , pregnant or young horse radio buttons css */
 			background-color:#E0E0E0;
 			float: left;
 			width: 450px;     
-            height: 200px; 
+            height: 186px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -82,15 +90,181 @@ body		{
 			border-radius: 7px;
 		
 		}
-
-
+															/* 1 Info red icon at bottom of the box  */
+#icon1	{
+			padding: 0px;
+			margin-left:440px;
 			
+		}
+#info1	{													/* 1 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 130px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+			
+#icon2	{														/* 2 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+#info2	{														/* 2 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 360px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+#icon3	{										/* 3 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+
+#info3	{													/* 3 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 560px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+		}			
+
+#icon4	{										/* 4 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}	
+#info4	{												/* 4 gray box with information that is activated when icon hoverd */
+			display: none;				
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 660px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+#icon5	{										/* 5 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+#info5	{											/* 5 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 920px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+#icon6	{										/* 6 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+#info6	{										/* 6 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 1170px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+#icon7	{										/* 7 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+#info7	{										/* 7 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 1480px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+
+#icon8	{											/* 8 Info red icon at bottom of the box  */
+			padding: 0px;
+			margin-left:440px;
+			opacity: 0.2px;
+		}
+#info8	{												/* 8 gray box with information that is activated when icon hoverd */
+			display: none;
+			background-image: url('../IMAGES/infobox.png');
+			background-repeat:no-repeat; 
+			background-color:none;
+			float: left;
+			width: 294px;     
+            height: 150px; 
+            padding: 39px;
+            margin-top: 1735px;
+			margin-left:200px;
+			text-align:justify;	
+			font-size: inherit;
+			z-index:auto;
+			}
+
+
+
+
 .weighttype{
 													                /* the weight of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float: left;
 			width: 450px;     
-            height: 250px; 
+            height: 150px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -110,7 +284,7 @@ body		{
 	 		background-color:#E0E0E0;
 			float: left;
 			width: 450px;     
-            height: 90px; 
+            height: 78px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -125,19 +299,11 @@ body		{
 			}
 
 .linkHolder{
-
-
-			background-color:#E0E0E0;
 			float: left;
 			width: auto;     
             height: auto; 
-            padding: 20px;
-            border-style:solid;
-            border-width:1px;
-			margin-top: 20px;
-					
-			
-			}
+           
+          }
 .nextButton{
    			border-top: 1px solid #7d9cb0;			/* the connection button css to the other sites (horseScale.html / horseWeight.html)*/
    			background: #a5b0b7;
@@ -173,7 +339,7 @@ body		{
 			background-color:#E0E0E0;			/* CSS for skinny or fat horse part*/
 			float: left;
 			width: 450px;     
-            height: 90px; 
+            height: 78px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -211,40 +377,12 @@ body		{
 			}
 
 
-
-.MjSmbrp	{												 /* the weight of the horse menu bar css*/
-			
-			background-color:#E0E0E0;
-			float: left;
-			width: 450px;     
-            height: 220px; 
-            padding: 20px;
-            border-style:solid;
-            border-width:1px;
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	   		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin-top: 20px;
-			text-align:inherit;
-			-webkit-border-radius: 7px;
-			-moz-border-radius: 7px;
-			border-radius: 7px;
-			margin-left:-20px;
-			}
-			
-
-
-
-
-
-
-.workout{
-													                /* the work of the horse menu bar css*/
+.workout{										                /* TRAVS AND SKRAT the work of the horse menu bar css*/
 			background-color:#E0E0E0;
 			float:left;
 			margin-top: 20px;
 			width: 450px;     
-            height: 300px; 
+            height: 230px; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -263,7 +401,7 @@ body		{
 			float: left;
 			margin-top: 20px;
 			width: 450px;     
-            height:auto; 
+            height:205px; 
             padding:20px;
             border-style:solid;
             border-width:1px;
@@ -281,7 +419,7 @@ body		{
 			float: left;
 			margin-top: 20px;
 			width: 450px;     
-            height: auto; 
+            height:185px; 
             padding:20px;
             border-style:solid;
             border-width:1px;
@@ -411,11 +549,13 @@ body		{
 			margin:730px;
 			margin-top: 50px;
 			position: absolute;
-			
+			-webkit-box-shadow:  0px 0px 10px 1px rgba(1, 1, 1, 1);
+        	-moz-box-shadow:  0px 0px 10px 1px rgba(1, 1, 1, 1);
+        	box-shadow:  0px 0px 10px 1px rgba(1, 1, 1, 1);
 			}
 
 #Row2		{
-				display:none;
+				display:none; 					/*  All the rows 2-5 are not displayed for energy break down input  */
 			}
 
 #Row3		{
@@ -431,7 +571,7 @@ body		{
 			}
 
 #Result11	{
-
+														/* this containe all the results css when the user submits */
 			background-color: white;
 			width: 500px;
 			float:right;
@@ -527,6 +667,9 @@ body		{
 			margin-top: 50px;
 			margin-left:-49px;
 			position: absolute;
+			-webkit-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	-moz-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
 			} 	
 	
 			
@@ -635,7 +778,7 @@ body		{
 			
 			}
 
-#error1	{
+#error1	{					/* validation error text color for the horse scale page*/
 			color:red;
 		}
 
@@ -676,44 +819,85 @@ body		{
 				
 			}			
 
-#menuBar-one { 
+#menuBar-one { 										/*gray menu bar on top of the page  */
 			margin: 1px auto; 
 			position: relative; 
-			background-color: #838B8B;
-			width: 590px; 
+			width:1375px; 
 			height:45px;	
 			border:solid;
 			border-width:0px; 
-			
+			margin-left:-50px;
 			margin-top: 305px;		
-			margin-right:390px;
-				
-			}			
+			text-align: center;
+			font-family: "Al Bayan";
+			font-size:43px;
+			font-style: normal
+			background-image: -ms-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
+			background-image: -moz-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
+			background-image: -o-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
+			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B80000), color-stop(0.5, #A10505), color-stop(0.75, #990701), color-stop(1, #870000));
+			background-image: -webkit-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
+			background-image: linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
+		
+		}			
 
 #menuBar-one li { 						/*red menu box's  */
 			display: inline-block; 
 			height:45px;
+			
+			
 			}
 
-#menuBar-one li a { 					/* menu box's font, style, size and postioning*/
+#menuBar-one li a{ 					/* menu box's font, style, size and postioning*/
 			position: relative; 
 			z-index: 200; 
 			color: black; 
-			font-size: 13px; 
+			font-size: 14px; 
 			display: block; 
 			float: left; 
-			padding: 15px;
+			padding: 35px;
+			padding-top:10px;
 			text-decoration: none;
-			text-transform: uppercase; 
-			}
-.current_page_item_two{
-			background-color:white; 
-					
-					}
+			
+		 	}
 
+#menuBar-one li a:hover{ 					/* menu box's font, style, size and postioning hover*/
+			position: relative; 
+			z-index: 200; 
+			height: 0px;
+			color:black; 
+			font-size: 14px; 
+			float: left; 
+			padding: 35px;
+			padding-top:10px;
+			text-decoration: none;
+		 	background-color:white;
+		 	color: black;
+			background-color:#DCDCDC; 
+			
+		 
+		 }
+
+
+
+
+.current_page_item_two{																		/* current page for the menu bar and link*/
+				background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
+ 				background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
+				background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
+				background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #D9D9D9));
+				background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
+				background-image: linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);			
+			}
+
+
+
+
+														/* ie6 or other browsers which have not been updated*/
 .ie6 #menuBar-one li, .ie7 #menuBar-one li {
-			display: inline;
-					}
+						display: inline;
+					
+				}
 			
 
 
@@ -732,7 +916,9 @@ body		{
 			margin:-250px;
 			margin-top: 50px;
 			position: absolute;
-
+			-webkit-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	-moz-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
+        	box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
 
 }			
 			
