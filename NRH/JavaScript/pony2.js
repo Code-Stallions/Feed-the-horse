@@ -62,7 +62,7 @@
 							
 		
 			$('#ResultBody').hide();												// It hiddes the result window but its reveled after button is clicked//
-			$("#calcu").click(function(){									// the click function starts here//
+			$("#calcu").click(function(){											// the click function starts here//
    			$('#ResultBody').fadeIn("10000");
    					
    					
@@ -134,8 +134,8 @@
 					else {	
 						 $("#ResultText").show();
 						 $("#ResultText").html(
-   								"<h3>Din häst vikt är : " + weight +' Kg' + "</h3>"+
-   								"<h3>Din häst dagsbehov är: </h3>" +
+   								"<h3>Din hästs vikt är : " + weight +' Kg' + "</h3>"+
+   								"<h3>Din hästs dagsbehov är: </h3>" +
    							  	"<h4>"+"Utfodring typ : "+ Horse2 +'<br/>'+"</h4>"+
 							  	"Energi (MJ) : " + feed + "<br/>" +
 							  	"Smältbart protein : " + prot +"g"+ '<br/>' +
@@ -163,7 +163,7 @@
 								
 								var MonthPreg = ("<h3>"+HorseType+' 8/9 månad'+"</h3>");
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ:  " + PregnentHastTotal + "</p>");
-								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult + "</p>");
+								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult +'g'+ "</p>");
 								$("#DraktigResult").show();
 								$("#DraktigResult").html(MonthPreg+pregnantHastSum + pregnantHästSMB);
 								}						
@@ -176,7 +176,7 @@
 								var MonthPreg = ("<h3>"+HorseType+' 10  månad'+"</h3>");
 								var SmbPregnentResult = parseInt((SmbPregnentAdd)+(SmbPregnent)+3);
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ:  "+ PregnentHastTotal + "</p>");
-								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult + "</p>");
+								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult +'g'+ "</p>");
 								$("#DraktigResult").show();
 								$("#DraktigResult").html(MonthPreg+pregnantHastSum + pregnantHästSMB);
 								}																															 
@@ -189,7 +189,7 @@
 								
 								var MonthPreg = ("<h3>"+HorseType+' 11  månad'+"</h3>");
 								var pregnantHastSum = ("<p>Din Dräktighäst MJ:  " + PregnentHastTotal + "</p>");
-								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult + "</p>");
+								var pregnantHästSMB = ("<p>Din Dräktighäst Protein:  " + SmbPregnentResult +'g'+ "</p>");
 								$("#DraktigResult").show();
 								$("#DraktigResult").html(MonthPreg+pregnantHastSum + pregnantHästSMB);
 								}
@@ -220,16 +220,16 @@
 							
 							
 					
-					var smallAmount = ("<a id='redTxt'> : Din häst får för lite med så tillsätt: </a>");  //  text variable if the horse takes too much  / too little energy//	
-					var rightAmount = ("<a id='greenTxt'>: Din häst får tillräckligt med: </a>");
-					var tooMuchAmount = ("<a id='redTxt'> : Din häst får för mycket så minus: </a>");
+					var smallAmount = ("<a id='redTxt'> : Din häst får för lite så tillsätt: </a>");  //  text variable if the horse takes too much  / too little energy//	
+					var rightAmount = ("<a id='greenTxt'>: Din häst får tillräckligt: </a>");
+					var tooMuchAmount = ("<a id='redTxt'> : Din häst får för mycket: </a>");
 					
 					var HayFeedWeight = ($('#FoodWeight').val() || 0);		    						// user input area for food amount they want to feed in KG //	
 					var HayFeedTotal = (parseInt(HayFeedWeight));		
 					
 					var MJenergy1 = ($('#MJ1').val());										//  1st ENERGY break down field and formula to work out too much / too little energy //
 					var EnergyLeft = ((HayFeedTotal) * (MJenergy1));	
-					var MJminus1 = (feed - EnergyLeft).toFixed(1);	
+					var MJminus1 = parseInt(feed - EnergyLeft).toFixed(1);	
 							if (EnergyLeft == undefined){					
 								 var EnergyIntake1 = ('');
 								}
@@ -245,7 +245,7 @@
 								
 					var SMBRPenergy1 = ($('#SMBRP1').val());								//  1st SMBRP break down field and formula to work out too much / too little energy //
 					var ProtineLeft1 = ((HayFeedTotal) * (SMBRPenergy1));
-					var SMBRPminus1 =  (prot - ProtineLeft1).toFixed(1);
+					var SMBRPminus1 =  parseInt(prot - ProtineLeft1).toFixed(1);
 							if (ProtineLeft1 == undefined || 0){				
 								var  ProtineIntake1 = ('');
 								}
@@ -262,7 +262,7 @@
 					
 					var Caenergy1 = ($('#Ca1').val());										//  1st Kalcium break down field and formula to work out too much / too little energy //
 					var CalciumLeft1 = ((HayFeedTotal) * (Caenergy1));
-					var CALCminus1 =  (kal - CalciumLeft1).toFixed(1);		
+					var CALCminus1 =  parseInt(kal - CalciumLeft1).toFixed(1);		
 							if (CalciumLeft1 == undefined){
 								 var CalcmIntake1 = ('');
 								}
@@ -278,7 +278,7 @@
 					
 					var Penergy1 = ($('#Phos1').val());										//  1st FOSFERS break down field and formula to work out too much / too little energy //
 					var FosferLeft1 = ((HayFeedTotal) * (Penergy1));
-					var FOSFminus1 = (fos - FosferLeft1).toFixed(1);
+					var FOSFminus1 = parseInt(fos - FosferLeft1).toFixed(1);
 							if (FosferLeft1 == undefined){
 								 var FosIntake = ('');
 								}
@@ -294,7 +294,7 @@
 					
 					var Mgenergy1 = ($('#MG1').val());									//  1st Magnesium break down field and formula to work out too much / too little energy //
 					var MagLeft1 = ((HayFeedTotal) * (Mgenergy1));
-					var MAGminus1 = (mag - MagLeft1).toFixed(1);
+					var MAGminus1 =parseInt(mag - MagLeft1).toFixed(1);
 							if (MagLeft1 == undefined){
 								var MagIntake1 = ('');
 								}
@@ -310,7 +310,7 @@
 					
 					var SEenergy1 =($('#SE1').val());								//  1st Seleniam break down field and formula to work out too much / too little energy //
 					var SELeft1 =  ((HayFeedTotal) * (SEenergy1));
-					var SEminus1 = (SE - SELeft1).toFixed(1);	
+					var SEminus1 = parseInt(SE - SELeft1).toFixed(1);	
 							if (SELeft1 == undefined){
 								var SEIntake1 = ('');
 								}
@@ -326,7 +326,7 @@
 					
 					var TSenergy1 =($('#TS1').val());							//  1st TS break down field and formula to work out too much / too little energy //
 					var TSLeft1 = ((HayFeedTotal) * (TSenergy1));	
-					var TSminus1 = (TS - TSLeft1).toFixed(1);	
+					var TSminus1 = parseInt(TS - TSLeft1).toFixed(1);	
 							if (TSLeft1 == undefined){
 								var TSIntake1 = ('');
 								}
@@ -340,8 +340,8 @@
 								var TSIntake1 = smallAmount+''+TSminus1+' g';	
 								}
 					
-					var MJandSMRP1 = (EnergyLeft / ProtineLeft1).toFixed(1);				//  1st MJ/SMBRP and CA/P compares them together //
-					var CaAndP1 = (FosferLeft1 / CalciumLeft1).toFixed(1);
+					var MJandSMRP1 = (ProtineLeft1/ EnergyLeft).toFixed(1);				//  1st MJ/SMBRP and CA/P compares them together //
+					var CaAndP1 = (CalciumLeft1/ FosferLeft1).toFixed(1);
 					
 					if ((HayFeedWeight == 0)){												//  1st USER result output  //
 							$("#Result11").hide();
@@ -349,9 +349,9 @@
 						}else{
 							$("#Result11").show();
 						  	$("#Result11").html(
-  									"<h3>Här är din kemiska in resultat 1:</h3> " +
-									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
-							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
+  									"<h3>Här är ditt kemiska in resultat 1:</h3> " +
+									"<h3>"+'Ditt hö du valde:' + HayType +"</h3>"+
+							  		"<h4>"+"Du matar din häst med : "+ HayFeedTotal +" Kg</h4>"+
 							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
 							  		'Energi (MJ) :' +  EnergyLeft + EnergyIntake1+'<br/>'+'<br/>'+
 							  		'Smältbart protein :'+  ProtineLeft1+' g' + ProtineIntake1 +'<br/>'+'<br/>'+
@@ -482,8 +482,8 @@
 								var TSIntake2 = smallAmount+''+TSminus2+' g';	
 								}
 					
-					var MJandSMRP2 = (EnergyLeft2 / ProtineLeft2).toFixed(1);		//  2nd MJ/SMBRP and CA/P compares them together //
-					var CaAndP2 = (FosferLeft2 / CalciumLeft2).toFixed(1);
+					var MJandSMRP2 = (ProtineLeft2 / EnergyLeft2).toFixed(1);		//  2nd MJ/SMBRP and CA/P compares them together //
+					var CaAndP2 = (CalciumLeft2 / FosferLeft2).toFixed(1);
 					
 					
 						if ((MJ_Input2 == 0)){									//  2nd USER result output  //
@@ -493,7 +493,7 @@
 							$("#Result22").show();
 						  	$("#Result22").html(
   									"<h3>Här är din kemiska in resultat 2:</h3> " +
-									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
+									"<h3>"+'Ditt hö du valde:' + HayType +"</h3>"+
 							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
 							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
 							  		'Energi (MJ) :' +  EnergyLeft2 + EnergyIntake2+'<br/>'+'<br/>'+
@@ -511,7 +511,7 @@
   							}						
 						
 						
-					var MJ_Input3 = ($('#MJ3').val());
+					var MJ_Input3 = ($('#MJ3').val());						//  energy break down field and formula to work out too much / too little energy //
 					var EnergyLeft3 = ((HayFeedTotal) * (MJ_Input3));	
 					var MJminusTwo3 = (feed - EnergyLeft3).toFixed(1);	
 							if (EnergyLeft3 == undefined){
@@ -527,7 +527,7 @@
 								 var EnergyIntake3 = smallAmount+''+MJminusTwo3+' MJ';
 								}
 								
-					var SMBRPenergy3 = ($('#SMBRP3').val());
+					var SMBRPenergy3 = ($('#SMBRP3').val());		//  protien break down field and formula to work out too much / too little energy //
 					var ProtineLeft3 = ((HayFeedTotal) * (SMBRPenergy3));
 					var SMBRPminus3 =  (prot - ProtineLeft3).toFixed(1);
 							if (ProtineLeft3 == undefined || 0){
@@ -544,7 +544,7 @@
 								}
 					
 					
-					var Caenergy3 = ($('#Ca3').val());
+					var Caenergy3 = ($('#Ca3').val());					//  kalciam break down field and formula to work out too much / too little energy //
 					var CalciumLeft3 = ((HayFeedTotal) * (Caenergy3));
 					var CALCminus3 =  (kal - CalciumLeft3).toFixed(1);		
 							if (CalciumLeft3 == undefined){
@@ -560,7 +560,7 @@
 								var CalcmIntake3 = smallAmount+''+CALCminus3+'g';
 								}			
 					
-					var Penergy3 = ($('#Phos3').val());
+					var Penergy3 = ($('#Phos3').val());								//   FOSFERS break down field and formula to work out too much / too little energy //
 					var FosferLeft3 = ((HayFeedTotal) * (Penergy3));
 					var FOSFminus3 = (fos - FosferLeft3).toFixed(1);
 							if (FosferLeft3 == undefined){
@@ -576,7 +576,7 @@
 								var FosIntake3 =  smallAmount+''+FOSFminus3+'g';
 								}
 					
-					var Mgenergy3 = ($('#MG3').val());
+					var Mgenergy3 = ($('#MG3').val());					//  mag break down field and formula to work out too much / too little energy //
 					var MagLeft3 = ((HayFeedTotal) * (Mgenergy3));
 					var MAGminus3 = (mag - MagLeft3).toFixed(1);
 							if (MagLeft3 == undefined){
@@ -592,7 +592,7 @@
 								var MagIntake3 = smallAmount+''+ MAGminus3+' g';
 								}
 					
-					var SEenergy3 =($('#SE3').val());
+					var SEenergy3 =($('#SE3').val());						//  2nd FOSFERS break down field and formula to work out too much / too little energy //
 					var SELeft3 =  ((HayFeedTotal) * (SEenergy3));
 					var SEminus3 = (SE - SELeft3).toFixed(1);	
 						if (SELeft3 == undefined){
@@ -624,8 +624,8 @@
 								var TSIntake3 = smallAmount+''+TSminus3+' g';	
 								}
 					
-					var MJandSMRP3 = (EnergyLeft3 / ProtineLeft3).toFixed(1);		
-					var CaAndP3 = (FosferLeft3 / CalciumLeft3).toFixed(1);
+					var MJandSMRP3 = (ProtineLeft3 / EnergyLeft3).toFixed(1);		
+					var CaAndP3 = (CalciumLeft3 / FosferLeft3).toFixed(1);
 					
 					
 						if ((MJ_Input3 == 0)){
@@ -635,7 +635,7 @@
 							$("#Result33").show();
 						  	$("#Result33").html(
   									"<h3>Här är din kemiska in resultat 3:</h3> " +
-									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
+									"<h3>"+'Ditt hö du valde:' + HayType +"</h3>"+
 							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
 							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
 							  		'Energi (MJ) :' +  EnergyLeft3 + EnergyIntake3+'<br/>'+'<br/>'+
@@ -766,8 +766,8 @@
 								var TSIntake4 = smallAmount+''+TSminus4+' g';	
 								}
 					
-					var MJandSMRP4 = (EnergyLeft4 / ProtineLeft4).toFixed(1);		
-					var CaAndP4 = (FosferLeft4 / CalciumLeft4).toFixed(1);
+					var MJandSMRP4 = (ProtineLeft4 / EnergyLeft4).toFixed(1);		
+					var CaAndP4 = (CalciumLeft4 / FosferLeft4).toFixed(1);
 					
 					if ((MJ_Input4 == 0)){
 							$("#Result44").hide();
@@ -776,7 +776,7 @@
 							$("#Result44").show();
 						  	$("#Result44").html(
   									"<h3>Här är din kemiska in resultat 4:</h3> " +
-									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
+									"<h3>"+'Ditt hö du valde:' + HayType +"</h3>"+
 							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
 							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
 							  		'Energi (MJ) :' +  EnergyLeft4 + EnergyIntake4+'<br/>'+'<br/>'+
@@ -908,8 +908,8 @@
 								var TSIntake5 = smallAmount+''+TSminus5+' g';	
 								}
 					
-					var MJandSMRP5 = (EnergyLeft5 / ProtineLeft5).toFixed(1);		
-					var CaAndP5 = (FosferLeft5 / CalciumLeft5).toFixed(1);
+					var MJandSMRP5 = (ProtineLeft5 / EnergyLeft5).toFixed(1);		
+					var CaAndP5 = (CalciumLeft5 / FosferLeft5).toFixed(1);
 					
 					if ((MJ_Input5 == 0)){
 							$("#Result55").hide();
@@ -917,8 +917,8 @@
 						}else{
 							$("#Result55").show();
 						  	$("#Result55").html(
-  									"<h3>Här är din kemiska in resultat 5:</h3> " +
-									"<h3>"+'Din hö du har:' + HayType +"</h3>"+
+  									"<h3>din kemiska i resultat 5:</h3> " +
+									"<h3>"+'Ditt hö du valde:' + HayType +"</h3>"+
 							  		"<h4>"+"Din Hös vikt: "+ HayFeedTotal +" Kg</h4>"+
 							  		"<h3>"+"Ditt hös egenskaper"+"</h3>"+
 							  		'Energi (MJ) :' +  EnergyLeft5 + EnergyIntake5+'<br/>'+'<br/>'+
@@ -953,10 +953,10 @@
 						}else{
 							$("#ResultTravGalopp").show();
 							$("#ResultTravGalopp").html(
-  									"<h3>Din häst Trav/Galopp är</h3>"
-									+ skrittCalc + ": Skrit hours per week" + '<br/>'
-									+ travCalc +": Trav hours in week"+'<br/>'+'<br/>'
-									+"<h4>Din häst energibehov är: </h4>" +
+  									"<h3>Din häst tränar i :</h3>"
+									+ skrittCalc + ": Timmar skritt i veckan" + '<br/>'
+									+ travCalc +": Timmar Trav i veckan"+'<br/>'+'<br/>'
+									+"<h4>Din hästs energibehov är: </h4>" +
 									+ workoutMJ +": MJ efter Trav/Galopp "+'<br/>'
 									);		
   								}
