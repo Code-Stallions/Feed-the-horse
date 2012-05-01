@@ -50,10 +50,7 @@
 		 						    			<div class="linkHolder">
 		 						    				
 		 						    				<a href="horseScale.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
-		 						    					Om du inte vet din häst vikt
-		 						    					<br/><br/>	
-		 						    					<a href="horseWeight.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
-		 						    					Om du inte vet hullbedömning av hästar
+		 						    				Om du inte vet din häst vikt
 		 						    			</div>
 		 						    			
 		 						    			<img id="icon2" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
@@ -76,7 +73,9 @@
 		 						    			<input type="radio" id="Small"   name="horsefiger" value="Smal"/>    Smal &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="Normal" name="horsefiger" value="Normal"/>  Normal &nbsp;&nbsp;&nbsp; 
 		 						    			<input type="radio" id="Tjok"  name="horsefiger" value="Tjock"/>    Tjock 
-		 						    			
+		 						    			<br/><br/>	
+		 						    					<a href="horseWeight.html" class="nextButton"> klicka här </a>&nbsp;&nbsp;
+		 						    					Om du inte vet hullbedömning av hästar
 		 						    			<img id="icon4" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						    		</div>
 		 						    		
@@ -85,6 +84,7 @@
 		 						    			<input type="text" name="hayInput" id="hayInput" value="" class="hayInput" style="margin-left:15px"/><br/>
 		 						    		
 		 						    			<h4>Skriv in ditt hös egenskaper och hur mycket du vill mata den i KG.</h4>
+		 						    			
 		 						    			<input type="button" id="AddTextField" name="AddTextField" value="Nytt Fält" style="float:right"/>
 		 						    			<input type="text" name="FoodWeight" id="FoodWeight"  class="numbersOnly" value="" style="margin-left:15px"/> Kg
 		 						    			<br/><br/>
@@ -92,13 +92,7 @@
 		 						    				<tbody>	
 		 						    						
 		 						    					<tr>
-		 						    						<th>MJ</th>				
-		 						    						<th>SMBRP</th>	
-		 						    						<th>Ca</th>	
-		 						    						<th>P</th>	
-		 						    						<th>Mg</th>	
-		 						    						<th>SE</th>	
-		 						    						<th>TS</th>	
+		 						    						<th>MJ</th><th>SMBRP</th><th>Ca</th><th>P</th><th>Mg</th><th>SE</th><th>TS</th>	
 		 						    						
 		 						    					</tr>
 		 						    						
@@ -186,9 +180,58 @@
 		 						    	    	<input type="checkbox" class="checkbox" id= "Sojamjo"       name="food" value="4"/> Sojamjöl<br/>
 		 						    	    	<input type="checkbox" class="checkbox" id= "Sojabona"      name="food" value="5"/> 	Sojaböna<br/>
 		 						    	    	<input type="checkbox" class="checkbox" id= "SolrosExpellerEj" name="food" value="6"/>  Solros<br/>
-		 						    			<input type="checkbox" class="checkbox" id= "Arter"         name="food" value="7"/> Ärter<br/>
-		 						    		
+		 						    			<input type="checkbox" class="checkbox" id= "Arter"         name="food" value="7"/> Ärter<br/><br/><br/>
+		 						    			
+		 						    			<input type="button" id="AddFoodText1" name="AddFoodText1" value="Nytt Fält" style="float:right"/>
+		 						    			
+		 						    			<table border="0">
+		 						    				<tbody>	
+		 						    						
+		 						    					<tr>
+		 						    						<th>MJ</th><th>SMBRP</th><th>Ca</th><th>P</th><th>Mg</th><th>SE</th><th>TS</th>	
+		 						    						
+		 						    					</tr>
+		 						    						
+		 						    					<tr id="FoodRow1">
+		 						    						<td>1:<input type="text" name="energy" maxlength="8" size="4" id="MJFood1"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPFood1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaFood1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosFood1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGFood1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEFood1" value=""  class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSFood1" value="" class="numbersOnly"/></td>	
+		 						    					</tr>	
+		 						    				</tbody>	
+		 						    						 
+		 						    				<tbody>	
+		 						    					<tr id="FoodRow2">	
+		 						    						<td>2:<input type="text" name="energy" maxlength="8" size="4" id="MJFood2"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPFood2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaFood2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosFood2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGFood2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEFood2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSFood2" value="" class="numbersOnly"/></td>	
+		 						    					</tr>
+		 						    				</tbody>
+		 						    				
+		 						    				<tbody>	
+		 						    					<tr id="FoodRow3">	
+		 						    						<td>3:<input type="text" name="energy" maxlength="8" size="4" id="MJFood3"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPFood3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaFood3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosFood3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGFood3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEFood3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSFood3" value="" class="numbersOnly"/></td>	
+		 						    					</tr>
+		 						    				</tbody>	
+		 						    			</table>	
+		 						    				
+		 						    				
 		 						    				<img id="icon7" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
+		 						    		
+		 						    		
 		 						    		</div>	  	
 		 						 					
 		 						 			<div class="DiverseType" id="DiverseFoder">
@@ -199,8 +242,55 @@
 		 						       			<input type="checkbox" class="checkbox" id="Sockerbeta"     name="food" value="3"/> Sockerbeta, melasserad<br/>
 		 						    			<input type="checkbox" class="checkbox" id="SockerbetaOme" 	name="food" value="4"/> Sockerbeta, omelasserad<br/>
 		 						    			<input type="checkbox" class="checkbox" id="SockerbetaBet" 	name="food" value="5"/> Sockerbeta,betmelass <br/>
-		 						    			<input type="checkbox" class="checkbox" id="Vegetabilisk"	name="food" value="6"/>Vegetabiliskt fett (oija)<br/>	
-		 						 	 		
+		 						    			<input type="checkbox" class="checkbox" id="Vegetabilisk"	name="food" value="6"/>Vegetabiliskt fett (oija)<br/><br/><br/>	
+		 						 	 			
+		 						 	 			<input type="button" id="AddFoodText2" name="AddFoodText2" value="Nytt Fält" style="float:right"/>
+		 						 	 			
+		 						 	 			<table border="0">
+		 						    				<tbody>	
+		 						    						
+		 						    					<tr>
+		 						    						<th>MJ</th><th>SMBRP</th><th>Ca</th><th>P</th><th>Mg</th><th>SE</th><th>TS</th>	
+		 						    						
+		 						    					</tr>
+		 						    						
+		 						    					<tr id="FoodRow11">
+		 						    						<td>1:<input type="text" name="energy" maxlength="8" size="4" id="MJDive1"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPDive1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaDive1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosDive1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGDive1" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEDive1" value=""  class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSDive1" value="" class="numbersOnly"/></td>	
+		 						    					</tr>	
+		 						    				</tbody>	
+		 						    						 
+		 						    				<tbody>	
+		 						    					<tr id="FoodRow22">	
+		 						    						<td>2:<input type="text" name="energy" maxlength="8" size="4" id="MJDive2"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPDive2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaDive2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosDive2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGDive2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEDive2" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSDive2" value="" class="numbersOnly"/></td>	
+		 						    					</tr>
+		 						    				</tbody>
+		 						    				
+		 						    				<tbody>	
+		 						    					<tr id="FoodRow33">	
+		 						    						<td>3:<input type="text" name="energy" maxlength="8" size="4" id="MJDive3"  value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SMBRPDive3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="CaDive3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="PhosDive3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="MGDive3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="SEDive3" value="" class="numbersOnly"/></td>	
+		 						    						<td><input type="text" name="energy" maxlength="8" size="4" id="TSDive3" value="" class="numbersOnly"/></td>	
+		 						    					</tr>
+		 						    				</tbody>	
+		 						    			</table>
+		 						 	 				
+		 						 	 				
 		 						 	 				<img id="icon8" src="IMAGES/info1.png" style="width:30px; height:30px;" alt=""  />
 		 						 	 		</div>	
 		 						    		
@@ -223,7 +313,6 @@
 				
 				
 				<div id="ResultBody">	<!--This is result viewer and holds gray color body -->
-					
 					<div id="ResultHead"></div>	<!--This is result for horse type you selected -->
 					<div id="ResultText"></div>	<!--prints out the result for requirements horse calculation -->
 					<div id="DraktigResult"></div><!--This is result of the for pregenant horse -->
@@ -234,9 +323,20 @@
 					<div id="Result44"></div><!--This is result of the for forth energy break down  -->
 					<div id="Result55"></div><!--This is result of the for fifth energy break down  -->
 					<div id="ResultTravGalopp"></div><!--This is result of the for Trav/Galopp break down -->
-				
 					
+					
+					<div id="Foodfield1"></div><!--This is result of the for the user Proteinfodermedel input(food they have at home) -->
+					<div id="Foodfield2"></div><!--This is result of the for the user Proteinfodermedel input(food they have at home) -->
+					<div id="Foodfield3"></div><!--This is result of the for the user Proteinfodermedel input(food they have at home) -->
+					
+					
+					<div id="Diversefield1"></div><!--This is result of the for the user Diverse Fodermedel input(food they have at home) -->
+					<div id="Diversefield2"></div><!--This is result of the for the user Diverse Fodermedel input(food they have at home) -->
+					<div id="Diversefield3"></div><!--This is result of the for the user Diverse Fodermedel  input(food they have at home) -->
+					
+				
 				</div>		
+				
 				
 				<div id="info1">
 		 			Välj den typen av häst du har, resultatet kommer bero på vilken typ av häst du valde.om du valde ung häst så skriv åldern av hästen i månader.
@@ -287,14 +387,33 @@
 		  									    		$("#AddTextField").live("click", function(){
 		  									    		$('#Row5').show()
 		  									    		.stop();
-		  									    		});
-		  									    	});						
-		  									    });						
-											});
-										});	    		
-							
-			</script>			
-							
+		  									    		});	    		
+													  });
+													});
+												  });
+												});
+					
+													$("#AddFoodText1").live("click", function(){
+		  									    		$('#FoodRow2').show()
+		  									    		.stop();
+		  									    		$("#AddFoodText1").live("click", function(){
+		  									    		$('#FoodRow3').show()
+		  									    		.stop();
+		  									    	});
+												});
+		  									    		
+		  									    		
+		  									    		$("#AddFoodText2").live("click", function(){
+		  									    		$('#FoodRow22').show()
+		  									    		.stop();
+		  									    		$("#AddFoodText2").live("click", function(){
+		  									    		$('#FoodRow33').show()
+		  										    	.stop();
+													});
+												});
+					
+								
+			</script>
 			
 			</body>		 
 		

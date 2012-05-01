@@ -5,7 +5,7 @@
 			}); 	
 			
 		
-		$("#icon1").hover(function(){							// It allow info box to show everytime info icon is hoverd //
+		$("#icon1").hover(function(){												// It allow info box to show everytime info icon is hoverd //
     						 $("#info1").fadeIn("fast");
 								},
 									function(){
@@ -14,15 +14,15 @@
 		
 		$("#icon2").hover(function(){
     						 $("#info2").fadeIn("fast");
-								},
-									function(){
+								},	
+								function(){
     							$("#info2").fadeOut();
 							});
 							
 		$("#icon3").hover(function(){
     						 $("#info3").fadeIn("fast");
 								},
-									function(){
+							function(){
     							$("#info3").fadeOut();
 							});				
 							
@@ -998,10 +998,145 @@
 						});
 					}
 									
+					/*text field for  Proteinfodermede, so user can input the food they have at home */	
+					
+					var MJtxtArea =($('#MJFood1').val());
+					var SMBRPtxtArea =($('#SMBRPFood1').val());
+					var CAtxtArea =($('#CaFood1').val());
+					var PhostxtArea =($('#PhosFood1').val());
+					var MGtxtArea =($('#MGFood1').val());
+					var SEtxtArea =($('#SEFood1').val());
+					var TStxtArea =($('#TSFood1').val());
+					
+					if ((MJtxtArea == 0)){
+						$("#Foodfield1").hide();
+						}
+					else
+						{
+						$("#Foodfield1").show();
+						$("#Foodfield1").html( "<h3>"+' Proteinfodermede '+'</h3>'+"<h4>"+'<br/>'+'Kolumnen: 1'+'<br/>'+'MJ: '+ MJtxtArea +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPtxtArea +'  &nbsp;&nbsp; '+'CA: '+ CAtxtArea +'  &nbsp;&nbsp; '+'P: '
+						+ PhostxtArea +'  &nbsp;&nbsp; '+'MG: '+ MGtxtArea +'  &nbsp;&nbsp; '+'SE: '
+						+ SEtxtArea +'  &nbsp;&nbsp; '+ 'TS: ' + TStxtArea +"</h4>");
+					}
+					
+																	/*2nd text field for  Proteinfodermede, so user can input the food they have at home */
+					var MJtxtArea2 =($('#MJFood2').val());
+					var SMBRPtxtArea2 =($('#SMBRPFood2').val());
+					var CAtxtArea2 =($('#CaFood2').val());
+					var PhostxtArea2 =($('#PhosFood2').val());
+					var MGtxtArea2 =($('#MGFood2').val());
+					var SEtxtArea2 =($('#SEFood2').val());
+					var TStxtArea2 =($('#TSFood2').val());
+					
+					if ((MJtxtArea2 == 0)){
+						$("#Foodfield2").hide();
+						}
+					else
+						{
+						$("#Foodfield2").show();
+						$("#Foodfield2").html( "<h4>"+'Kolumnen: 2'+'<br/>'+'MJ: '+ MJtxtArea2 +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPtxtArea2 +'  &nbsp;&nbsp; '+'CA: '+ CAtxtArea2 +'  &nbsp;&nbsp; '+'P: '
+						+ PhostxtArea2 +'  &nbsp;&nbsp; '+'MG: '+ MGtxtArea2 +'  &nbsp;&nbsp; '+'SE: '
+						+ SEtxtArea2 +'  &nbsp;&nbsp; '+ 'TS: ' + TStxtArea2 +"</h4>");
+					}
+					
+					
+															/*3rd text field for  Proteinfodermede, so user can input the food they have at home */
+					var MJtxtArea3 =($('#MJFood3').val());
+					var SMBRPtxtArea3 =($('#SMBRPFood3').val());
+					var CAtxtArea3 =($('#CaFood3').val());
+					var PhostxtArea3 =($('#PhosFood3').val());
+					var MGtxtArea3 =($('#MGFood3').val());
+					var SEtxtArea3 =($('#SEFood3').val());
+					var TStxtArea3 =($('#TSFood3').val());
+					
+					if ((MJtxtArea3 == 0)){
+						$("#Foodfield3").hide();
+						}
+					else
+						{
+						$("#Foodfield3").show();
+						$("#Foodfield3").html( "<h4>"+'Kolumnen: 3 '+'<br/>'+'MJ: '+ MJtxtArea3 +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPtxtArea3 +'  &nbsp;&nbsp; '+'CA: '+ CAtxtArea3 +'  &nbsp;&nbsp; '+'P: '
+						+ PhostxtArea3 +'  &nbsp;&nbsp; '+'MG: '+ MGtxtArea3 +'  &nbsp;&nbsp; '+'SE: '
+						+ SEtxtArea3 +'  &nbsp;&nbsp; '+ 'TS: ' + TStxtArea3 +"</h4>");
+						}
+					
+					
+					
+					
+					
+					var MJDive1 =($('#MJDive1').val());
+					var SMBRPDive1 =($('#SMBRPDive1').val());
+					var CADive1 =($('#CaDive1').val());
+					var PhosDive1 =($('#PhosDive1').val());
+					var MGDive1 =($('#MGDive1').val());
+					var SEDive1 =($('#SEDive1').val());
+					var TSDive1 =($('#TSDive1').val());
+					
+					if (( MJDive1 == 0)){
+						$("#Diversefield1").hide();
+						}
+					else
+						{
+						$("#Diversefield1").show();
+						$("#Diversefield1").html( '<h3>'+'Diverse Fodermedel'+'</h3>'+"<h4>"+'Kolumnen: 1 '+'<br/>'+'MJ: '+ MJDive1 +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPDive1 +'  &nbsp;&nbsp; '+'CA: '+ CADive1 +'  &nbsp;&nbsp; '+'P: '
+						+ PhosDive1 +'  &nbsp;&nbsp; '+'MG: '+ MGDive1 +'  &nbsp;&nbsp; '+'SE: '
+						+ SEDive1 +'  &nbsp;&nbsp; '+ 'TS: ' + TSDive1 +"</h4>");
+						}
+					
+					
+					
+					
+					var MJDive2 =($('#MJDive2').val());
+					var SMBRPDive2 =($('#SMBRPDive2').val());
+					var CADive2 =($('#CaDive2').val());
+					var PhosDive2 =($('#PhosDive2').val());
+					var MGDive2 =($('#MGDive2').val());
+					var SEDive2 =($('#SEDive2').val());
+					var TSDive2 =($('#TSDive2').val());
+					
+					if (( MJDive2 == 0)){
+						$("#Diversefield2").hide();
+						}
+					else
+						{
+						$("#Diversefield2").show();
+						$("#Diversefield2").html("<h4>"+'Kolumnen: 2 '+'<br/>'+'MJ: '+ MJDive2 +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPDive2 +'  &nbsp;&nbsp; '+'CA: '+ CADive2 +'  &nbsp;&nbsp; '+'P: '
+						+ PhosDive2 +'  &nbsp;&nbsp; '+'MG: '+ MGDive2 +'  &nbsp;&nbsp; '+'SE: '
+						+ SEDive2 +'  &nbsp;&nbsp; '+ 'TS: ' + TSDive2 +"</h4>");
+						}
+					
+					
+					
+					var MJDive3 =($('#MJDive3').val());
+					var SMBRPDive3 =($('#SMBRPDive3').val());
+					var CADive3 =($('#CaDive3').val());
+					var PhosDive3 =($('#PhosDive3').val());
+					var MGDive3 =($('#MGDive3').val());
+					var SEDive3 =($('#SEDive3').val());
+					var TSDive3 =($('#TSDive3').val());
+					
+					if (( MJDive3 == 0)){
+						$("#Diversefield3").hide();
+						}
+					else
+						{
+						$("#Diversefield3").show();
+						$("#Diversefield3").html("<h4>"+'Kolumnen: 3 '+'<br/>'+'MJ: '+ MJDive3 +'  &nbsp;&nbsp; '
+						+'SMBRP: '+ SMBRPDive3 +'  &nbsp;&nbsp; '+'CA: '+ CADive3 +'  &nbsp;&nbsp; '+'P: '
+						+ PhosDive3 +'  &nbsp;&nbsp; '+'MG: '+ MGDive3 +'  &nbsp;&nbsp; '+'SE: '
+						+ SEDive3 +'  &nbsp;&nbsp; '+ 'TS: ' + TSDive3 +"</h4>");
+						}
+					
+						
+				
+				});
 									
-							});
-									
-					});
+		});
 					 
 					 
 

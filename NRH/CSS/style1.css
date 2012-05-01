@@ -92,7 +92,7 @@ body		{
 		}
 															/* 1 Info red icon at bottom of the box  */
 #icon1	{
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
 			
 		}
@@ -105,7 +105,7 @@ body		{
 			width: 294px;     
             height: 150px; 
             padding: 39px;
-            margin-top: 130px;
+            margin-top: 150px;
 			margin-left:200px;
 			text-align:justify;	
 			font-size: inherit;
@@ -113,9 +113,9 @@ body		{
 			}
 			
 #icon2	{														/* 2 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 #info2	{														/* 2 gray box with information that is activated when icon hoverd */
 			display: none;
@@ -126,16 +126,16 @@ body		{
 			width: 294px;     
             height: 150px; 
             padding: 39px;
-            margin-top: 360px;
+            margin-top: 390px;
 			margin-left:200px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
 			}
 #icon3	{										/* 3 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 
 #info3	{													/* 3 gray box with information that is activated when icon hoverd */
@@ -155,9 +155,9 @@ body		{
 		}			
 
 #icon4	{										/* 4 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+		
 		}	
 #info4	{												/* 4 gray box with information that is activated when icon hoverd */
 			display: none;				
@@ -168,16 +168,16 @@ body		{
 			width: 294px;     
             height: 150px; 
             padding: 39px;
-            margin-top: 660px;
+            margin-top: 700px;
 			margin-left:200px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
 			}
 #icon5	{										/* 5 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 #info5	{											/* 5 gray box with information that is activated when icon hoverd */
 			display: none;
@@ -195,9 +195,9 @@ body		{
 			z-index:auto;
 			}
 #icon6	{										/* 6 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 #info6	{										/* 6 gray box with information that is activated when icon hoverd */
 			display: none;
@@ -215,9 +215,9 @@ body		{
 			z-index:auto;
 			}
 #icon7	{										/* 7 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 #info7	{										/* 7 gray box with information that is activated when icon hoverd */
 			display: none;
@@ -228,7 +228,7 @@ body		{
 			width: 294px;     
             height: 150px; 
             padding: 39px;
-            margin-top: 1480px;
+            margin-top: 1500px;
 			margin-left:200px;
 			text-align:justify;	
 			font-size: inherit;
@@ -236,9 +236,9 @@ body		{
 			}
 
 #icon8	{											/* 8 Info red icon at bottom of the box  */
-			padding: 0px;
+			margin-bottom:-20px;
 			margin-left:440px;
-			opacity: 0.2px;
+			
 		}
 #info8	{												/* 8 gray box with information that is activated when icon hoverd */
 			display: none;
@@ -249,7 +249,7 @@ body		{
 			width: 294px;     
             height: 150px; 
             padding: 39px;
-            margin-top: 1735px;
+            margin-top: 1880px;
 			margin-left:200px;
 			text-align:justify;	
 			font-size: inherit;
@@ -264,7 +264,7 @@ body		{
 			background-color:#E0E0E0;
 			float: left;
 			width: 450px;     
-            height: 150px; 
+            height: auto; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -339,7 +339,7 @@ body		{
 			background-color:#E0E0E0;			/* CSS for skinny or fat horse part*/
 			float: left;
 			width: 450px;     
-            height: 78px; 
+            height: auto; 
             padding: 20px;
             border-style:solid;
             border-width:1px;
@@ -394,14 +394,14 @@ body		{
 			border-radius: 7px;
 			margin-left:-20px;
 			}
-			
+				
 .ProteinType{
 
 			background-color:#E0E0E0;
 			float: left;
 			margin-top: 20px;
 			width: 450px;     
-            height:205px; 
+            height:auto; 
             padding:20px;
             border-style:solid;
             border-width:1px;
@@ -419,7 +419,7 @@ body		{
 			float: left;
 			margin-top: 20px;
 			width: 450px;     
-            height:185px; 
+            height:auto; 
             padding:20px;
             border-style:solid;
             border-width:1px;
@@ -524,6 +524,19 @@ body		{
 #ResultFoodArry {
 			background-color: white;
 			width: 500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 20px;
+}
+
+#Foodfield1 {
+			background-color: white;
+			width: 500px;
+			height:auto;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -532,6 +545,70 @@ body		{
 			margin-top: 20px;
 
 }
+
+#Foodfield2 {
+			background-color: white;
+			width:500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 0px;
+
+}
+
+#Foodfield3 {
+			background-color: white;
+			width:500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 0px;
+}
+
+
+#Diversefield1{
+			background-color: white;
+			width:500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 10px;
+}
+
+
+#Diversefield2{
+			background-color: white;
+			width:500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 0px;
+}
+
+#Diversefield3{
+			background-color: white;
+			width:500px;
+			height:auto;
+			float:right;
+			padding:10px;	
+			border: black;
+			border-style:solid;
+            border-width:1px;	 
+			margin-top: 0px;
+}
+
 
 #ResultBody {
 
@@ -627,6 +704,25 @@ body		{
 
 }
 
+#FoodRow2	{
+				display:none; 					/*  All the rows 2-5 are not displayed for energy break down input  */
+			}
+
+#FoodRow3		{
+				display:none;
+			}
+
+#FoodRow22		{
+				display:none;
+			}
+
+#FoodRow33		{
+				display:none;
+			}
+
+
+
+
 #redTxt		{
 			color:red; 
 			}
@@ -639,7 +735,7 @@ body		{
 			
             text-align: center;
 			float:left;
-			margin-top:2300px;
+			margin-top:2500px;
 			position: relative;
 		}	
 
