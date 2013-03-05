@@ -1,27 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<link rel="stylesheet" href="../NRH/CSS/style1.css" type="text/css"/> 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Näringsämnen Krav på hästar</title>
-</head>
-<body>
-	<div class="body2">	
-		<img id="BgHorsesPicRight" src="IMAGES/horses.png" style="width:680px; height:450px" alt=""  />	 <!--This is Background image of the horse's-->
-		<div class="header">	
-     				<div class="nav-wrap">
-     				<ul class="group" id="menuBar-one">
-            				<li><a rel="#fe4902" href="index.html">Hem</a></li>
-          					<li><a rel="#900" href="horseWeight.html">Häst Vikt</a></li>
-            				<li><a rel="#D40229" href="horseScale.html">Häst Skala</a></li>
-            				<li><a rel="#98CEAA" href="Videos.html">Videos</a></li>
-           					<li class="current_page_item_two"><a rel="#1B9B93" href="Photos.html">Bilder</a></li>
-            				<li><a rel="#8DC91E" href="FoodShop.html">Häst mat</a></li>
-       				 </ul>
-       				 </div>		   					
-   		</div>
- 			
- 	<div id="Youtubetable">
+<?php include'Head.php'; ?>
+
 		<table border="0" cellpadding="10" cellspacing="20" style="width:425px; height:350px;">
 			<tr>
 				<td><img src="photoPage/image1.png"  alt=""/></td>
@@ -66,22 +44,5 @@
 				</td>
 			</tr>	
 		</table>
-	</div>
- 			
- 			
- 	<p class="footer3">
-  		<a href="http://validator.w3.org/check?uri=referer">
-  		<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
-  	</p>
- 			
- 			
- 			
- 	</div>
- 			<script type="text/javascript" src="JavaScript/jquery.js"></script>
-			<script type="text/javascript" id="display" src="JavaScript/pony2.js"></script>	
 
-
-
-
-</body>
-</html>
+<?php include'footer.php'; ?>

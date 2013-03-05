@@ -1,76 +1,24 @@
 body		{
 			width: 100%;
-			height: auto;
-			background-repeat: repeat-x ;
-			background-position-y: 200px;
-			background-size:400px;				
-			margin: 0px auto;
-			z-index:-1;	
-			
-			font-size:13px;
-			font-family:"Tahoma";
+		
 			float: left;
+			position: absolute;
 			
 			}
 			
 
 .body2		{
-			margin: 0 auto;
-			width: 620px;
-			height: auto;
-			
-			
-			
-			}
-			
-.header		{
-			background-image:url('../IMAGES/header.png');/* horses text header  */ 
-			background-repeat:no-repeat;
-			background-color: black;
-			background-size:700px;
-			background-position:center;
-		 	width: 1315px;     
-            height: 300px; 
-            padding: 50px;
-            margin-left:-400px;
-            border:solid 1px;
-			border-color: white;
-			}
-
-#BgHorsesPicRight	{	
-			
+			margin: 0;
 			float:left;
-			padding:30px;
-			margin-top:680px;	
-			margin-left:190px;
-			position:absolute;
-			z-index:-1;
+			
+			
 			}
+			
 
 
 
 
 
-.grayBack	{															/* menu gray Background image in index.html  */
-			background-image:url('../IMAGES/pony-patter.png');
-			width: 450px;
-			float:left;
-			height:auto;
-			padding:50px;	
-			border: 1px solid;
-			border-style: solid;
-			border-color:#838B8B; 
-			-webkit-box-shadow: 0 8px 6px -6px black;
-	   		-moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-			margin:-260px;
-			margin-top: 50px;
-			position: absolute;
-			-webkit-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
-        	-moz-box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
-        	box-shadow:  0px 3px 10px 0px rgba(1, 1, 1, 1);
-        
-			}
 .horseSelect{
 												/* the horse type form input, stallian , pregnant or young horse radio buttons css */
 			background-color:#E0E0E0;
@@ -98,15 +46,23 @@ body		{
 		}
 #info1	{													/* 1 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 150px;
-			margin-left:200px;
+			width: 280px;     
+            height: 60px; 
+            padding:20px;
+            margin-top: 220px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -119,15 +75,23 @@ body		{
 		}
 #info2	{														/* 2 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 390px;
-			margin-left:200px;
+			width: 280px;     
+            height: 20px; 
+            padding: 20px;
+            margin-top: 450px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -140,15 +104,22 @@ body		{
 
 #info3	{													/* 3 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
-			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 560px;
-			margin-left:200px;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */			float: left;
+			width: 280px;     
+            height: 20px; 
+            padding: 20px;
+            margin-top: 590px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -161,15 +132,23 @@ body		{
 		}	
 #info4	{												/* 4 gray box with information that is activated when icon hoverd */
 			display: none;				
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 700px;
-			margin-left:200px;
+			width: 280px;     
+            height: 20px; 
+            padding: 20px;
+            margin-top: 760px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -181,15 +160,23 @@ body		{
 		}
 #info5	{											/* 5 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 920px;
-			margin-left:200px;
+			width: 280px;     
+            height: 70px; 
+            padding: 20px;
+            margin-top: 1000px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -201,15 +188,22 @@ body		{
 		}
 #info6	{										/* 6 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
-			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 1170px;
-			margin-left:200px;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */			float: left;
+			width: 280px;     
+            height: 50px; 
+            padding: 20px;
+            margin-top: 1310px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -221,15 +215,23 @@ body		{
 		}
 #info7	{										/* 7 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 1500px;
-			margin-left:200px;
+			width: 280px;     
+            height: 50px; 
+            padding: 20px;
+            margin-top: 1660px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -242,15 +244,23 @@ body		{
 		}
 #info8	{												/* 8 gray box with information that is activated when icon hoverd */
 			display: none;
-			background-image: url('../IMAGES/infobox.png');
-			background-repeat:no-repeat; 
-			background-color:none;
+			-webkit-border-radius: 1px;
+			-moz-border-radius: 1px;
+			border-radius: 1px;
+			background: #eeeeee; /* Old browsers */
+			background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
 			float: left;
-			width: 294px;     
-            height: 150px; 
-            padding: 39px;
-            margin-top: 1880px;
-			margin-left:200px;
+			width: 280px;     
+            height: 40px; 
+            padding: 20px;
+            margin-top: 2000px;
+			margin-left:220px;
 			text-align:justify;	
 			font-size: inherit;
 			z-index:auto;
@@ -399,19 +409,15 @@ body		{
 
 			background-color:#E0E0E0;
 			float: left;
-			margin-top: 20px;
-			width: 450px;     
+			width: 500px;     
             height:auto; 
-            padding:20px;
+            padding:40px;
             border-style:solid;
             border-width:1px;
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
-	        -webkit-border-radius: 7px;
-			-moz-border-radius: 7px;
-			border-radius: 7px;
-			margin-left:-20px;
+			margin-left:30px;
 			}
 .DiverseType{
 			
@@ -431,42 +437,11 @@ body		{
 			border-radius: 7px;
 			margin-left:-20px;
 			}
-.submit {																/* submit button, and has on mouse over css */
-		     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-		     -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-		     box-shadow:inset 0px 1px 0px 0px #ffffff;
-		     margin-top: 30px;
-		     background-color:#ededed;
-		     -moz-border-radius:2px;
-		     -webkit-border-radius:2px;
-		     border-radius:2px;
-		     border:1px solid black;
-		     width: 170px;     
-             height: auto;
-		     display:inline-block;
-		     color:black;
-		     font-family:arial;
-		     font-size:15px;
-		     font-weight:bold;
-		     float: left;
-		     padding:10px;
-		     text-decoration:none;
-		     text-shadow:1px 1px 0px #ffffff;
-		     -webkit-box-shadow: 0 8px 6px -6px black;
-	   		 -moz-box-shadow: 0 8px 6px -6px black;
-	         box-shadow: 0 8px 6px -6px black;	
-}.submit:hover {
-			 
-			 				
-			 background-color:#dfdfdf;
-}.submit:active { 	
-			 position:relative;
-			 top:1px;
-}			 
+
 
 #ResultHead	{
 			background-color: white;
-			width:500px;
+			width:400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -477,7 +452,7 @@ body		{
 
 #ResultText	{
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -490,7 +465,7 @@ body		{
 
 #DraktigResult{
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -501,7 +476,7 @@ body		{
 
 #ResultText2 {
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -512,7 +487,7 @@ body		{
 
 #ResultTravGalopp {
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -535,7 +510,7 @@ body		{
 
 #Foodfield1 {
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -548,7 +523,7 @@ body		{
 
 #Foodfield2 {
 			background-color: white;
-			width:500px;
+			width:400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -561,7 +536,7 @@ body		{
 
 #Foodfield3 {
 			background-color: white;
-			width:500px;
+			width:400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -574,7 +549,7 @@ body		{
 
 #Diversefield1{
 			background-color: white;
-			width:500px;
+			width:400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -587,7 +562,7 @@ body		{
 
 #Diversefield2{
 			background-color: white;
-			width:500px;
+			width:400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -599,7 +574,7 @@ body		{
 
 #Diversefield3{
 			background-color: white;
-			width:500px;
+			width:400px;
 			height:auto;
 			float:right;
 			padding:10px;	
@@ -612,13 +587,12 @@ body		{
 
 #ResultBody {
 
-			background-image:url('../IMAGES/pony-patter.png');
-			width: auto;
+			
+			width:400px;
 			height:auto;
 			float:right;
 			padding:50px;	
 			border: 1px solid;
-			border-style: solid;
 			border-color: black; 
 			-webkit-box-shadow: 0 8px 6px -6px black;
 	   		-moz-box-shadow: 0 8px 6px -6px black;
@@ -650,7 +624,7 @@ body		{
 #Result11	{
 														/* this containe all the results css when the user submits */
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -661,7 +635,7 @@ body		{
 #Result22	{
 			display:none;
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -672,7 +646,7 @@ body		{
 #Result33	{
 			display:none;
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -683,7 +657,7 @@ body		{
 #Result44	{
 			display:none;
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -694,7 +668,7 @@ body		{
 #Result55	{
 			display:none;
 			background-color: white;
-			width: 500px;
+			width: 400px;
 			float:right;
 			padding:10px;	
 			border: black;
@@ -750,7 +724,7 @@ body		{
 .grayBack2{															/* menu gray Background image in horseScale site  */
 	
 			background-image:url('../IMAGES/pony-patter.png');
-			width: 540px;
+			width: auto;
 			float:left;
 			height:auto;
 			padding:50px;	
@@ -908,93 +882,8 @@ body		{
 			margin-top:1900px;
 			
 			}
-.footer4	{
-			width: 0px;     			/*W3C logo at footer in VIDEO.html page */
-            text-align: center;
-			margin-top:1600px;
-				
-			}			
-
-#menuBar-one { 										/*gray menu bar on top of the page  */
-			margin: 1px auto; 
-			position: relative; 
-			width:1375px; 
-			height:45px;	
-			border:solid;
-			border-width:0px; 
-			margin-left:-50px;
-			margin-top: 305px;		
-			text-align: center;
-			font-family: "Al Bayan";
-			font-size:43px;
-			font-style: normal
-			background-image: -ms-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
-			background-image: -moz-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
-			background-image: -o-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
-			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B80000), color-stop(0.5, #A10505), color-stop(0.75, #990701), color-stop(1, #870000));
-			background-image: -webkit-linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
-			background-image: linear-gradient(bottom, #B80000 0%, #A10505 50%, #990701 75%, #870000 100%);
-		
-		}			
-
-#menuBar-one li { 						/*red menu box's  */
-			display: inline-block; 
-			height:45px;
 			
-			
-			}
 
-#menuBar-one li a{ 					/* menu box's font, style, size and postioning*/
-			position: relative; 
-			z-index: 200; 
-			color: black; 
-			font-size: 14px; 
-			display: block; 
-			float: left; 
-			padding: 35px;
-			padding-top:10px;
-			text-decoration: none;
-			
-		 	}
-
-#menuBar-one li a:hover{ 					/* menu box's font, style, size and postioning hover*/
-			position: relative; 
-			z-index: 200; 
-			height: 0px;
-			color:black; 
-			font-size: 14px; 
-			float: left; 
-			padding: 35px;
-			padding-top:10px;
-			text-decoration: none;
-		 	background-color:white;
-		 	color: black;
-			background-color:#DCDCDC; 
-			
-		 
-		 }
-
-
-
-
-.current_page_item_two{																		/* current page for the menu bar and link*/
-				background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
- 				background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
-				background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
-				background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #D9D9D9));
-				background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);
-				background-image: linear-gradient(bottom, #FFFFFF 0%, #D9D9D9 100%);			
-			}
-
-
-
-
-														/* ie6 or other browsers which have not been updated*/
-.ie6 #menuBar-one li, .ie7 #menuBar-one li {
-						display: inline;
-					
-				}
-			
 
 
 #Youtubetable {

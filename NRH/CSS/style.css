@@ -1,0 +1,120 @@
+.header {
+	
+		background-image: url(IMAGES/horses.png);
+      	background-repeat: no-repeat;
+	
+}
+
+
+#horseForm {  
+			border: 1px solid #ccc;
+			padding: 30px;
+			background-color: rgba(252,251,252,0.37)
+			}
+			
+#weighttype{
+	border: 1px solid #ccc;
+	padding:30px;
+}			
+			
+#FatSkinny{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+
+#Foodtable{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#ProteinFoder{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#FoodRowTable{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#horsetype{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#horseSelect{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+
+
+#horseimage{
+	border: 0px solid #ccc;
+	background-image:url(../IMAGES/horses.png);
+	background-repeat: no-repeat;
+	
+	
+}
+#DiverseFoder{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#EndFoodtable{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+#horseSelect{
+	border: 1px solid #ccc;
+	padding:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+			
+#Row2		{
+				display:none; 					/*  All the rows 2-5 are not displayed for energy break down input  */
+			}
+
+#Row3		{
+				display:none;
+			}
+
+#Row4		{
+				display:none;
+			}
+
+#Row5		{
+				display:none;
+			}
+
+#FoodRow2	{
+				display:none; 					/*  All the rows 2-5 are not displayed for energy break down input  */
+			}
+
+#FoodRow3		{
+				display:none;
+			}
+
+#FoodRow22		{
+				display:none;
+			}
+
+#FoodRow33		{
+				display:none;
+			}
+
+
+
+
+#redTxt		{
+			color:red; 
+			}
+
+#greenTxt		{
+			color:green; 
+			}
