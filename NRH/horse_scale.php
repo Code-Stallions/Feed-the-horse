@@ -1,8 +1,12 @@
 <?php include'Head.php'; ?>
 
-							    
+						    
+				<div class="row-fluid">
+				<div class="span12 offset2">
 				<form action="" id="horseMark" name="form2" method="post">		
 				
+				<div class="row-fluid">
+				<div class="span8">
 				<h1>Hästens vikt</h1>
 				
 				<h3>Formel:1</h3>
@@ -17,10 +21,13 @@
  										<input type="button" value="Calculate" class="submit1" name="submit" style="margin-left:35px;"/> 
  									<div id="theanswer"></div>
  								</div>
-    							 		
- 					<h3>Det går också bra att ange lansmärkeomfång och mankhöjd i cm i beställningen. Skriv då vilka mått det gäller.</h3>
+    							<h4>Det går också bra att ange lansmärkeomfång och mankhöjd i cm i beställningen. Skriv då vilka mått det gäller.</h4>
+ 							</div>
+ 						</div>	 		
+				<hr />	
  				
- 				
+ 				<div class="row-fluid">
+				<div class="span8">
  					<h3>Formel:2</h3>						
  						<p>Bröstomfång är måttet runt bålen bakom manke och armbåge.
 						   Längden mäts från armbågen till bärbensknölen.(Bröstomfång * Bröstomfång * Längd) / 8 900 = Vikt i kg</p>
@@ -36,9 +43,19 @@
 										 <input type="button" value="Calculate" class="submit2" name="submit" style="margin-left:35px;"/>
 										 <div id="theanswer2"> </div>
 									</div>			
+								<h4>Det går också bra att ange bröstomfång och längd i cm i beställningen. Skriv då vilka mått det gäller.</h4>	
 						</form>
-						<h3>Det går också bra att ange bröstomfång och längd i cm i beställningen. Skriv då vilka mått det gäller.</h3>
-						
-						<script type="text/javascript" id="display" src="JavaScript/scale.js"></script>	
-										
+					
+					</div>
+ 					</div>
+ 					
+			</div>					
+		</div>	
+		
+			
+
+
+<script type="text/javascript" id="display" src="JavaScript/scale.js"></script>	
+
+
 <?php include 'footer.php'; ?>

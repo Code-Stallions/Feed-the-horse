@@ -1,10 +1,15 @@
 	$(document).ready(function() {
+		
+		//Result field loader//
+		
+		
 		$('.numbersOnly').keyup(function() { // It will only allow numbers to be entered in the text field//
 			this.value = this.value.replace(/[^0-9\.]/g, '');
 		});
 		$('#ResultBody').hide(); // It hiddes the result window but its reveled after button is clicked//
 		$("#calcu").click(function() { // the click function starts here//
 			$("#horseForm").hide();
+			$('#ResultBody').fadeIn("10000");
 			var HorseTypeInput = ("Din häst är en :");
 			var HorseType = ($("input[name=horseType]:checked").val() || 0); // calls out the horse type you have selected//
 			if (HorseType == "" || 0) {
@@ -45,6 +50,7 @@
 			var SE2 = parseInt(SE);
 			var TS = (1.75 * (weight / 100)).toFixed(1); // It works out the TS math formulas//
 			var TS2 = parseInt(TS);
+			
 			if ((weight2 == 0)) {
 				$("#ResultText").hide();
 			} else {

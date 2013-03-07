@@ -4,7 +4,7 @@
 	<!--<link rel="stylesheet" href="CSS/style1.css" type="text/css"/>-->
 	<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
 	<link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css"/> 
-		
+	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Näringsämnen Krav på hästar</title>
 
@@ -15,8 +15,8 @@
 						<script type="text/javascript" src="JavaScript/tooltip.js"></script>
 						<script type="text/javascript" src="JavaScript/popover.js"></script>
 						<script type="text/javascript" src="JavaScript/bootstrap.min.js"></script>
-						<meta name="viewport" content="width=device-width, initial-scale=1.0">
-						<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">	
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+										
 <style type="text/css">
       body {
         padding-top: 60px;
@@ -61,7 +61,7 @@
 		          						<li><a href="horseWeight.php">Häst Vikt</a></li>
 		            					<li><a href="horse_scale.php">Häst Skala</a></li>
 		            					<li><a href="Videos.php">Videos</a></li>
-		           						<li><a href="photos.php">Bilder</a></li>
+		           						<li><a href="photo.php">Bilder</a></li>
 		            					<li><a href="FoodShop.php">Häst mat</a></li>
 		            				</ul>
 		       					 </div>

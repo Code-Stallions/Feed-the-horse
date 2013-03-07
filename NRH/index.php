@@ -510,13 +510,13 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div><a href="#ResultBody" data-toggle="modal"><input type="button" value="Räkna ut" class="btn btn-large btn-primary" name="submit" id="calcu" data-toggle="modal"></a>
+                    </div><a href="#ResultBody"><input type="button" value="Räkna ut" class="btn btn-large btn-primary" name="submit" id="calcu"></a>
                 </div><!-- table end -->
             </form>
         </div>
     </div>
 
-    <div id="ResultBody" class="modal hide fade" aria-hidden="true">
+    <div id="ResultBody">
         <!--This is result viewer and holds gray color body -->
 
         <div class="modal-header">
@@ -525,7 +525,7 @@
             <h3 id="myModalLabel">Result:</h3>
         </div>
 
-        <div class="modal-body">
+        <div class="content">
             <div id="ResultHead"></div><!--This is result for horse type you selected -->
 
             <div id="ResultText"></div><!--prints out the result for requirements horse calculation -->

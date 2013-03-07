@@ -1,10 +1,17 @@
 <?php include'Head.php'; ?>
 
-		<h2><strong>Hullbedömning av hästar</strong></h2>
-					
+		<div class="row-fluid">
+				<div id="wieghtBodycover" class="span12 offset2">
+		
+					<div class="span9 offset3">
+						<h1>Hullbedömning av hästar</h1>
+						<br>
 						<img id="horseFatPic" src="IMAGES/real_horse_body.png" style="width:440px; height:350px" alt="horseFatPic"  />
-						
-						<ol>
+					</div>
+					<hr/>
+					<br>
+					<div class="span9">	
+					<ol>
 							<li>Längs halsen</li>
 							<li>Manken</li>
 							<li>Fåra längs ländryggen</li>
@@ -92,9 +99,16 @@
 								Svansroten utstående, men individuella kotor kan inte urskiljas visuellt. 
 								Höftbensknölen verkar rundad men lätt urskiljbar. Bärbensknöl inte urskiljbar. 
 								Manke, bog och hals betonade.
-								</li>
+							</li>
+							<br>
 						</ol>
-				
+					</div>
+			
+				</div>	
+			</div>	
+						
+
+
 <?php include'footer.php'; ?>
 
 									
