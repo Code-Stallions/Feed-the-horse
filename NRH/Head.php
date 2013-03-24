@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<!--<link rel="stylesheet" href="CSS/style1.css" type="text/css"/>-->
+	<link rel="stylesheet" href="CSS/style1.css" type="text/css"/>
 	<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
-	<link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css"/> 
 	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Näringsämnen Krav på hästar</title>
@@ -36,15 +36,16 @@
         }
       
       }
-            
-      
-      
-    </style>
+      </style>
 			
 		
 		</head>
 				<body>
 					<div class="header">
+					<div id="headImage"><a href="index.php"><img src="IMAGES/horseHeader.png" alt="horseHeader" /></a>
+					
+					
+					</div>
 						<div class="navbar">
 							<div class="navbar-inner">
 								<a class="brand" href="index.php">Näringsämnen Krav på hästar</a><!--This is head banner with menu bar-->	

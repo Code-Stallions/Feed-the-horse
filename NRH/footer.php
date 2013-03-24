@@ -5,21 +5,24 @@
 
 
 <script>
-	$('body').delegate('.nav li a', 'click', function(){
-    var $thisLi = $(this).parents('li:first');
-    var $ul = $thisLi.parents('ul:first');
-    if (!$thisLi.hasClass('active')){
-        $ul.find('li.active').removeClass('active');
-        $thisLi.addClass('active');
-        }
-    	});	
+$('.menu li a').click(function(e) {
+  var $this = $(this);
+  if (!$this.hasClass('active')) {
+    $this.addClass('active');
+  }
+  e.preventDefault();
+});	
 </script>
 
 
 
 </body>		 
 	
-<footer></footer>	
+<footer>
+	
+	
+	
+</footer>	
 	
 		
 </html>		
